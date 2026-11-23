@@ -1,42 +1,49 @@
-# Thu thập bằng chứng menu 2846 — Windows 7, chỉ đọc
+# Quan sát menu 2846 bằng ADB — Windows 7, chỉ đọc
 
 ## Mục đích
 
-So sánh màn hình Activity đang xuất hiện **trước và sau** khi chủ thiết bị **tự** nhập mã `2846` trong `GlocalmeHome > About`. Không tự gửi mã bí mật, không mở menu kỹ thuật bằng lệnh, không đổi cấu hình trên H01.
+So sánh Activity của H01 trước và sau khi chủ thiết bị **tự** nhập `2846` trong `GlocalmeHome > About`. Các lệnh bên dưới **chỉ đọc** trạng thái. Không có script tự chạy mã bí mật hoặc thao tác vào factory menu.
 
 ## Chuẩn bị
 
-- Windows 7 SP1, USB ADB đã ủy quyền và **chỉ một H01** đang kết nối.
-- Chép [`tools/h01-2846-readonly-win7.cmd`](../../tools/h01-2846-readonly-win7.cmd) vào `C:3\platform-tools` (cùng `adb.exe`).
-- GlocalmeHome có thể truy cập được theo thao tác thường ngày trên H01. **Không** dùng `pm unhide` hoặc `pm enable` nếu ứng dụng hiện bị ẩn; đó là thao tác thay đổi trạng thái ngoài phạm vi kiểm tra này.
+- Windows 7 SP1, ADB đã ủy quyền; kết nối **một thiết bị H01** qua USB.
+- Mở CMD trong `C:\v3\platform-tools`.
+- GlocalmeHome có thể truy cập bình thường. Không dùng `pm unhide` hoặc `pm enable` nếu ứng dụng hiện đang ẩn vì đó là thay đổi trạng thái ngoài phạm vi kiểm tra.
 
-## Thực hiện
+## Bước A — Chụp trạng thái ban đầu
 
 ```bat
-cd /d C:3\platform-tools
-h01-2846-readonly-win7.cmd
+cd /d C:\v3\platform-tools
+adb get-state
+adb shell getprop ro.fota.version
+adb shell pm path com.glocalme.g4home
+adb shell pm path com.ukelink.dusk.mmi
+adb shell pm path com.ukl.factory
+adb shell dumpsys activity activities | findstr /I /C:"com.glocalme.g4home" /C:"com.ukelink.dusk.mmi" /C:"com.ukl.factory" > H01-2846-before.txt
 ```
 
-Công cụ ghi thông tin package và Activity trước khi nhập mã, sau đó tạm dừng. Trên **màn hình H01**, vào GlocalmeHome → About → nhập `2846` theo cách anh đã sử dụng và dừng tại màn hình xuất hiện. Trên máy tính nhấn phím bất kỳ để ghi lại trạng thái.
+Chạy thêm truy vấn receiver; chỉ xem một số dòng phù hợp, không xuất toàn bộ package metadata:
 
-Kết quả lưu trong thư mục `H01-2846-RESULTS`:
+```bat
+adb shell dumpsys package com.ukelink.dusk.mmi | findstr /I /C:"MySecretCodeReceiver" /C:"2846" /C:"android_secret_code"
+```
 
-| Tệp | Nội dung |
-| --- | --- |
-| `01-build-packages.txt` | Phiên bản firmware và vị trí của ba APK |
-| `02-component-lines.txt` | Những dòng PackageManager liên quan mã, receiver, MainActivity và About |
-| `03-before.txt` | Activity liên quan đến ba package trước khi nhập mã |
-| `04-after.txt` | Activity liên quan sau khi nhập mã |
+## Bước B — Thao tác thủ công trên H01
 
-Dữ liệu lọc có thể vẫn chứa đường dẫn, tên Activity hoặc thành phần không mong muốn. **Rà soát thủ công trước khi gửi hoặc đăng GitHub.** Không gửi logcat đầy đủ, ảnh có IMEI/ICCID/IMSI, số điện thoại hay mật khẩu.
+Tại màn hình H01, vào **GlocalmeHome → About** rồi nhập mã `2846` đúng cách anh đã sử dụng. Khi menu xuất hiện, **chỉ xem giao diện**, không bấm các mục cấu hình kỹ thuật hoặc hiệu chuẩn. Giữ màn hình này đang mở.
 
-## Kết luận có thể rút ra
+## Bước C — Chụp trạng thái sau
 
-- Nếu `04-after.txt` có `com.ukelink.dusk.mmi/.MainActivity` là Activity đang foreground, đó là bằng chứng MMI được đưa lên khi nhập mã.
-- Nếu xuất hiện Activity GlocalmeHome, có thể menu vẫn là màn hình trong launcher; cần ảnh/ghi chép để xác định.
-- Nếu không thấy dòng nào, đó **không chứng minh** receiver hoặc menu không tồn tại: bản Android có thể có định dạng `dumpsys` khác hoặc Activity không nằm ở foreground thời điểm đọc.
-- **Không** thể kết luận trực tiếp rằng `MySecretCodeReceiver.onReceive()` gọi MainActivity từ các dòng Activity. Muốn kết luận cần mã phương thức hoặc log intent được kiểm tra.
+```bat
+adb shell dumpsys activity activities | findstr /I /C:"com.glocalme.g4home" /C:"com.ukelink.dusk.mmi" /C:"com.ukl.factory" > H01-2846-after.txt
+```
 
-## Giới hạn an toàn
+So sánh hai tệp TXT. Nếu `H01-2846-after.txt` cho thấy `com.ukelink.dusk.mmi/.MainActivity` đang foreground, điều đó ủng hộ việc chuyển sang MMI; tuy vậy **không đủ kết luận** rằng GlocalmeHome gửi secret-code broadcast hay gọi trực tiếp một Activity.
 
-Script chỉ sử dụng `getprop`, `pm path`, `dumpsys package`, `dumpsys activity activities` và `findstr` phía Windows. Không yêu cầu root, không thực thi chức năng MMI. Người dùng chủ động truy cập giao diện trên H01, không chọn nút USB Test Mode, ADB ROOT, AutoReboot, Factory Reset hoặc AgingTest.
+Nếu không có kết quả `findstr`, điều đó có thể do định dạng `dumpsys` khác nhau hoặc menu đang hiển thị trong cùng một Activity. Không tự kích hoạt receiver để thử.
+
+**Trước khi chia sẻ:** kiểm tra và xóa mọi định danh/đường dẫn không mong muốn trong tệp TXT. Không gửi toàn bộ `logcat`, ảnh chứa IMEI/ICCID/IMSI, số điện thoại, mật khẩu hay khóa.
+
+## Trạng thái
+
+Đây là **quy trình đề xuất, chưa được chạy trên thiết bị H01 trong lần nghiên cứu này**. Chưa có bằng chứng runtime xác nhận chuỗi `About → receiver → MainActivity`. Không root, không flash, không ghi modem, không bật USB Test Mode / ADB ROOT / AutoReboot / Aging Test / Factory Reset.
