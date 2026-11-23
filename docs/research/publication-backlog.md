@@ -67,3 +67,10 @@
 - [x] [Thử nghiệm IME](../system/ime-navigation-research-timeline.md) và [xoay/cảm biến](../system/rotation-and-sensors-timeline.md).
 - [ ] Tiếp tục biên soạn các mục nguồn chưa có báo cáo chi tiết, không xuất nguyên văn log, bí mật backend hoặc firmware OEM.
 - [ ] Không mở thêm nhánh phát triển công cụ trong lộ trình **chỉ công bố nghiên cứu**.
+
+## Thêm kết quả nghiên cứu (23/11/2026)
+
+- [x] [OTA v1–v9](../firmware/ota-discovery-history-v1-v9.md), [v10](../firmware/ota-delta-validation-v10.md), [v11](../firmware/ota-patch-file-map-v11.md).
+- [x] [UService v12/v16](../system/uservice-update-channels-v12-v16.md), [network v13/v14](../network/ucloud-live-sockets-v13-v14.md).
+- [x] [DTB âm thanh K1](../hardware/k1-audio-device-tree-confirmation.md), [Dual SIM/RIL/PCB](../network/dual-sim-ril-pcb-evidence.md).
+- [ ] Tiếp tục rà các trang Notion và báo cáo H01 chưa có tài liệu độc lập; không công bố log/firmware OEM hoặc thông tin riêng.

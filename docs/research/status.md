@@ -64,3 +64,14 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | LK/ABOOT | STATIC CALL GRAPH, QSEE runtime chưa kiểm chứng | [Boot verifier](../boot/boot-verification-chain.md) |
 | Magisk 30.7 | REPORTED PASS boot RAM & root cố định | [Timeline](../boot/magisk-root-timeline.md) |
 | Phục hồi H01 | READINESS checklist, full restore CHƯA PASS | [Recovery readiness](../boot/recovery-readiness.md) |
+
+## Bằng chứng từ tài liệu chuyên đề Notion (đã đưa lên GitHub 23/11)
+
+| Nhánh | Trạng thái | Chi tiết |
+| --- | --- | --- |
+| OTA delta 81→87 | CMS/Recovery KEY MATCH; system/vendor TARGET BLOCK PASS, server SHA-256 UNRESOLVED | [V10](../firmware/ota-delta-validation-v10.md) |
+| OTA ext4 mapping | STATIC; các tệp có vùng bsdiff/new giao nhau | [V11](../firmware/ota-patch-file-map-v11.md) |
+| UService update channels | STATIC; runtime mode UNKNOWN | [UService](../system/uservice-update-channels-v12-v16.md) |
+| Network PID | RUNTIME, 3 snapshot v14; WAN reachability UNKNOWN | [Network](../network/ucloud-live-sockets-v13-v14.md) |
+| Audio K1 | RUNTIME DTB disabled; AUDIO FIX NOT PASS | [Audio](../hardware/k1-audio-device-tree-confirmation.md) |
+| Dual SIM | DSDS/RIL2 RUNTIME; second physical SIM NOT PASS | [DSDS](../network/dual-sim-ril-pcb-evidence.md) |

@@ -38,3 +38,7 @@ Nội dung trên GitHub là **tóm tắt kỹ thuật tự biên soạn**, khôn
 Đã mở lại trang Notion H01 tổng và các mục 19–24 (init, uknet, /firmware), các phần “Đổi phạm vi: giữ disable” và “Kết quả đo RAM”, 100/104–109 (ABOOT), và những mốc “boot RAM marker”, “Magisk 30.7 qua boot RAM”, “Root cố định đã PASS”. **Ghi chú về trạng thái:** đề mục lịch sử có thể chứa câu “chưa root/chưa thử”; mốc sau có chứng cứ mới hơn phải được trình bày tách biệt, không xóa lịch sử hoặc coi mọi mốc cũ vẫn đúng hiện tại.
 
 Không kiểm thử thiết bị hoặc nạp module trong lần xuất bản này; không phát hành file .ko/IMG/firmware OEM, raw logs, dữ liệu SIM hay khóa.
+
+## Tài liệu nguồn chuyên đề 20–22/11, công bố 23/11/2026
+
+Đã đọc trực tiếp trang [Notion OTA (22/11)](https://app.notion.com/p/420c5d5277a981ddbe17ca37e72e91df), [Audio K1 (21/11)](https://app.notion.com/p/41fc5d5277a9814eb9e5f4324e25fba9), [Dual SIM/PCB (20/11)](https://app.notion.com/p/41ec5d5277a9811a916cc87d0bac9d3b). Phân biệt **kết quả phân tích tĩnh**, **snapshot đã thu**, **đối chiếu bản sao** và **những điều chưa thử**. Không trích đăng binary OEM, log nguyên vẹn, khóa hay định danh máy.

@@ -38,3 +38,6 @@ Phân tích native `libdexload.so` tìm thấy tham chiếu Android AssetManager
 - `mcfg_hw.mbn` và `mcfg_sw.mbn` là cấu hình modem được ghi nhận, **không phải full baseband firmware**.
 
 **Nguồn liên quan:** [FOTA](../firmware/fota-abup-internals.md), [daemon/socket](../network/ucloud-daemons-and-sockets.md), [chính sách công bố](../security/publication-policy.md).
+## Dữ liệu được xác minh bổ sung ở v12/v16
+
+V12 trong Notion ngày 22/11 báo cáo đã kiểm chứng header của một DEX payload nạp động và routine RC4 tương ứng trong **mẫu khảo sát**; không suy rộng tất cả asset/firmware. V16 đã tách được ba nhánh: firmware FOTA, cập nhật APK UService và binary nghiệp vụ. Hai nhánh UService chỉ mới **STATIC VERIFIED**, mode hiệu lực runtime chưa xác định. Xem [báo cáo](uservice-update-channels-v12-v16.md).

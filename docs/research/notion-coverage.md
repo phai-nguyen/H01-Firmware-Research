@@ -66,3 +66,17 @@ Các số mục là **số trong trang nguồn**, có thể trùng nhau do nhi�
 | Khóa xoay và cảm biến: v0.1–v0.3.1 | [Rotation](../system/rotation-and-sensors-timeline.md) |
 
 Bảng ghi **bản tóm tắt kỹ thuật đã lọc**, không phải chuyển toàn văn log/ảnh/nhật ký riêng. Các mục Notion khác còn cần đọc và chuyển tiếp.
+
+## Chuyên đề chi tiết đọc từ Notion 20–22/11
+
+| Nguồn Notion | Tài liệu đã đưa GitHub |
+| --- | --- |
+| OTA v1–v9 | [Lịch sử nhận gói](../firmware/ota-discovery-history-v1-v9.md) |
+| OTA v8–v10 | [Chữ ký và khối đích](../firmware/ota-delta-validation-v10.md) |
+| OTA v11 | [Ánh xạ vùng vá → tệp](../firmware/ota-patch-file-map-v11.md) |
+| OTA/UService v12, v16 | [Ba cơ chế cập nhật](../system/uservice-update-channels-v12-v16.md) |
+| OTA/Network v13–v14 | [Socket runtime](../network/ucloud-live-sockets-v13-v14.md) |
+| Audio 21/11: DTB/runtime | [Device Tree K1](../hardware/k1-audio-device-tree-confirmation.md) |
+| Dual SIM 20/11: init/getprop/PCB | [DSDS chi tiết](../network/dual-sim-ril-pcb-evidence.md) |
+
+Mỗi tài liệu ghi rõ phạm vi kiểm chứng; không đồng nghĩa nội dung nhị phân hoặc tất cả 207 đề mục đã được chuyển.

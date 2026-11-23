@@ -80,6 +80,15 @@ English: [README.en.md](README.en.md)
 
 Đây là **bản biên soạn nội dung nghiên cứu từ hồ sơ lưu**, không đưa bản dump OEM, log chứa định danh hoặc APK đã vá lên GitHub.
 
+## Chuyên đề OTA, UService, mạng và phần cứng — 23/11/2026
+
+- [OTA: lịch sử thu thập v1–v9](docs/firmware/ota-discovery-history-v1-v9.md), [chữ ký và dữ liệu delta v10](docs/firmware/ota-delta-validation-v10.md), [ánh xạ tệp v11](docs/firmware/ota-patch-file-map-v11.md).
+- [UService: ba đường cập nhật v12–v16](docs/system/uservice-update-channels-v12-v16.md).
+- [Network: socket/PID từ thiết bị thật v13–v14](docs/network/ucloud-live-sockets-v13-v14.md).
+- [K1 Device Tree âm thanh](docs/hardware/k1-audio-device-tree-confirmation.md) và [DSDS/RIL/PCB](docs/network/dual-sim-ril-pcb-evidence.md).
+
+Đây là các kết quả nghiên cứu đã lưu, **không chạy lại thí nghiệm** hoặc đưa firmware/credential riêng lên GitHub.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

@@ -31,3 +31,6 @@ Bản `mosquitto.conf` lưu trữ chưa cho thấy listener/password/topic/tài 
 Khảo sát tiếp theo ưu tiên **chỉ đọc**: `adb shell cat /proc/net/tcp`, `adb shell cat /proc/net/tcp6`, `adb shell cat /proc/net/unix`, `adb shell getprop init.svc.ril-daemon`. Trước khi đưa log lên công khai phải lọc địa chỉ, định danh và phiên kết nối.
 
 **Liên quan:** [UService](../system/uservice-loader.md), [Dual SIM](dual-sim.md), [khảo sát phần cứng](../hardware/overview.md).
+## Bổ sung snapshot mới hơn (22/11)
+
+Báo cáo ngày 10/11 chưa map socket-to-PID qua inode/FD. Đợt v14 đã ghép PID/UID tại ba snapshot thực tế đối với port 80/443, 1883 và 1989. [Bằng chứng v13/v14](ucloud-live-sockets-v13-v14.md). Đây không phải xác minh có thể truy cập WAN.

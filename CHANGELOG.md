@@ -1,5 +1,13 @@
 # Changelog
 
+## [OTA, UService, network and hardware research] — 2026-11-23
+
+- Bảy báo cáo kỹ thuật từ Notion: OTA v1–v11, UService v12/v16, socket runtime v13/v14, Device Tree âm thanh K1 và DSDS/PCB.
+- Chỉ lưu bằng chứng; phân biệt bản sao ngoại tuyến, thử runtime, lỗi/hạn chế còn mở và trạng thái được chứng minh.
+- Không thêm code, tool, binary OEM hay dữ liệu SIM và bí mật backend.
+
+
+
 ## [Research-history consolidation only] — 2026-11-23
 
 - Bổ sung 7 báo cáo kỹ thuật lịch sử từ hồ sơ H01: OTA ABUP, nguồn firmware và phản hồi OEM, timeline sao lưu eMMC, J2ME/KISS/H01 Home, chính sách APK và FOTA/Feedback, IME/nav, xoay/cảm biến.
