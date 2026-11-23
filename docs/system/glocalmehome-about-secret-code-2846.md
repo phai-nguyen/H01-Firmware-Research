@@ -1,36 +1,72 @@
 # Mã 2846 — menu kỹ thuật ẩn trong About của GlocalmeHome
 
-> **Trạng thái:** Ghi nhận từ người thử thiết bị H01; chưa phân tích xác nhận đầy đủ điều kiện kích hoạt trên từng bản launcher. Đây **không phải** ứng dụng [H01 Hidden Settings](https://github.com/phai-nguyen/H01-Hidden-Settings).
+> **Kết quả phân tích tĩnh, cập nhật 23/11/2026:** đã tìm được **nơi đăng ký nhận mã 2846 trong MMI.apk**. Chưa chứng minh bằng log runtime bước trung gian giữa About của GlocalmeHome và MMI. Không nhầm với ứng dụng [H01 Hidden Settings](https://github.com/phai-nguyen/H01-Hidden-Settings).
 
-## Mục đích và vị trí
+## 1. Phát hiện xác minh từ ba APK nghiên cứu
 
-- Thiết bị: ZEUS H01 / nền tảng GlocalMe K1, Android 8.1.
-- Launcher OEM: `GlocalmeHome`, package `com.glocalme.g4home`.
-- **Mã được chủ thiết bị xác nhận: `2846`.**
-- **Vị trí được mô tả:** mục **About / Giới thiệu** trong launcher GlocalmeHome, để vào **menu bí mật / menu kỹ thuật**.
-- Phải phân biệt menu OEM này với các trang Android Settings mở qua ứng dụng H01 Hidden Settings.
+Báo cáo phân tích ngoại tuyến ngày 19/11/2026 (từ ba APK H01 do chủ thiết bị cung cấp) ghi nhận:
 
-Các bước chạm chính xác để xuất hiện ô nhập mã (nhấn nhiều lần vào phiên bản, giữ lâu hay lựa chọn khác) **chưa được xác minh bằng bản ghi thao tác**. Không suy diễn rằng mọi firmware đều mở bằng cách giống nhau.
+| APK | Package | Quan sát đáng chú ý |
+| --- | --- | --- |
+| `GlocalmeHome.apk` | `com.glocalme.g4home` | Launcher gốc, 55 Activity; theo người dùng, mục **About / Giới thiệu** là nơi nhập mã `2846`. APK có 3 DEX. |
+| `MMI.apk` | `com.ukelink.dusk.mmi` | 44 Activity; **`MySecretCodeReceiver`** đăng ký nhận `android_secret_code` với **host `2846`**. Có `MainActivity` và các trang kiểm tra phần cứng. APK gốc không có `classes.dex` trong ZIP. |
+| `UklFactory.apk` | `com.ukl.factory` | Một Activity `UklFacMainActivity`; bố cục có hai tùy chọn **USB Test Mode** và **ADB ROOT**. APK gốc không có `classes.dex` trong ZIP. |
 
-## Bằng chứng và giới hạn
+Mã `2846` là **mã người dùng đã xác nhận** để vào menu kỹ thuật từ About; phần đăng ký secret-code trong MMI.apk được **đối chiếu từ AndroidManifest**. Một chương trình tự nhận secret-code không chứng minh launcher gọi nó theo cách nào.
 
-Ghi chép nghiên cứu H01 ngày 19/11/2026 trong Notion ghi nhận mã `2846` xuất hiện trong thành phần **MMI**, được người dùng đánh giá có liên quan đến các mốc nghiên cứu mở khóa bootloader và root. Ghi chép đó **chưa chứng minh** kiểm tra mã nằm trong `GlocalmeHome.apk` hay chỉ do launcher gọi Activity/Service của MMI.
+## 2. Sơ đồ luồng — mức độ chắc chắn
 
-Vì vậy cần tách ba vấn đề:
+```text
+[GlocalmeHome / About]
+          |
+          | Nhập 2846 (đã được chủ H01 xác nhận)
+          v
+[Điểm kiểm tra/chuyển tiếp trong launcher: CHƯA XÁC ĐỊNH]
+          |
+          | Giả thuyết: secret-code intent / explicit Activity / IPC
+          v
+[MMI: MySecretCodeReceiver đăng ký host=2846]
+          |
+          | Receiver mở MainActivity? CHƯA KIỂM CHỨNG METHOD BODY
+          v
+[MMI MainActivity / giao diện kiểm tra kỹ thuật]
+```
 
-1. **Trải nghiệm người dùng:** nhập mã `2846` từ mục About của GlocalmeHome để truy cập menu OEM — ghi nhận từ người thử.
-2. **Nơi xử lý mã:** `GlocalmeHome.apk`, `MMI.apk`, `UklFactory.apk` hay IPC giữa chúng — **đang điều tra**.
-3. **Tác dụng từng mục trong menu:** chưa kiểm kê đủ và chưa bảo đảm các thao tác an toàn.
+**Không coi các mũi tên giả thuyết là luồng đã được xác minh thực tế.** Một luồng khác cũng có thể tồn tại, ví dụ About tự mở Activity của OEM thay vì sử dụng receiver; cần quan sát Activity được đưa lên foreground khi nhập mã.
 
-## Hướng phân tích tiếp theo (chỉ đọc)
+## 3. Định danh component quan trọng
 
-- Ghi lại phiên bản launcher và tên màn hình About, ảnh màn hình trước/sau khi nhập mã (loại bỏ IMEI, số SIM và dữ liệu tài khoản).
-- Thu thập `dumpsys package` cho `com.glocalme.g4home` và package của MMI/UklFactory, so sánh Activity được mở khi nhập mã.
-- Phân tích tĩnh tài nguyên/DEX từ bản APK **đang sở hữu hợp pháp** để xác định nơi so sánh mã và đường chuyển sang Activity kỹ thuật.
-- Chỉ công khai **mô tả, tên lớp/hàm, mã nguồn công cụ tự viết**; không đăng APK/DEX, khóa ký OEM hay bản dump firmware có bản quyền.
+- **MMI secret-code receiver:** `com.ukelink.dusk.mmi/.MySecretCodeReceiver`.
+- **MMI main activity:** `com.ukelink.dusk.mmi/.MainActivity`.
+- **UklFactory main activity:** `com.ukl.factory/com.ukl.factory.UklFacMainActivity`.
+- **GlocalmeHome launcher:** `com.glocalme.g4home/com.glocalme.common.boot.BootActivity`.
 
-## An toàn
+Sự có mặt của component trong manifest **không tự chứng minh** ứng dụng ngoài có quyền mở component đó, hoặc rằng component an toàn khi chạy. Không sử dụng lệnh tự kích hoạt receiver hay menu kỹ thuật trong phép khảo sát này.
 
-Menu OEM có thể chứa **factory reset, thử phần cứng, cài firmware hoặc cấu hình modem**. Chỉ xem và ghi nhận ban đầu. Không nhấn các nút ghi NV, xóa dữ liệu, đổi IMEI, flash hoặc đặt lại thiết bị nếu chưa có phương án khôi phục và hiểu rõ tác dụng.
+## 4. Có bao nhiêu chức năng trong MMI?
 
-**Nguồn ghi chép nội bộ:** “H01 – Mốc khóa màn hình PIN: mở menu PASS, tương phản cao PASS” (19/11/2026). Xác nhận vị trí *About* và mã 2846 do chủ thiết bị cung cấp trong cuộc trao đổi ngày 23/11/2026.
+Tài nguyên XML phân tích ngoại tuyến chứa **30 bài kiểm tra**. Có hai cấu hình hiển thị khác nhau: **thường bật 20/30**, **DG4 bật 10/30**. Danh sách và trạng thái từng mục xem [MMI factory test inventory](mmi-factory-tests.md). Chưa có bằng chứng xác định cấu hình nào đang được sử dụng trên H01 K1 thực tế hoặc các bài kiểm tra có phần cứng tương ứng.
+
+## 5. Kiểm chứng runtime an toàn trên H01 (Windows 7)
+
+Dùng [công cụ quan sát trước/sau khi nhập mã](../tools/secret-2846-readonly.md). Công cụ chỉ chạy `getprop`, `pm path`, `dumpsys package` và `dumpsys activity activities` qua ADB, lọc các component có liên quan; **không** gọi `su`, `am start`, gửi secret-code broadcast, kích hoạt factory test hoặc thay đổi bất cứ cài đặt nào. Chủ thiết bị tự thao tác About trên màn hình khi thấy an toàn.
+
+Nếu Activity foreground sau khi nhập mã là `com.ukelink.dusk.mmi/.MainActivity`, đó sẽ là bằng chứng MMI được mở trong luồng menu; tuy nhiên vẫn **chưa chứng minh MMI được gọi bằng BroadcastReceiver hay explicit Intent**. Để xác định điểm gọi cần phân tích body DEX của About và MMI VDEX/ODEX gốc, hoặc có log intent đã được kiểm tra an toàn.
+
+## 6. Hướng phân tích mã tiếp theo
+
+1. **GlocalmeHome**: tìm lớp About, callback nhập mã và chuỗi/constant liên quan; nếu mã được chuyển qua IPC, ghi lại loại Intent và component đích (không công bố APK/DEX OEM).
+2. **MMI**: phân tích method `MySecretCodeReceiver.onReceive()` từ `MMI.vdex`/`.odex` theo đúng bản firmware. MMI.apk không chứa DEX thông thường, do đó kết quả chỉ nhìn trong APK là chưa đủ.
+3. **UklFactory**: chỉ ghi nhận Activity và hai key `CheckBoxPreferenceUsbTesNodeKey`, `CheckBoxPreferenceAdbDebug`; chưa có method body chứng minh hành vi của các công tắc.
+4. **Runtime**: quan sát foreground Activity trước/sau trên máy, không bật các chức năng kỹ thuật.
+
+## 7. An toàn và giấy phép
+
+Không bấm **ADB ROOT, USB Test Mode, AutoReboot, Aging Test, Factory Reset, Charging/DisCharging** hoặc chỉnh modem, eMMC, khóa/bảo mật từ menu này trước khi xác minh hành vi. Bản quyền APK/ODEX/VDEX của nhà sản xuất vẫn thuộc chủ sở hữu tương ứng; repository chỉ phát hành tài liệu tự biên soạn và công cụ nghiên cứu độc lập.
+
+### Nguồn và giới hạn
+
+- Hồ sơ phân tích 19/11/2026: `H01_PhanTich_3APK_MenuAn_20261119.txt` (đọc trực tiếp từ kho tệp nghiên cứu, kiểm tra manifest/XML của ba APK; không phát hành tệp APK gốc).
+- Nhật ký Notion 19/11/2026: nghiên cứu màn hình khóa và mã bí mật 2846; phần khảo sát MMI dựa trên phân tích tĩnh.
+- Xác nhận về **mục About**: chủ thiết bị H01, 23/11/2026.
+- **Chưa kiểm chứng:** đường gọi thực tế từ GlocalmeHome, body `onReceive`, màn hình sau khi nhập mã trong lượt thu thập hiện tại và khả năng tương thích giữa các firmware H01.
