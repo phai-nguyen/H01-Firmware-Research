@@ -98,3 +98,5 @@
 - [x] [Launcher/IME B](../system/device-b-launcher-ime-evidence.md) và [xoay B](../system/device-b-rotation-evidence.md): giữ phân biệt snapshot cũ và boot persistent.
 - [x] [Share Server v0.1.4 chi tiết](../projects/share-server-protocol-v014.md): PASS H01/iPhone ở máy đã thử, test hash 9 MiB chỉ ở fixture.
 - [ ] Nội dung các hồ sơ khác, TXT/ZIP/ảnh/video còn phải kiểm kê và lọc dữ liệu. Không coi có mục lục 207 tiêu đề là đã xuất bản toàn bộ.
+
+**Điều chỉnh mốc thời gian:** dòng “không thử H01 thứ hai” trong kế hoạch ngày 24/11 là giới hạn **không thực hiện thử mới trong nhiệm vụ công bố**. Nó không phủ định nhật ký Notion 23–24/11 ghi các phép thử đã xảy ra trên máy B; đã biên soạn và [ẩn định danh ở đây](h01-device-b-comparison-20261124.md).

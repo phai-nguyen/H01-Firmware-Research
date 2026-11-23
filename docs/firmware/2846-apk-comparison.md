@@ -74,3 +74,7 @@ Người dùng hiện **không có chiếc H01 thứ hai** để kiểm thử. B
 ## Trạng thái
 
 **Đã hoàn thành:** 4 bản OEM lưu trữ có hash y hệt; mẫu Việt hóa khác hash nhưng cả 5 phương thức mục tiêu cho chữ ký đối chiếu khớp; công cụ so sánh đã chạy trên 2 cặp mẫu; 6/6 unit test synthetic PASS. **Chưa hoàn thành:** đối chiếu máy H01 thứ hai và kiểm thử chạy APK Việt hóa trên thiết bị thật.
+
+## Mốc tiếp theo: đã có nhật ký riêng máy B (23–24/11/2026)
+
+Khi lập kế hoạch đối chiếu APK ngày 23/11, người dùng chưa có H01 thứ hai để thực hiện phép so sánh **GlocalmeHome 2846**. Sau đó có trang Notion ghi quá trình unlock/root/IME/xoay của một thiết bị được gọi là **máy B**. Trang đó **không cung cấp bằng chứng đã pull GlocalmeHome APK của B và kiểm mã 2846 trên B**, nên kết luận của phép so sánh APK ở trên vẫn chỉ giới hạn ở các tệp lưu trữ ban đầu. Xem [tài liệu A/B](../research/h01-device-b-comparison-20261124.md). Việc bổ sung này chỉ cập nhật trạng thái hồ sơ, không phát sinh yêu cầu kiểm thử mới.

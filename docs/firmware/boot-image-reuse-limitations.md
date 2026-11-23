@@ -17,3 +17,6 @@ Kế hoạch nguồn đề xuất đối chiếu board, firmware, GPT, lock stat
 Đặc biệt không dùng các phân vùng riêng `modemst1/2`, `fsg`, `persist`, `userdata`, `keystore/keymaster`, `productinfo`, `devinfo` hoặc dữ liệu SoftSIM/NV từ H01 này để ghi mù vào máy khác.
 
 **Theo quyết định hiện tại, nhánh thử máy thứ hai đã dừng vì không có máy.** Đợt này chỉ ghi tài liệu, không tạo gói clone/script flash hay yêu cầu mượn thêm H01. Xem [tổng quan sao lưu](backup-and-reconstruction.md), [mốc boot lạnh](../boot/auto-power-on-cold-boot-evidence.md).
+## Đính chính theo nguồn mới (Notion 23–24/11/2026)
+
+Các đoạn trên mô tả **kế hoạch và tình trạng tại thời điểm khảo sát ban đầu**, khi chưa có thử nghiệm trên máy thứ hai. Hồ sơ Notion xuất hiện sau đó ghi các bước thực tế trên **máy B**: EDL/GPT, mở khóa, nạp tạm RAM và root từ **boot gốc riêng B**. Điều đó **không chứng minh** việc flash ảnh boot của A sang B là an toàn; thực tế boot gốc của hai máy có hash khác nhau. Kết quả mới được biên soạn tại [hồ sơ A/B](../research/h01-device-b-comparison-20261124.md) và [boot/root B](../boot/device-b-unlock-root-evidence.md). **Không tiến hành nhân bản hoặc thử máy mới trong đợt chỉnh tài liệu này.**
