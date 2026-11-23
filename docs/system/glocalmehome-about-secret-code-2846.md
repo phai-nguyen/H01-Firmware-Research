@@ -49,7 +49,7 @@ Tài nguyên XML phân tích ngoại tuyến chứa **30 bài kiểm tra**. Có 
 
 ## 5. Kiểm chứng runtime an toàn trên H01 (Windows 7)
 
-Dùng [công cụ quan sát trước/sau khi nhập mã](../tools/secret-2846-readonly.md). Công cụ chỉ chạy `getprop`, `pm path`, `dumpsys package` và `dumpsys activity activities` qua ADB, lọc các component có liên quan; **không** gọi `su`, `am start`, gửi secret-code broadcast, kích hoạt factory test hoặc thay đổi bất cứ cài đặt nào. Chủ thiết bị tự thao tác About trên màn hình khi thấy an toàn.
+Dùng [hướng dẫn quan sát ADB thủ công trước/sau khi nhập mã](../tools/secret-2846-readonly.md). Các lệnh kiểm tra chỉ đọc trạng thái qua ADB; **không** gọi `su`, `am start`, gửi secret-code broadcast, kích hoạt factory test hoặc thay đổi cài đặt. Chủ thiết bị tự thao tác About trên màn hình khi thấy an toàn.
 
 Nếu Activity foreground sau khi nhập mã là `com.ukelink.dusk.mmi/.MainActivity`, đó sẽ là bằng chứng MMI được mở trong luồng menu; tuy nhiên vẫn **chưa chứng minh MMI được gọi bằng BroadcastReceiver hay explicit Intent**. Để xác định điểm gọi cần phân tích body DEX của About và MMI VDEX/ODEX gốc, hoặc có log intent đã được kiểm tra an toàn.
 
