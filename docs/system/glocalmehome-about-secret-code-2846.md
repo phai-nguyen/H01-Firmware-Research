@@ -121,3 +121,41 @@ copy /b H01-2846-Assistant.txt+H01-2846-MMI.txt H01-2846-RESULT.txt
 ```
 
 Mỗi lệnh tạo tệp trước khi gộp. Tệp `dumpsys` đầy đủ có thể chứa dữ liệu riêng của thiết bị; rà soát và ẩn danh trước khi phát hành công khai.
+
+## 10. Bằng chứng ảnh CMD mới — xác định chính xác Activity About (23/11/2026)
+
+Người dùng cung cấp **ba ảnh màn hình Windows 7 CMD** sau khi khảo sát `dumpsys activity activities` với bộ lọc `findstr`. Ảnh hiển thị cùng task **#150**, gồm những Activity sau theo thứ tự chuyển màn hình:
+
+| Bước | Package | Activity thực tế | Bằng chứng |
+| --- | --- | --- | --- |
+| About / Giới thiệu | `com.glocalme.g4home` | `com.glocalme.minilauncher.about.MiniAboutActivity` | `mLastPausedActivity` khi Assistant Function ở foreground |
+| Assistant Function | `com.glocalme.g4home` | `com.glocalme.minilauncher.assistant.AssistantActivity` | `mResumedActivity` ở ảnh đầu và `mLastPausedActivity` khi MMI ở foreground |
+| MMI | `com.ukelink.dusk.mmi` | `com.ukelink.dusk.mmi.MainActivity` | `mResumedActivity` trong ảnh thứ hai |
+
+**Kết luận:** Đã xác minh đường chuyển màn hình **MiniAboutActivity → AssistantActivity → MMI MainActivity** trên H01 thật. Đây là quan sát trạng thái Activity, **không đồng nghĩa** đã đọc được lệnh gọi Intent, broadcast hay biểu thức xác thực `2846` trong Java.
+
+**Điều chỉnh trọng tâm RE:** Ưu tiên phân tích method/callback nhập mật mã của `com.glocalme.minilauncher.about.MiniAboutActivity` và logic mở `AssistantActivity` trong ba DEX của `GlocalmeHome.apk`. Receiver MMI có host `2846` là **một nhánh chức năng có thể liên quan**, nhưng không được coi là đường gọi chắc chắn từ màn About nếu chưa có bằng chứng.
+
+### Lưu riêng báo cáo rút gọn vào TXT (Windows 7)
+
+Đang ở About, gõ:
+
+```bat
+cd /d C:\v3\platform-tools
+adb shell dumpsys activity activities ^| findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-About.txt
+```
+
+Sau khi nhập `2846` và ở Assistant Function, chạy:
+
+```bat
+adb shell dumpsys activity activities ^| findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-Assistant.txt
+```
+
+Sau khi chọn MMI, chạy:
+
+```bat
+adb shell dumpsys activity activities ^| findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-MMI.txt
+copy /b H01-2846-About.txt+H01-2846-Assistant.txt+H01-2846-MMI.txt H01-2846-RESULT.txt
+```
+
+**Lưu ý:** Trong CMD chạy trực tiếp, dùng toán tử ống `|` (không có dấu `^`); ký hiệu `^|` chỉ dùng khi cần escape pipe trong một lớp lệnh bao quanh. Sau khi tạo tệp có thể chạy `dir H01-2846-*.txt` để xác nhận chúng có thật. Không đưa log đầy đủ lên GitHub trước khi ẩn danh.
