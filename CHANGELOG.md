@@ -1,5 +1,12 @@
 # Changelog
 
+## [Partition inventory audit] — 2026-11-23
+
+- Bổ sung công cụ metadata-only để tính số ứng viên 42 phân vùng GPT theo tên/kích thước IMG/ZIP, không trộn số ảnh và số partition.
+- Kèm 7 unit tests dùng dữ liệu tổng hợp; không thay thế SHA-256/CRC hoặc khả năng phục hồi.
+
+
+
 ## [Backup archive integrity auditor] — 2026-11-23
 
 - Đăng trình kiểm tra ZIP/IMG CRC + SHA-256 chỉ đọc, kèm 12 bài thử tổng hợp và tài liệu Windows 7/antiX.

@@ -52,3 +52,8 @@
 - [x] Đã đăng [ZIP auditor](../../tools/audit_backup_archives.py), [tài liệu](../tools/backup-archive-audit.md) và 12 bài kiểm thử tổng hợp.
 - [ ] Chưa chạy công cụ trên các ZIP nhiều GB trong kho riêng của H01; không ghi PASS thực địa khi chưa có kết quả.
 - [ ] Chưa tạo đối chiếu tự động **42 partition name/LBA/size** với mỗi IMG; checksum khớp không tự chứng minh đúng phân vùng.
+
+## Đối chiếu 42 phân vùng bằng metadata — 23/11/2026
+
+- [x] [Công cụ kiểm kê partition](../../tools/audit_partition_inventory.py), [hướng dẫn](../tools/partition-inventory-audit.md) và unit tests tổng hợp.
+- [ ] Chưa chạy trên bản sao H01 thực tế. Metadata/kích thước khớp **không** thay thế kiểm tra SHA-256/CRC, LBA hay phục hồi.

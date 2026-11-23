@@ -37,3 +37,7 @@ CRC/SHA-256 khớp **không chứng minh** đúng LBA eMMC, chữ ký OEM, nội
 Bộ 12 unit test dùng dữ liệu ZIP/IMG tổng hợp. **Chưa thử trên kho backup H01 nhiều GB thực tế.**
 
 **Tài liệu liên quan:** [backup integrity](../firmware/emmc-backup-verification.md), [GPT](../firmware/gpt-layout.md), [hash từng ảnh](backup-hashes.md).
+
+## Đối chiếu số phân vùng GPT
+
+Dùng thêm [audit_partition_inventory.py](../../tools/audit_partition_inventory.py) và [hướng dẫn](partition-inventory-audit.md). Công cụ đó chỉ so sánh tên/kích thước IMG/ZIP với 42 mục trong GPT CSV, không tính hash hoặc CRC. Hai công cụ giải quyết hai câu hỏi độc lập: tính toàn vẹn bản sao và độ phủ tên phân vùng.

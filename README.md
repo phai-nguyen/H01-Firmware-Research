@@ -67,6 +67,11 @@ English: [README.en.md](README.en.md)
 - [Hướng dẫn và giới hạn bằng chứng](docs/tools/backup-archive-audit.md): phân biệt MATCH, REVIEW, MISMATCH và ERROR.
 - [12 unit tests tổng hợp](tests/test_backup_archive_audit.py): không cần APK, IMG hay ZIP OEM.
 
+## Kiểm kê bản sao theo 42 phân vùng GPT — 23/11/2026
+
+- [audit_partition_inventory.py](tools/audit_partition_inventory.py) đối chiếu ứng viên tên/kích thước IMG/ZIP với GPT CSV đã khử định danh; không coi nhiều thế hệ dump là nhiều phân vùng.
+- [Hướng dẫn](docs/tools/partition-inventory-audit.md) và [7 bài kiểm thử tổng hợp](tests/test_partition_inventory.py). Đây là **metadata-only**, không thay thế CRC/SHA-256.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |
