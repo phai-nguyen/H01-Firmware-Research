@@ -75,3 +75,13 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | Network PID | RUNTIME, 3 snapshot v14; WAN reachability UNKNOWN | [Network](../network/ucloud-live-sockets-v13-v14.md) |
 | Audio K1 | RUNTIME DTB disabled; AUDIO FIX NOT PASS | [Audio](../hardware/k1-audio-device-tree-confirmation.md) |
 | Dual SIM | DSDS/RIL2 RUNTIME; second physical SIM NOT PASS | [DSDS](../network/dual-sim-ril-pcb-evidence.md) |
+
+## Mốc SystemUI/GlocalmeHome (23/11/2026)
+
+| Nhánh | Trạng thái | Chi tiết |
+| --- | --- | --- |
+| Android Keyguard | Framework flag + VDEX stub STATIC VERIFIED; runtime lock OPEN | [Keyguard](../system/keyguard-framework-vdex-ucloud-sleep.md) |
+| UCloud sleep | Model K1 branch STATIC, quick vtable 51 UNKNOWN | [Sleep](../system/keyguard-framework-vdex-ucloud-sleep.md) |
+| BackKeyManager | NPE trace VERIFIED; missing setup cause HYPOTHESIS | [Crash](../system/backkeymanager-lock-crash.md) |
+| LockSet | Activity/UI/high contrast PASS; PIN NEVER TESTED | [UI](../system/glocalme-lockscreen-ui-history.md) |
+| Activity/flags | 473 components STATIC; most runtime UNKNOWN | [Inventory](../system/hidden-activity-and-oem-flags.md) |

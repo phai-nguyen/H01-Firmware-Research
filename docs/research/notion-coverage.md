@@ -80,3 +80,14 @@ Bảng ghi **bản tóm tắt kỹ thuật đã lọc**, không phải chuyển 
 | Dual SIM 20/11: init/getprop/PCB | [DSDS chi tiết](../network/dual-sim-ril-pcb-evidence.md) |
 
 Mỗi tài liệu ghi rõ phạm vi kiểm chứng; không đồng nghĩa nội dung nhị phân hoặc tất cả 207 đề mục đã được chuyển.
+
+## Bổ sung nghiên cứu Keyguard và Activity ẩn
+
+| Nguồn Notion | Tài liệu |
+| --- | --- |
+| Android Keyguard + SystemUI VDEX + UCloud sleep (20/11) | [Keyguard bytecode](../system/keyguard-framework-vdex-ucloud-sleep.md) |
+| BackKeyManager NullPointerException (19/11) | [BackKeyManager case study](../system/backkeymanager-lock-crash.md) |
+| LockSet UI/High contrast (19/11) | [LockSet UI history](../system/glocalme-lockscreen-ui-history.md) |
+| Scanner 8 APK/7 ODEX/7 VDEX (19/11) | [Hidden Activity & flags](../system/hidden-activity-and-oem-flags.md) |
+
+Các tệp chỉ biên soạn phát hiện đã lưu và giới hạn kiểm chứng; không kích hoạt thiết bị.

@@ -1,5 +1,12 @@
 # Changelog
 
+## [Keyguard and hidden component research] — 2026-11-23
+
+- Bổ sung bốn chuyên đề H01 từ hồ sơ Notion 19–20/11: Android Keyguard + UCloud sleep, crash BackKeyManager, UI LockSet/High contrast, danh mục Activity/cờ OEM.
+- Chỉ công bố tài liệu. Nhánh khóa PIN và các cờ OEM chưa kiểm thử tiếp; không đưa log riêng, APK/DEX hoặc patch lên repo.
+
+
+
 ## [OTA, UService, network and hardware research] — 2026-11-23
 
 - Bảy báo cáo kỹ thuật từ Notion: OTA v1–v11, UService v12/v16, socket runtime v13/v14, Device Tree âm thanh K1 và DSDS/PCB.

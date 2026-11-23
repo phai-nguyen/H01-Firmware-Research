@@ -74,3 +74,11 @@
 - [x] [UService v12/v16](../system/uservice-update-channels-v12-v16.md), [network v13/v14](../network/ucloud-live-sockets-v13-v14.md).
 - [x] [DTB âm thanh K1](../hardware/k1-audio-device-tree-confirmation.md), [Dual SIM/RIL/PCB](../network/dual-sim-ril-pcb-evidence.md).
 - [ ] Tiếp tục rà các trang Notion và báo cáo H01 chưa có tài liệu độc lập; không công bố log/firmware OEM hoặc thông tin riêng.
+
+## Nhánh Keyguard/Activity đã biên soạn (23/11/2026)
+
+- [x] [Android Keyguard và UCloud sleep](../system/keyguard-framework-vdex-ucloud-sleep.md).
+- [x] [BackKeyManager crash](../system/backkeymanager-lock-crash.md), [UI LockSet](../system/glocalme-lockscreen-ui-history.md).
+- [x] [Danh mục Activity/flags OEM](../system/hidden-activity-and-oem-flags.md).
+- [ ] Không có bằng chứng PIN/Swipe tự khóa PASS; giữ trạng thái PAUSED.
+- [ ] Chưa thử thực tế mọi Activity/feature; manifest không đồng nghĩa có phần cứng.

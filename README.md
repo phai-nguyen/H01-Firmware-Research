@@ -89,6 +89,15 @@ English: [README.en.md](README.en.md)
 
 Đây là các kết quả nghiên cứu đã lưu, **không chạy lại thí nghiệm** hoặc đưa firmware/credential riêng lên GitHub.
 
+## Hệ thống khóa màn hình và Activity ẩn — 23/11/2026
+
+- [Framework và SystemUI VDEX: Keyguard + UCloud sleep](docs/system/keyguard-framework-vdex-ucloud-sleep.md)
+- [Lỗi BackKeyManager và luồng phục hồi GlocalmeHome](docs/system/backkeymanager-lock-crash.md)
+- [Lịch sử LockSetActivity: UI PASS, PIN chưa thử](docs/system/glocalme-lockscreen-ui-history.md)
+- [Danh mục Activity và cờ OEM theo APK/DEX](docs/system/hidden-activity-and-oem-flags.md)
+
+Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **không tự thay đổi khóa, PIN hoặc firmware H01**.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |
