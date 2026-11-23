@@ -104,3 +104,15 @@ Các tệp chỉ biên soạn phát hiện đã lưu và giới hạn kiểm ch�
 | Sao lưu boot/đề xuất máy thứ hai (chỉ lịch sử) | [Boot reuse limitations](../firmware/boot-image-reuse-limitations.md) |
 
 Đây là bản tóm tắt bằng chứng đã thu, không phải ảnh thử mới hoặc yêu cầu có máy thứ hai.
+
+## Trang Notion cập nhật 23–24/11: H01 máy B và Share Server
+
+| Nguồn đã đọc trực tiếp | Báo cáo GitHub |
+| --- | --- |
+| “H01 MÁY MỚI #2”, mục 1–4,13–14 | [Đối chiếu A/B](h01-device-b-comparison-20261124.md) |
+| Cùng trang, mục 5–7 | [Bootloader, EDL, Magisk B](../boot/device-b-unlock-root-evidence.md) |
+| Cùng trang, mục 8–9 | [DPI, Launcher3, navigation, IME](../system/device-b-launcher-ime-evidence.md) |
+| Cùng trang, mục 10 | [Xoay và module tích hợp](../system/device-b-rotation-evidence.md) |
+| Nhật ký tổng, mục Share Server v0.1.4 | [Giao thức và kết quả thử](../projects/share-server-protocol-v014.md) |
+
+Bằng chứng B tách khỏi A; phần danh sách tệp riêng ở Notion không được sao chép sang repo. Các tệp công khai là **bản biên soạn đã lọc**, không phải toàn văn hồ sơ.

@@ -108,6 +108,16 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 
 **Chỉ lưu nghiên cứu:** không phát hành IMG, APK OEM, module/driver, dữ liệu SIM hoặc công cụ mới trong lô này.
 
+## Hồ sơ H01 máy B và Share Server — 24/11/2026
+
+- [Hồ sơ đối chiếu H01 A/B, đã ẩn định danh](docs/research/h01-device-b-comparison-20261124.md).
+- [Máy B: EDL, bootloader và Magisk 30.7](docs/boot/device-b-unlock-root-evidence.md).
+- [Máy B: DPI, Launcher3, thanh điều hướng, IME AutoHide](docs/system/device-b-launcher-ime-evidence.md).
+- [Máy B: module tích hợp IME và xoay dọc/ngang](docs/system/device-b-rotation-evidence.md).
+- [Share Server v0.1.4: giao thức, test fixture và PASS thực tế](docs/projects/share-server-protocol-v014.md).
+
+Đây là **báo cáo từ nhật ký nghiên cứu đã lưu**, không phải phép thử mới hay hướng dẫn ghi flash. Giữ riêng boot/DEVINFO, serial, HWID, file OEM và dữ liệu cá nhân.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

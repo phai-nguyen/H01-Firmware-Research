@@ -96,3 +96,13 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | AutoHotspot | v0.3.4 manual PASS; v0.4 after boot REPORTED PASS | [API](../projects/autohotspot-api-history.md) |
 | SMS | ISms/Provider OBSERVED, receive/send UNVERIFIED | [SMS](../network/sms-telephony-permission-evidence.md) |
 | Clone H01 | Historical proposal only; no second device | [Limitations](../firmware/boot-image-reuse-limitations.md) |
+
+## Mốc nguồn 23–24/11/2026 mới biên soạn
+
+| Nhánh | Trạng thái nguồn | Báo cáo |
+| --- | --- | --- |
+| H01 máy B EDL/GPT | OBSERVED 42 partition + backup riêng | [A/B](h01-device-b-comparison-20261124.md) |
+| H01 máy B unlock + Magisk | REPORTED PASS trước/sau reboot, root cố định | [Boot/root](../boot/device-b-unlock-root-evidence.md) |
+| Launcher3 / IME trên B | REPORTED PASS; IME input và persistence là hai snapshot khác nhau | [IME](../system/device-b-launcher-ime-evidence.md) |
+| Xoay trên B | REPORTED PASS; dọc 0 sau một boot, chưa xác nhận giữ qua boot tiếp theo | [Xoay](../system/device-b-rotation-evidence.md) |
+| Share Server v0.1.4 | REPORTED PASS tải/gửi trên H01 thử trước; chưa chứng minh truyền trên B | [Protocol](../projects/share-server-protocol-v014.md) |

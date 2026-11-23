@@ -1,5 +1,13 @@
 # Changelog
 
+## [H01 secondary-device research and Share Server documentation] — 2026-11-24
+
+- Bổ sung **5 báo cáo** từ trang Notion H01 23–24/11 và mục Share Server v0.1.4: đối chiếu máy A/B, EDL/unlock/root, DPI/Launcher3/IME, xoay persistent, giao thức truyền file.
+- Phân biệt **bộ cài gửi** với **ứng dụng chạy PASS**, các mốc boot ID khác nhau, thử IME đang mở và lưu module qua reboot, kết quả root/boot của từng máy.
+- Chỉ biên soạn tài liệu; không công bố ID máy, PK_HASH, serial, IMG, DEVINFO, module OEM, log, công cụ mới hay lệnh ghi flash.
+
+
+
 ## [H01 legacy power/SIM/hotspot research documentation] — 2026-11-24
 
 - Đăng thêm 6 báo cáo lịch sử chi tiết từ Notion 19–21/11: LK/PMIC charger-mode, Auto Power-On v0.6 trên eMMC, AutoShow slot0, AutoHotspot API v0.3.1–v0.4, SMS Provider và giới hạn dùng lại ảnh boot trên máy khác.

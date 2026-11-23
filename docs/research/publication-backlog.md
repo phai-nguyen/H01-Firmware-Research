@@ -90,3 +90,11 @@
 - [x] [SMS/Provider permission](../network/sms-telephony-permission-evidence.md), [giới hạn tái sử dụng boot](../firmware/boot-image-reuse-limitations.md).
 - [ ] Vẫn còn các báo cáo TXT/ZIP/ảnh/video và các mục Notion chưa đối chiếu đủ; không tự tuyên bố hoàn thành 100%.
 - [ ] Không thử H01 thứ hai, không tạo tool/app trong nhiệm vụ chỉ xuất bản nghiên cứu.
+
+## Mục Notion bổ sung ngày 24/11 — đã đưa lên GitHub
+
+- [x] [Đối chiếu A/B](h01-device-b-comparison-20261124.md), không công bố serial/HWID/PK_HASH.
+- [x] [EDL/unlock/root B](../boot/device-b-unlock-root-evidence.md), ghi mốc PASS nhưng không xuất script ghi DEVINFO/boot.
+- [x] [Launcher/IME B](../system/device-b-launcher-ime-evidence.md) và [xoay B](../system/device-b-rotation-evidence.md): giữ phân biệt snapshot cũ và boot persistent.
+- [x] [Share Server v0.1.4 chi tiết](../projects/share-server-protocol-v014.md): PASS H01/iPhone ở máy đã thử, test hash 9 MiB chỉ ở fixture.
+- [ ] Nội dung các hồ sơ khác, TXT/ZIP/ảnh/video còn phải kiểm kê và lọc dữ liệu. Không coi có mục lục 207 tiêu đề là đã xuất bản toàn bộ.
