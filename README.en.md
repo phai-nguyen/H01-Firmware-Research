@@ -21,6 +21,11 @@ Browse the Vietnamese [main README](README.md), [research status](docs/research/
 - [Offline SHA-256 verifier](docs/tools/backup-hashes.md) for independently held backups.
 - Basic checks: `python3 -m unittest discover -s tests -v`. These tools were unit-tested with synthetic data, not validated as a recovery workflow.
 
+
+## GlocalmeHome About / secret code 2846
+
+A prior offline manifest inspection found that `MMI.apk` registers `com.ukelink.dusk.mmi.MySecretCodeReceiver` for secret-code host `2846`. The device owner reports entering `2846` from GlocalmeHome's About screen, but the actual About-to-MMI call path has **not** been verified. See the [Vietnamese technical findings](docs/system/glocalmehome-about-secret-code-2846.md), [30 MMI test inventory](docs/system/mmi-factory-tests.md) and [manual read-only Windows 7 observation guide](docs/tools/secret-2846-readonly.md). No vendor APK is distributed.
+
 ## License & contributions
 
 Original scripts/code: MIT ([LICENSE](LICENSE)); independently authored documentation: CC BY 4.0 ([LICENSE-DOCS.md](LICENSE-DOCS.md)). Vendor firmware, apps, copyrighted logos, keys and device data are **not redistributed or relicensed**. Contributions welcome via issues and pull requests under [CONTRIBUTING.md](CONTRIBUTING.md). This project is not affiliated with the vendors.
