@@ -34,3 +34,15 @@
 - [x] [OEM Unlock](../boot/oem-unlock-research.md) — kết quả trên máy thử, không phát hành patch.
 - [ ] Kiểm kê mảng kernel/init/driver khác, đối chiếu tệp raw đã lọc.
 - [ ] Trích công bố công cụ tự viết sau review license, bảo mật và tests.
+
+## Kernel/init/RAM/boot chain — đợt đã biên soạn 23/11/2026
+
+- [x] [uknet.ko](../hardware/uknet-kernel-module.md) — symbols/Netfilter/Generic Netlink, chưa thử load module.
+- [x] [init system](../system/init-service-map.md) — daemon sockets, trigger và vùng còn thiếu.
+- [x] [/firmware](../system/firmware-mount-permissions.md) — mount VFAT ro và DAC 0550.
+- [x] [RAM/PSS](../system/ram-and-package-audit.md) — snapshot gốc, không khuyến nghị tắt hàng loạt.
+- [x] [Boot verifier vs Fastboot](../boot/boot-verification-chain.md) — gọi đúng call graph đã được hiệu chỉnh.
+- [x] [Magisk 30.7 timeline](../boot/magisk-root-timeline.md) — root RAM rồi root cố định.
+- [x] [Recovery readiness](../boot/recovery-readiness.md) — checklist, không phải bộ restore hoàn chỉnh.
+- [ ] Rà source tự viết của công cụ backup/recovery để phát hành riêng có unit tests và dry-run; không tải OEM binary.
+- [ ] Bổ sung toàn bộ mapping init import và kiểm chứng Netlink peer nếu có log đọc thụ động được phép.

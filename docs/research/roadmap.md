@@ -40,3 +40,11 @@
 - [x] Phân loại trạng thái mới nhất so với các mục lịch sử trong nhật ký.
 - [ ] Bổ sung sơ đồ boot chain và init service map đầy đủ (cần đối chiếu snapshot).
 - [ ] Đưa công cụ parser read-only và tài liệu tái lập phép kiểm tra ZIP/CRC/SHA-256 lên repo sau khi kiểm thử.
+
+## Lô biên soạn kernel/init/boot — 23/11/2026
+
+- [x] Phân tích và ghi chép kernel uknet, init Qualcomm, quyền mount /firmware, tối ưu PSS.
+- [x] Phân biệt boot-image verification với Fastboot flash gates từ Notion mục 107 (đã hiệu chỉnh).
+- [x] Tài liệu hóa Magisk 30.7 qua boot RAM rồi root cố định, ghi chú giới hạn kiểm thử.
+- [x] Tạo checklist cứu hộ mà không phát hành script flash OEM.
+- [ ] Rà soát các báo cáo TXT/ZIP của kernel và công cụ cứu hộ tự viết để phát hành có nguồn, tests và giấy phép.

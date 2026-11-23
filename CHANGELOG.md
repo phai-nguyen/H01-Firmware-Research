@@ -1,5 +1,13 @@
 # Changelog
 
+## [Kernel/init/boot and recovery readiness documentation] — 2026-11-23
+
+- Bổ sung bảy chuyên đề từ Notion: uknet.ko, init services Qualcomm/UCloudlink, /firmware DAC/mount, RAM/PSS, Verified Boot vs Fastboot flash, Magisk 30.7, readiness cứu hộ.
+- Đính chính những mốc lịch sử theo báo cáo nguồn sau: /firmware thực sự mounted nhưng bị DAC chặn; 3.10.49 vermagic khác kernel 3.18.71 chưa kết luận compatibility; root cố định đã PASS sau boot RAM.
+- Giữ giới hạn: chỉ tài liệu và lệnh đọc trạng thái, không kèm OEM .ko/IMG, log riêng, script flash, khóa hoặc dữ liệu SIM.
+
+
+
 ## [H01 firmware deep-dive documentation] — 2026-11-23
 
 - Bổ sung bảy báo cáo: ABUP/FOTA, UService loader, MQTT/UCloudlink daemons, EDL/Firehose, integrity 42/42 và 46/46 IMG, Boot1/Boot2 zero-filled, OEM Unlock.

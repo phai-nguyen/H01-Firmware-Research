@@ -32,3 +32,9 @@ Nội dung trên GitHub là **tóm tắt kỹ thuật tự biên soạn**, khôn
 ## Nguồn phục vụ bổ sung FOTA, EDL và eMMC — 23/11/2026
 
 Đã đọc lại **trang Notion tổng** H01 ở các mục 4–7, 14–15, 19, 22, 32–33, 60 (unlock), 95, 98, 113, 115, 122, 129, 132, 137–138. Phân biệt mục lịch sử cùng số nhưng khác tiêu đề. Dữ liệu trong báo cáo mới chỉ là tóm tắt các quan sát đã ghi, **không có phép đo mới trên thiết bị trong đợt cập nhật này**. Không chuyển transcript/log đầy đủ hoặc tệp nhị phân OEM vào GitHub.
+
+## Đợt kernel/init/RAM và boot — 23/11/2026
+
+Đã mở lại trang Notion H01 tổng và các mục 19–24 (init, uknet, /firmware), các phần “Đổi phạm vi: giữ disable” và “Kết quả đo RAM”, 100/104–109 (ABOOT), và những mốc “boot RAM marker”, “Magisk 30.7 qua boot RAM”, “Root cố định đã PASS”. **Ghi chú về trạng thái:** đề mục lịch sử có thể chứa câu “chưa root/chưa thử”; mốc sau có chứng cứ mới hơn phải được trình bày tách biệt, không xóa lịch sử hoặc coi mọi mốc cũ vẫn đúng hiện tại.
+
+Không kiểm thử thiết bị hoặc nạp module trong lần xuất bản này; không phát hành file .ko/IMG/firmware OEM, raw logs, dữ liệu SIM hay khóa.

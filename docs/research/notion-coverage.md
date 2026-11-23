@@ -40,3 +40,15 @@
 | 99–113 và mốc 60 ngày 18/11: unlock | [OEM Unlock](../boot/oem-unlock-research.md) |
 
 Các số mục là **số trong trang nguồn**, có thể trùng nhau do nhiều giai đoạn cập nhật; không dùng chúng làm ID tệp.
+
+## Chủ đề mới từ trang Notion tổng
+
+| Mục/hồ sơ trong Notion | Báo cáo đã biên soạn |
+| --- | --- |
+| 19–24: init RC, qcom init, uknet.ko | [Module](../hardware/uknet-kernel-module.md), [Init](../system/init-service-map.md), [Mount](../system/firmware-mount-permissions.md) |
+| Đổi phạm vi và kết quả đo RAM thật | [RAM/PSS](../system/ram-and-package-audit.md) |
+| Mục 100, 104–109: ABOOT, Verified Boot, QSEE | [Boot chain](../boot/boot-verification-chain.md) |
+| Boot RAM marker, Magisk 30.7, root cố định | [Magisk](../boot/magisk-root-timeline.md) |
+| 42 GPT, eMMC, EDL, boot và sao lưu | [Recovery readiness](../boot/recovery-readiness.md) |
+
+Đây là các bản **tổng hợp kỹ thuật**, không phải dump nguyên văn Notion hoặc binary gốc.

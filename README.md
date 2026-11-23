@@ -51,6 +51,16 @@ English: [README.en.md](README.en.md)
 
 **Không** đăng trình nạp Firehose, APK/VDEX, ảnh DEVINFO hoặc dữ liệu SIM trong đợt công bố.
 
+## Kernel, init, RAM và cứu hộ — 23/11/2026
+
+- [Module uknet.ko: Netfilter và Generic Netlink](docs/hardware/uknet-kernel-module.md)
+- [Bản đồ init service Qualcomm/UCloudlink](docs/system/init-service-map.md)
+- [Lý do ADB không liệt kê được /firmware](docs/system/firmware-mount-permissions.md)
+- [Đánh giá RAM/PSS thực tế, không tắt dịch vụ hàng loạt](docs/system/ram-and-package-audit.md)
+- [ABOOT: Verified Boot khác cổng Fastboot flash](docs/boot/boot-verification-chain.md)
+- [Magisk 30.7: boot RAM và root cố định](docs/boot/magisk-root-timeline.md)
+- [Danh sách điều kiện cần có trước khi cứu hộ firmware](docs/boot/recovery-readiness.md)
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

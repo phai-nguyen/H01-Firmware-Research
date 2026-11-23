@@ -52,3 +52,15 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | eMMC backups | 42/42 partition IMG; 46/46 objects integrity match (latest) | [Verification](../firmware/emmc-backup-verification.md) |
 | PPN1/PPN2 | Zero-filled READ; physical Boot Area NOT CONFIRMED | [Boot areas](../firmware/emmc-boot-areas.md) |
 | Bootloader OEM | REPORTED PASS 18/11; không lặp unlock | [Unlock research](../boot/oem-unlock-research.md) |
+
+## Kernel / init / RAM và điều kiện cứu hộ — 23/11/2026
+
+| Nhánh | Phân loại | Tài liệu |
+| --- | --- | --- |
+| uknet.ko | BINARY STATIC; SYSFS OBSERVED, daemon peer chưa xác nhận | [Kernel module](../hardware/uknet-kernel-module.md) |
+| Init Qualcomm/UCloudlink | RC STATIC VERIFIED + PROCESS SNAPSHOTS | [Init map](../system/init-service-map.md) |
+| /firmware | MOUNT VERIFIED, ADB DAC BLOCKED | [Permissions](../system/firmware-mount-permissions.md) |
+| RAM | SNAPSHOT OBSERVED, không chứng minh thiếu RAM | [RAM audit](../system/ram-and-package-audit.md) |
+| LK/ABOOT | STATIC CALL GRAPH, QSEE runtime chưa kiểm chứng | [Boot verifier](../boot/boot-verification-chain.md) |
+| Magisk 30.7 | REPORTED PASS boot RAM & root cố định | [Timeline](../boot/magisk-root-timeline.md) |
+| Phục hồi H01 | READINESS checklist, full restore CHƯA PASS | [Recovery readiness](../boot/recovery-readiness.md) |
