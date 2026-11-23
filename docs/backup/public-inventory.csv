@@ -1,0 +1,8 @@
+file_name,bytes,storage,sharing,notes
+H01-boot-20261111.img,33554432,private-dropbox,NO,OEM boot image - do not redistribute
+H01-system-20261111.img,1288491008,private-dropbox,NO,OEM system image - do not redistribute
+H01-vendor-20261111.img,524288000,private-dropbox,NO,OEM vendor image - do not redistribute
+H01-userdata-20261111.img,5440510464,private-dropbox,NO,contains private user/device data
+H01-GPT-map-20261111.txt,8084,private-dropbox,REVIEW,requires sanitization before publication
+H01-partitions-20261111.csv,5863,private-dropbox,REVIEW,requires sanitization before publication
+H01-verify-all-report.txt,4868,private-dropbox,REVIEW,requires sanitization before publication

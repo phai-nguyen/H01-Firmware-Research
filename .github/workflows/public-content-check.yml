@@ -1,0 +1,13 @@
+name: Check public repository contents
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  pre-publication:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Basic public-content audit
+        run: python3 tools/check_public_content.py
