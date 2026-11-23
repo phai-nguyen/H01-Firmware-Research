@@ -67,6 +67,10 @@ adb shell pm path com.glocalme.g4home
 
 Đường APK sẽ do `pm path` báo về. Chỉ dùng `adb pull <đường-dẫn-APK> <thư-mục-riêng>` sau khi xác định đúng một thiết bị và đúng đường dẫn. Không cần sửa launcher hay bật factory mode. Hai H01 có thể dùng cùng build nên cần kiểm tra **bytecode thực**, không chỉ tên phiên bản.
 
+## Điều chỉnh kế hoạch ngày 23/11/2026
+
+Người dùng hiện **không có chiếc H01 thứ hai** để kiểm thử. Bước đối chiếu thiết bị thứ hai chỉ còn là giả thuyết lịch sử, **không đặt làm yêu cầu tiếp theo**. Nhánh chủ động hiện tại là [Assistant Function: kiểm tra ba nút và package Feedback](../system/assistant-function-routing.md), dùng dữ liệu trên một máy và APK gốc đã lưu.
+
 ## Trạng thái
 
 **Đã hoàn thành:** 4 bản OEM lưu trữ có hash y hệt; mẫu Việt hóa khác hash nhưng cả 5 phương thức mục tiêu cho chữ ký đối chiếu khớp; công cụ so sánh đã chạy trên 2 cặp mẫu; 6/6 unit test synthetic PASS. **Chưa hoàn thành:** đối chiếu máy H01 thứ hai và kiểm thử chạy APK Việt hóa trên thiết bị thật.
