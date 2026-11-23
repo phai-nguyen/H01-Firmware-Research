@@ -90,3 +90,34 @@ Không bấm **ADB ROOT, USB Test Mode, AutoReboot, Aging Test, Factory Reset, C
 **Chưa kết luận từ video:** component Android phụ trách Assistant Function, có/không sử dụng `MySecretCodeReceiver`, cách `2846` được đối chiếu trong code, khả năng phát log có thực sự được kích hoạt khi xem trang Log Tools. Video không có kết quả `dumpsys activity` nên không đủ để gán chính xác Activity/package cho từng màn hình.
 
 **Kiểm chứng kế tiếp:** lấy `dumpsys activity activities` theo ba mốc **trước nhập mã**, **Assistant Function**, **sau khi chọn MMI**; chỉ trích các dòng chứa tên package/activity, không gửi nguyên log chứa định danh. Không thử những công tắc có thể thay đổi modem/ADB/root hoặc khởi động lại.
+
+## 9. Kiểm chứng foreground Activity từ ảnh CMD Windows 7 (23/11/2026)
+
+Trong ảnh người dùng cung cấp sau khi mở menu **MMI**, đầu ra `adb shell dumpsys activity activities` hiển thị:
+
+```text
+mResumedActivity: ... com.ukelink.dusk.mmi/.MainActivity ...
+mLastPausedActivity: ... com.glocalme.g4home/com.glocalme.minilauncher.assistant.AssistantActivity ...
+```
+
+**Kết luận quan sát runtime:** màn hình Assistant Function sử dụng `com.glocalme.minilauncher.assistant.AssistantActivity` của package `com.glocalme.g4home`; sau khi chọn **MMI**, Activity `com.ukelink.dusk.mmi/.MainActivity` của package MMI ở foreground. Như vậy đoạn **Assistant Function → MMI** đã được đối chiếu từ trạng thái Activity thật, không còn là suy đoán chỉ dựa trên Manifest.
+
+**Giới hạn bằng chứng:** ảnh được chụp khi MMI đang mở; `mLastPausedActivity` cho biết Activity trước đó, nhưng không khẳng định cách gửi Intent, không chứng minh `MySecretCodeReceiver` được gọi, cũng không chỉ ra method kiểm tra mật mã trong trang About.
+
+### Thu thập TXT đúng thứ tự trên Windows 7
+
+Mở **Assistant Function** (trước khi chọn MMI), rồi thực thi:
+
+```bat
+cd /d C:\\v3\\platform-tools
+adb shell dumpsys activity activities > H01-2846-Assistant.txt 2>&1
+```
+
+Chọn **MMI** trên H01, sau đó chạy:
+
+```bat
+adb shell dumpsys activity activities > H01-2846-MMI.txt 2>&1
+copy /b H01-2846-Assistant.txt+H01-2846-MMI.txt H01-2846-RESULT.txt
+```
+
+Mỗi lệnh tạo tệp trước khi gộp. Tệp `dumpsys` đầy đủ có thể chứa dữ liệu riêng của thiết bị; rà soát và ẩn danh trước khi phát hành công khai.
