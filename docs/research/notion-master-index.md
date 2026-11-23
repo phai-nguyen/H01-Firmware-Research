@@ -1,6 +1,6 @@
 # Danh mục 207 đề mục của nhật ký nghiên cứu H01
 
-> **INDEXED / CHƯA PHẢI BẢN CÔNG BỐ TOÀN VĂN.** Trích **tiêu đề cấp 2 בלבד** từ trang Notion tổng “H01 – Nghiên cứu firmware GlocalMe K1 / Qualcomm MSM8909”, kiểm kê 23/11/2026. Không chứa nội dung log, ảnh, firmware, mã khóa, đường dẫn riêng hoặc dữ liệu nhận dạng thiết bị.
+> **INDEXED / CHƯA PHẢI BẢN CÔNG BỐ TOÀN VĂN.** Chỉ trích **các tiêu đề cấp 2** từ trang Notion tổng “H01 – Nghiên cứu firmware GlocalMe K1 / Qualcomm MSM8909”, kiểm kê 23/11/2026. Không chứa nội dung log, ảnh, firmware, mã khóa, đường dẫn riêng hoặc dữ liệu nhận dạng thiết bị.
 
 ## Cách dùng
 
