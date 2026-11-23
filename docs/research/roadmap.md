@@ -48,3 +48,10 @@
 - [x] Tài liệu hóa Magisk 30.7 qua boot RAM rồi root cố định, ghi chú giới hạn kiểm thử.
 - [x] Tạo checklist cứu hộ mà không phát hành script flash OEM.
 - [ ] Rà soát các báo cáo TXT/ZIP của kernel và công cụ cứu hộ tự viết để phát hành có nguồn, tests và giấy phép.
+
+## Chốt phạm vi theo yêu cầu chủ dự án — 23/11/2026
+
+- [x] Chuyển trọng tâm sang **đưa toàn bộ kết quả nghiên cứu H01 lên GitHub**.
+- [x] Bổ sung bảy tài liệu nghiên cứu lịch sử còn thiếu, cập nhật README/Changelog/bảng đối chiếu.
+- [ ] Tiếp tục chuyển nội dung các mục nghiên cứu khác trong Notion/kho tệp thành báo cáo kỹ thuật đã lọc, không xem chỉ mục 207 tiêu đề là đã hoàn tất toàn bộ.
+- [ ] Không tạo app, script, bộ kiểm thử hoặc yêu cầu thử thiết bị mới khi nhiệm vụ hiện tại chỉ là **lưu hồ sơ nghiên cứu**.

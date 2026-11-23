@@ -1,5 +1,13 @@
 # Changelog
 
+## [Research-history consolidation only] — 2026-11-23
+
+- Bổ sung 7 báo cáo kỹ thuật lịch sử từ hồ sơ H01: OTA ABUP, nguồn firmware và phản hồi OEM, timeline sao lưu eMMC, J2ME/KISS/H01 Home, chính sách APK và FOTA/Feedback, IME/nav, xoay/cảm biến.
+- Đợt này **chỉ công bố tài liệu**. Không thêm script, công cụ, APK hoặc binary. Các mốc PASS gắn với bằng chứng lịch sử, không phải phép kiểm thử mới.
+- Bảo vệ dữ liệu SIM, ID thiết bị, xác thực ABUP, thư riêng và firmware/driver OEM.
+
+
+
 ## [Partition inventory audit] — 2026-11-23
 
 - Bổ sung công cụ metadata-only để tính số ứng viên 42 phân vùng GPT theo tên/kích thước IMG/ZIP, không trộn số ảnh và số partition.

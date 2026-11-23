@@ -52,3 +52,17 @@ Các số mục là **số trong trang nguồn**, có thể trùng nhau do nhi�
 | 42 GPT, eMMC, EDL, boot và sao lưu | [Recovery readiness](../boot/recovery-readiness.md) |
 
 Đây là các bản **tổng hợp kỹ thuật**, không phải dump nguyên văn Notion hoặc binary gốc.
+
+## Lịch sử chi tiết đã chuyển vào GitHub — 23/11/2026
+
+| Chủ đề Notion | Bản công bố |
+| --- | --- |
+| 25–27: hai lần kiểm tra OTA 20–21/10 và hai lần 10/11 | [FOTA timeline](../firmware/fota-update-history.md) |
+| 26–31: H01/ZEUS, tìm firmware và phản hồi OEM | [Firmware sources](../firmware/oem-firmware-sources-and-support.md) |
+| 32–98, 114–138: các bước sao lưu eMMC, GPT và Boot Areas | [eMMC history](../firmware/emmc-acquisition-chronology.md) |
+| J2ME Loader, KISS Launcher, H01 Home v0.1–v0.4 | [Apps](../projects/launcher-and-j2me-history.md) |
+| Cài APK qua InstallService, FOTA/Feedback disabled-user | [Package policy](../system/package-install-and-fota-feedback.md) |
+| Thanh phím/IME: thử v0.1/v0.2/v0.3 | [IME/navigation](../system/ime-navigation-research-timeline.md) |
+| Khóa xoay và cảm biến: v0.1–v0.3.1 | [Rotation](../system/rotation-and-sensors-timeline.md) |
+
+Bảng ghi **bản tóm tắt kỹ thuật đã lọc**, không phải chuyển toàn văn log/ảnh/nhật ký riêng. Các mục Notion khác còn cần đọc và chuyển tiếp.

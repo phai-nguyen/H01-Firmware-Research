@@ -72,6 +72,14 @@ English: [README.en.md](README.en.md)
 - [audit_partition_inventory.py](tools/audit_partition_inventory.py) đối chiếu ứng viên tên/kích thước IMG/ZIP với GPT CSV đã khử định danh; không coi nhiều thế hệ dump là nhiều phân vùng.
 - [Hướng dẫn](docs/tools/partition-inventory-audit.md) và [7 bài kiểm thử tổng hợp](tests/test_partition_inventory.py). Đây là **metadata-only**, không thay thế CRC/SHA-256.
 
+## Lịch sử nghiên cứu chi tiết — bổ sung 23/11/2026
+
+- **Firmware / OTA:** [nhật ký ABUP/FOTA](docs/firmware/fota-update-history.md), [nguồn firmware và phản hồi OEM](docs/firmware/oem-firmware-sources-and-support.md), [dòng thời gian sao lưu eMMC](docs/firmware/emmc-acquisition-chronology.md).
+- **Ứng dụng và kiểm soát:** [J2ME Loader, KISS và H01 Home](docs/projects/launcher-and-j2me-history.md), [chính sách cài APK, FOTA và Feedback](docs/system/package-install-and-fota-feedback.md).
+- **Giao diện:** [thử nghiệm IME/navigation v0.1–v0.3](docs/system/ime-navigation-research-timeline.md), [xoay/cảm biến v0.1–v0.3.1](docs/system/rotation-and-sensors-timeline.md).
+
+Đây là **bản biên soạn nội dung nghiên cứu từ hồ sơ lưu**, không đưa bản dump OEM, log chứa định danh hoặc APK đã vá lên GitHub.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

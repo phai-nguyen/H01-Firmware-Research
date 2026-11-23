@@ -57,3 +57,13 @@
 
 - [x] [Công cụ kiểm kê partition](../../tools/audit_partition_inventory.py), [hướng dẫn](../tools/partition-inventory-audit.md) và unit tests tổng hợp.
 - [ ] Chưa chạy trên bản sao H01 thực tế. Metadata/kích thước khớp **không** thay thế kiểm tra SHA-256/CRC, LBA hay phục hồi.
+
+## Tiếp tục chuyển nội dung nghiên cứu — 23/11/2026
+
+- [x] [Lịch sử truy vấn FOTA/ABUP](../firmware/fota-update-history.md), không đăng request credential.
+- [x] [Truy vết firmware OEM và phản hồi hãng](../firmware/oem-firmware-sources-and-support.md), không đăng thread/IMEI.
+- [x] [Dòng thời gian sao lưu eMMC](../firmware/emmc-acquisition-chronology.md) và phân biệt các mốc 42/46.
+- [x] [Lịch sử J2ME/KISS/H01 Home](../projects/launcher-and-j2me-history.md) và [chính sách cài APK](../system/package-install-and-fota-feedback.md).
+- [x] [Thử nghiệm IME](../system/ime-navigation-research-timeline.md) và [xoay/cảm biến](../system/rotation-and-sensors-timeline.md).
+- [ ] Tiếp tục biên soạn các mục nguồn chưa có báo cáo chi tiết, không xuất nguyên văn log, bí mật backend hoặc firmware OEM.
+- [ ] Không mở thêm nhánh phát triển công cụ trong lộ trình **chỉ công bố nghiên cứu**.
