@@ -39,6 +39,18 @@ English: [README.en.md](README.en.md)
 
 **Phạm vi:** chỉ công bố tài liệu và công cụ có quyền phân phối, không đăng bản dump firmware OEM hoặc dữ liệu riêng. Các mốc PASS chỉ áp dụng cho phép thử đã ghi chép.
 
+## Phân tích firmware chuyên sâu — đợt bổ sung 23/11/2026
+
+- [FOTA/ABUP APK và đường cập nhật Recovery](docs/firmware/fota-abup-internals.md)
+- [UService: nạp DEX, thư viện native, BinaryUpdateHelper](docs/system/uservice-loader.md)
+- [UCloudlink daemon, MQTT và socket runtime](docs/network/ucloud-daemons-and-sockets.md)
+- [EDL 9008, Sahara, Firehose: bằng chứng READ và ranh giới an toàn](docs/firmware/edl-firehose-diagnostics.md)
+- [Sao lưu 42 phân vùng GPT: phân biệt 42/42 và 46/46 IMG](docs/firmware/emmc-backup-verification.md)
+- [eMMC Boot1/Boot2: hai bản đọc toàn 0x00, chưa xác nhận Boot Area trống](docs/firmware/emmc-boot-areas.md)
+- [Diễn biến nghiên cứu OEM Unlock và bằng chứng sau reboot](docs/boot/oem-unlock-research.md)
+
+**Không** đăng trình nạp Firehose, APK/VDEX, ảnh DEVINFO hoặc dữ liệu SIM trong đợt công bố.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

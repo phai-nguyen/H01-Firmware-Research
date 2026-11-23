@@ -28,3 +28,7 @@ Các ghi chép nguồn hiện nằm trong **Notion riêng của người nghiên
 Đã mở và đối chiếu các trang Notion chuyên đề về Auto Power-On, SystemUI 4G, Launcher3 AutoHotspot, dual SIM, SMS, kiểm kê tính năng ẩn, SystemUI/Keyguard, BackKeyManager, sao lưu boot; và các phần display/rotation/IME, H01 Home, Share Server trong trang tổng H01. Tạo [bản đồ độ phủ](notion-coverage.md).
 
 Nội dung trên GitHub là **tóm tắt kỹ thuật tự biên soạn**, không phải sao chép toàn văn Notion chứa log/dữ liệu riêng. Các mốc REPORTED PASS từ người dùng không phải kiểm thử thiết bị mới ở thời điểm xuất bản.
+
+## Nguồn phục vụ bổ sung FOTA, EDL và eMMC — 23/11/2026
+
+Đã đọc lại **trang Notion tổng** H01 ở các mục 4–7, 14–15, 19, 22, 32–33, 60 (unlock), 95, 98, 113, 115, 122, 129, 132, 137–138. Phân biệt mục lịch sử cùng số nhưng khác tiêu đề. Dữ liệu trong báo cáo mới chỉ là tóm tắt các quan sát đã ghi, **không có phép đo mới trên thiết bị trong đợt cập nhật này**. Không chuyển transcript/log đầy đủ hoặc tệp nhị phân OEM vào GitHub.

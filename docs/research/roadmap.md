@@ -33,3 +33,10 @@
 - [ ] Kiểm tra links/CI và xây dựng GitHub Release tài liệu có checksum.
 
 - [x] Đánh chỉ mục 207 mục H2 của trang Notion tổng vào [Master Index](notion-master-index.md) mà không đưa log/tệp OEM lên GitHub.
+
+## Mở rộng kiến trúc và lưu trữ — 23/11/2026
+
+- [x] Biên soạn bảy báo cáo kỹ thuật có nguồn FOTA/UService/daemon, Firehose, integrity eMMC, Boot Area, OEM Unlock.
+- [x] Phân loại trạng thái mới nhất so với các mục lịch sử trong nhật ký.
+- [ ] Bổ sung sơ đồ boot chain và init service map đầy đủ (cần đối chiếu snapshot).
+- [ ] Đưa công cụ parser read-only và tài liệu tái lập phép kiểm tra ZIP/CRC/SHA-256 lên repo sau khi kiểm thử.

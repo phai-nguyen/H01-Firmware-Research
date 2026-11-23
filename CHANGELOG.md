@@ -1,5 +1,13 @@
 # Changelog
 
+## [H01 firmware deep-dive documentation] — 2026-11-23
+
+- Bổ sung bảy báo cáo: ABUP/FOTA, UService loader, MQTT/UCloudlink daemons, EDL/Firehose, integrity 42/42 và 46/46 IMG, Boot1/Boot2 zero-filled, OEM Unlock.
+- Đối chiếu mốc lịch sử và mốc cuối: UService dequickening đã hoàn thành trong ghi chép sau; Bootloader mở khóa PASS 18/11 là mốc sau các thử nghiệm khóa 14/11.
+- Không đăng OEM firmware/APK/VDEX/DEVINFO, token, dữ liệu SIM hoặc log thô.
+
+
+
 ## [H01 research consolidation] — 2026-11-23
 - Xuất bản thêm mục lục **207 đề mục H2 của trang Notion tổng** (chỉ tiêu đề đã lọc), tạo danh sách truy vết những nội dung chưa được chuyển thành báo cáo.
 

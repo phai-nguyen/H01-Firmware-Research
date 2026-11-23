@@ -40,3 +40,15 @@
 | H01 Home installer v0.4 | REPORTED PASS | [Installer](../projects/h01-home-installer.md) |
 
 Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publication-backlog.md).
+
+## Chuyên đề bổ sung: FOTA/UService, EDL và eMMC (23/11/2026)
+
+| Phân hệ | Trạng thái | Tài liệu |
+| --- | --- | --- |
+| FOTA/ABUP | STATIC VERIFIED; Recovery install path | [FOTA](../firmware/fota-abup-internals.md) |
+| UService/Loader | STATIC VERIFIED; DEX dequickened theo báo cáo | [UService](../system/uservice-loader.md) |
+| UCloud daemon/socket | SNAPSHOT OBSERVED; port-to-process PARTIAL | [Daemons](../network/ucloud-daemons-and-sockets.md) |
+| Firehose | READ / GPT / NOP VERIFIED in source logs | [EDL](../firmware/edl-firehose-diagnostics.md) |
+| eMMC backups | 42/42 partition IMG; 46/46 objects integrity match (latest) | [Verification](../firmware/emmc-backup-verification.md) |
+| PPN1/PPN2 | Zero-filled READ; physical Boot Area NOT CONFIRMED | [Boot areas](../firmware/emmc-boot-areas.md) |
+| Bootloader OEM | REPORTED PASS 18/11; không lặp unlock | [Unlock research](../boot/oem-unlock-research.md) |

@@ -26,3 +26,17 @@
 ## Mục lục đầy đủ của trang tổng
 
 Đã ghi riêng [207 tiêu đề cấp 2 của nhật ký Notion tổng](notion-master-index.md) theo thứ tự nguồn. Đây chỉ là kiểm kê để tránh bỏ sót, **không có nghĩa toàn bộ 207 mục đã được biên soạn thành báo cáo độc lập**.
+
+## Bổ sung nghiên cứu từ nhật ký Notion tổng (23/11/2026)
+
+| Các mốc nội bộ nguồn | Tài liệu mới |
+| --- | --- |
+| 4, 14: FOTA/ABUP, VDEX | [FOTA](../firmware/fota-abup-internals.md) |
+| 5, 6, 14: UService/native/DEX loader | [UService](../system/uservice-loader.md) |
+| 7, 15, 19, 22: Daemon/socket/init | [Network](../network/ucloud-daemons-and-sockets.md) |
+| 32, 115–123, 132: EDL, Firehose | [EDL](../firmware/edl-firehose-diagnostics.md) |
+| 95, 98: 42/42 và 46/46 IMG | [Backup](../firmware/emmc-backup-verification.md) |
+| 132, 137, 138: PPN1/PPN2 | [Boot areas](../firmware/emmc-boot-areas.md) |
+| 99–113 và mốc 60 ngày 18/11: unlock | [OEM Unlock](../boot/oem-unlock-research.md) |
+
+Các số mục là **số trong trang nguồn**, có thể trùng nhau do nhiều giai đoạn cập nhật; không dùng chúng làm ID tệp.

@@ -23,3 +23,14 @@
 **Quy tắc chuyển:** đọc đúng nguồn; phân biệt `OBSERVED`, `STATIC VERIFIED`, `REPORTED PASS`, `FAIL`, `PROPOSED`; lưu mốc ngày; tránh phát hành binary OEM và thông tin bảo mật. Sau mỗi lô, rà link nội bộ, thay đổi README/CHANGELOG và chạy `tools/check_public_content.py`.
 
 **Bản đồ các trang đã đối chiếu:** [Notion coverage](notion-coverage.md).
+## Đã biên soạn bổ sung — 23/11/2026
+
+- [x] [FOTA ABUP chuyên sâu](../firmware/fota-abup-internals.md) — phân biệt Recovery OTA và EDL.
+- [x] [UService loader](../system/uservice-loader.md) — sửa mốc raw/dequickened.
+- [x] [UCloud daemon/network](../network/ucloud-daemons-and-sockets.md) — chưa quy port-to-PID chắc chắn.
+- [x] [EDL/Firehose](../firmware/edl-firehose-diagnostics.md) — không công khai programmer OEM.
+- [x] [Sao lưu eMMC](../firmware/emmc-backup-verification.md) — 42 phân vùng, 46 đối tượng.
+- [x] [PPN1/2](../firmware/emmc-boot-areas.md) — zero-filled nhưng chưa xác minh physical Boot Area.
+- [x] [OEM Unlock](../boot/oem-unlock-research.md) — kết quả trên máy thử, không phát hành patch.
+- [ ] Kiểm kê mảng kernel/init/driver khác, đối chiếu tệp raw đã lọc.
+- [ ] Trích công bố công cụ tự viết sau review license, bảo mật và tests.
