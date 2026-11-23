@@ -22,3 +22,12 @@
 - [ ] Tự động kiểm tra Markdown, cấu trúc tài liệu và tệp đầu vào.
 - [ ] Quy trình xây dựng Release có checksum, changelog và dấu mốc kiểm thử.
 - [ ] Bản dịch tiếng Anh cho các tài liệu chính.
+
+## Lô tổng hợp Notion → GitHub (23/11/2026)
+
+- [x] Kiểm kê 15 trang Notion trong cây H01 và tài liệu đang có ở repo.
+- [x] Chuyển 12 chuyên đề kỹ thuật có trạng thái và nguồn đối chiếu, bổ sung README/Changelog.
+- [x] Lập [bảng độ phủ](notion-coverage.md) và [danh sách chưa hoàn tất](publication-backlog.md).
+- [ ] Rà soát các báo cáo TXT/ZIP, ảnh, video từ kho riêng trước khi trích đăng.
+- [ ] Trích biên soạn các nghiên cứu còn lại trong trang Notion tổng (không sao chép log nguyên văn).
+- [ ] Kiểm tra links/CI và xây dựng GitHub Release tài liệu có checksum.

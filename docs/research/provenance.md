@@ -22,3 +22,9 @@ Các ghi chép nguồn hiện nằm trong **Notion riêng của người nghiên
 - `/H01/EMMC/H01-GPT-map-20261111.txt`: kiểm tra CRC/backup GPT, đếm 42/44 entry; không tái xuất DiskGUID hay UniqueGUID.
 - Sidecar `H01-system-20261111.sha256`, `H01-boot-20261111.sha256`: xác nhận định dạng `sha256sum` cho công cụ offline; không sao chép hash thật lên GitHub.
 - Công cụ v0.2.0 mới được kiểm tra bằng unit test và kiểm tra tĩnh; **chưa ghi nhận PASS khi chạy trên H01 thực tế**.
+
+## Đợt tổng hợp hồ sơ nghiên cứu ngày 23/11/2026
+
+Đã mở và đối chiếu các trang Notion chuyên đề về Auto Power-On, SystemUI 4G, Launcher3 AutoHotspot, dual SIM, SMS, kiểm kê tính năng ẩn, SystemUI/Keyguard, BackKeyManager, sao lưu boot; và các phần display/rotation/IME, H01 Home, Share Server trong trang tổng H01. Tạo [bản đồ độ phủ](notion-coverage.md).
+
+Nội dung trên GitHub là **tóm tắt kỹ thuật tự biên soạn**, không phải sao chép toàn văn Notion chứa log/dữ liệu riêng. Các mốc REPORTED PASS từ người dùng không phải kiểm thử thiết bị mới ở thời điểm xuất bản.

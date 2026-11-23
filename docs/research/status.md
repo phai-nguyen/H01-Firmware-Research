@@ -25,3 +25,18 @@
 2. Bổ sung bảng phiên bản OTA đã nghiên cứu, không xuất gói OTA gốc.
 3. Chạy thử bộ script ADB chỉ đọc Windows 7 và Linux trên H01, rà soát thủ công báo cáo trước khi gửi.
 4. Chia nhỏ Issues dựa trên các mục `OPEN`/`PARTIAL`; không tự động khôi phục nhánh `PAUSED`.
+
+## Mốc tài liệu được bổ sung — 23/11/2026
+
+| Chủ đề | Trạng thái | Trang |
+| --- | --- | --- |
+| Auto Power-On USB-C v0.6 | REPORTED PASS | [Boot](../boot/auto-power-on-usb.md) |
+| Hiển thị icon 4G v1.1 | REPORTED PASS | [SystemUI](../system/4g-status-icon.md) |
+| Keyguard / khóa OEM | STATIC VERIFIED, PIN/Swipe PAUSED | [Keyguard](../system/keyguard-and-lockscreen.md) |
+| SMS | SERVICE OBSERVED, SEND/RECEIVE OPEN | [SMS](../network/sms.md) |
+| Hidden feature inventory | 473 COMPONENTS STATIC | [Inventory](../system/hidden-feature-inventory.md) |
+| Rotate v0.3.1 | REPORTED PASS AFTER REBOOT | [Display](../system/display-rotation-navigation.md) |
+| Share Server v0.1.4 | REPORTED PASS | [Share Server](../projects/share-server.md) |
+| H01 Home installer v0.4 | REPORTED PASS | [Installer](../projects/h01-home-installer.md) |
+
+Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publication-backlog.md).

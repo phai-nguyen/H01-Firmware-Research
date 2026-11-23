@@ -1,5 +1,13 @@
 # Changelog
 
+## [H01 research consolidation] — 2026-11-23
+
+- Đối chiếu 15 trang Notion H01, bổ sung 12 tài liệu chuyên đề và 2 bảng kiểm kê/trạng thái (Notion coverage và publication backlog nằm trong 12 tài liệu).
+- Ghi lại mốc Auto Power-On v0.6, AutoShow 4G v1.1, rotation v0.3.1 và Share Server v0.1.4 theo chứng cứ đã lưu.
+- Phân biệt rõ kết quả thử máy, phân tích tĩnh và phần chưa xác minh; không đăng IMG/APK gốc, secret hoặc raw log.
+
+
+
 ## [0.2.0 + nghiên cứu 2846] — 2026-11-23
 
 - Đối chiếu 4 bản sao GlocalmeHome gốc có cùng SHA-256; bản GlocalmeHome-VietHoa-Test.apk khác hash nhưng giữ chữ ký tham chiếu/opcode của 5 phương thức xử lý menu 2846.

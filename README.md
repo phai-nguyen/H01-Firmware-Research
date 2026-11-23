@@ -29,6 +29,16 @@ English: [README.en.md](README.en.md)
 - [Nguồn gốc và độ tin cậy](docs/research/provenance.md)
 - [Quy định an toàn khi công khai](docs/security/publication-policy.md)
 
+## Mở rộng kho nghiên cứu H01 — 23/11/2026
+
+- **Khởi động/firmware:** [Auto Power-On USB-C v0.6](docs/boot/auto-power-on-usb.md), [sao lưu và ghép firmware](docs/firmware/backup-and-reconstruction.md).
+- **Mạng:** [khôi phục biểu tượng 4G v1.1](docs/system/4g-status-icon.md), [SMS](docs/network/sms.md), [Dual SIM](docs/network/dual-sim.md).
+- **Giao diện/hệ thống:** [Keyguard và khóa OEM](docs/system/keyguard-and-lockscreen.md), [chức năng ẩn (473 component)](docs/system/hidden-feature-inventory.md), [xoay/IME/navigation](docs/system/display-rotation-navigation.md).
+- **Ứng dụng:** [Share Server v0.1.4](docs/projects/share-server.md), [H01 Home installer](docs/projects/h01-home-installer.md), [App Control](docs/projects/app-control.md).
+- **Tiến độ chuyển tài liệu:** [15 trang Notion đã đối chiếu](docs/research/notion-coverage.md) và [backlog phần còn thiếu](docs/research/publication-backlog.md).
+
+**Phạm vi:** chỉ công bố tài liệu và công cụ có quyền phân phối, không đăng bản dump firmware OEM hoặc dữ liệu riêng. Các mốc PASS chỉ áp dụng cho phép thử đã ghi chép.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |
