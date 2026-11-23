@@ -31,3 +31,5 @@
 - [ ] Rà soát các báo cáo TXT/ZIP, ảnh, video từ kho riêng trước khi trích đăng.
 - [ ] Trích biên soạn các nghiên cứu còn lại trong trang Notion tổng (không sao chép log nguyên văn).
 - [ ] Kiểm tra links/CI và xây dựng GitHub Release tài liệu có checksum.
+
+- [x] Đánh chỉ mục 207 mục H2 của trang Notion tổng vào [Master Index](notion-master-index.md) mà không đưa log/tệp OEM lên GitHub.
