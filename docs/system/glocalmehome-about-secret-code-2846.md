@@ -1,6 +1,6 @@
 # Mã 2846 — menu kỹ thuật ẩn trong About của GlocalmeHome
 
-> **Kết quả phân tích tĩnh, cập nhật 23/11/2026:** đã tìm được **nơi đăng ký nhận mã 2846 trong MMI.apk**. Chưa chứng minh bằng log runtime bước trung gian giữa About của GlocalmeHome và MMI. Không nhầm với ứng dụng [H01 Hidden Settings](https://github.com/phai-nguyen/H01-Hidden-Settings).
+> **Kết quả phân tích tĩnh và video thực tế, cập nhật 23/11/2026:** đã tìm được **nơi đăng ký nhận mã 2846 trong MMI.apk**, đồng thời video H01 xác nhận mã mở giao diện **Assistant Function** trong GlocalmeHome. Chưa chứng minh bằng log runtime hoặc decompile method body đường gọi sang MMI. Không nhầm với ứng dụng [H01 Hidden Settings](https://github.com/phai-nguyen/H01-Hidden-Settings).
 
 ## 1. Phát hiện xác minh từ ba APK nghiên cứu
 
@@ -69,4 +69,24 @@ Không bấm **ADB ROOT, USB Test Mode, AutoReboot, Aging Test, Factory Reset, C
 - Hồ sơ phân tích 19/11/2026: `H01_PhanTich_3APK_MenuAn_20261119.txt` (đọc trực tiếp từ kho tệp nghiên cứu, kiểm tra manifest/XML của ba APK; không phát hành tệp APK gốc).
 - Nhật ký Notion 19/11/2026: nghiên cứu màn hình khóa và mã bí mật 2846; phần khảo sát MMI dựa trên phân tích tĩnh.
 - Xác nhận về **mục About**: chủ thiết bị H01, 23/11/2026.
-- **Chưa kiểm chứng:** đường gọi thực tế từ GlocalmeHome, body `onReceive`, màn hình sau khi nhập mã trong lượt thu thập hiện tại và khả năng tương thích giữa các firmware H01.
+- **Đã kiểm chứng trực quan từ video ngày 23/11/2026:** màn hình Assistant Function hiện sau khi nhập `2846`, có ba nút MMI / Log Tools / System Settings; các nhánh mở được giao diện tương ứng trên máy thử.
+- **Chưa kiểm chứng:** tên Activity foreground chính xác ở mỗi bước, đường Intent/IPC từ GlocalmeHome sang MMI, body `onReceive` và khả năng tương thích giữa các firmware H01.
+
+## 8. Bằng chứng bổ sung: video thao tác thực tế 23/11/2026
+
+**Nguồn:** video người dùng cung cấp trong phiên nghiên cứu (`IMG_5366.mp4`, dài khoảng 48 giây). Không đăng video nguyên bản lên GitHub vì màn hình About có thể chứa thông tin riêng về thiết bị.
+
+| Mốc tương đối | Quan sát trực tiếp trên màn hình H01 | Mức độ |
+| --- | --- | --- |
+| 00:05–00:10 | Vào trang **About** của launcher GlocalmeHome | VIDEO OBSERVED |
+| 00:13–00:21 | Hộp thoại **Please enter password**, bàn phím số nhập **2846** | VIDEO OBSERVED |
+| 00:24–00:26 | Mở trang **Assistant Function** với **MMI**, **Log Tools**, **System Settings** | VIDEO OBSERVED |
+| 00:29–00:34 | Chọn **MMI**, hiện menu thử phần cứng có nhãn tiếng Trung (gồm mục tự động/kiểm thử thủ công và thông tin) | VIDEO OBSERVED |
+| 00:39–00:42 | Màn hình **Log Tools** hiển thị **Open Android log**, **Open Modem log**, **Modem cfg** | VIDEO OBSERVED |
+| 00:44–00:47 | Màn hình **System Settings** của Android xuất hiện (Apps & notifications, Battery, Display) | VIDEO OBSERVED |
+
+**Kết luận mới:** Trên một H01 thực tế, luồng người dùng `GlocalmeHome > About > nhập 2846 > Assistant Function` đã hoạt động. **Assistant Function không đồng nhất với MMI MainActivity**: người dùng còn phải chọn nút **MMI**. Điều này điều chỉnh giả thuyết trước rằng nhập mã có thể mở thẳng MMI.
+
+**Chưa kết luận từ video:** component Android phụ trách Assistant Function, có/không sử dụng `MySecretCodeReceiver`, cách `2846` được đối chiếu trong code, khả năng phát log có thực sự được kích hoạt khi xem trang Log Tools. Video không có kết quả `dumpsys activity` nên không đủ để gán chính xác Activity/package cho từng màn hình.
+
+**Kiểm chứng kế tiếp:** lấy `dumpsys activity activities` theo ba mốc **trước nhập mã**, **Assistant Function**, **sau khi chọn MMI**; chỉ trích các dòng chứa tên package/activity, không gửi nguyên log chứa định danh. Không thử những công tắc có thể thay đổi modem/ADB/root hoặc khởi động lại.
