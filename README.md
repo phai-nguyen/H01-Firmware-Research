@@ -10,6 +10,7 @@ English: [README.en.md](README.en.md)
 
 - [Tổng quan phần cứng](docs/hardware/overview.md)
 - [Bảng GPT 42 phân vùng đã lược bỏ định danh](docs/firmware/gpt-layout.md)
+- [Đối chiếu APK GlocalmeHome và cơ chế 2846 giữa các mẫu](docs/firmware/2846-apk-comparison.md)
 - [Thu thập báo cáo ADB chỉ đọc (Windows 7 / antiX)](docs/tools/read-only-report.md)
 - [Xác minh bản sao SHA-256 ngoại tuyến](docs/tools/backup-hashes.md)
 - [Bản đồ nghiên cứu firmware / phân vùng](docs/firmware/overview.md)
@@ -58,6 +59,8 @@ Những giá trị trên là **snapshot từ một thiết bị/nhóm bản sao 
 - `tests/test_repository.py`: kiểm tra CSV GPT và logic xác minh hash bằng dữ liệu giả.
 
 Chạy thử trên PC bằng `python3 -m unittest discover -s tests -v`; không cần kết nối H01. Đây là **công cụ dành cho nghiên cứu**, chưa được kiểm thử trực tiếp trên mọi cấu hình H01.
+
+- `tools/compare_glocalmehome_2846.py`: đối chiếu ngoại tuyến các APK GlocalmeHome, không đăng lại APK OEM; xem [báo cáo mẫu lưu trữ](docs/firmware/2846-apk-comparison.md).
 
 ## Đóng góp
 
