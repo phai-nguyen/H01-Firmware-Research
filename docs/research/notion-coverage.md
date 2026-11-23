@@ -23,3 +23,6 @@
 **Các nguồn chưa phát hành:** IMG OEM, APK/ODEX/VDEX/ELF, SoftSIM và NV, log có số thuê bao/định danh, ảnh/video có thông tin người dùng, bản vá flash, full dump. Không đưa URL Dropbox riêng hoặc token. Xem [Backlog](publication-backlog.md) và [Publication Policy](../security/publication-policy.md).
 
 **Giới hạn:** vẫn có các kết quả trong trang Notion tổng và kho tệp chưa trích biên soạn; không tuyên bố đã chuyển hết.
+## Mục lục đầy đủ của trang tổng
+
+Đã ghi riêng [207 tiêu đề cấp 2 của nhật ký Notion tổng](notion-master-index.md) theo thứ tự nguồn. Đây chỉ là kiểm kê để tránh bỏ sót, **không có nghĩa toàn bộ 207 mục đã được biên soạn thành báo cáo độc lập**.
