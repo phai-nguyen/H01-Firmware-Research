@@ -142,20 +142,20 @@ Người dùng cung cấp **ba ảnh màn hình Windows 7 CMD** sau khi khảo s
 
 ```bat
 cd /d C:\v3\platform-tools
-adb shell dumpsys activity activities ^| findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-About.txt
+adb shell dumpsys activity activities | findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-About.txt
 ```
 
 Sau khi nhập `2846` và ở Assistant Function, chạy:
 
 ```bat
-adb shell dumpsys activity activities ^| findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-Assistant.txt
+adb shell dumpsys activity activities | findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-Assistant.txt
 ```
 
 Sau khi chọn MMI, chạy:
 
 ```bat
-adb shell dumpsys activity activities ^| findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-MMI.txt
+adb shell dumpsys activity activities | findstr /I /C:"mResumedActivity" /C:"mLastPausedActivity" > H01-2846-MMI.txt
 copy /b H01-2846-About.txt+H01-2846-Assistant.txt+H01-2846-MMI.txt H01-2846-RESULT.txt
 ```
 
-**Lưu ý:** Trong CMD chạy trực tiếp, dùng toán tử ống `|` (không có dấu `^`); ký hiệu `^|` chỉ dùng khi cần escape pipe trong một lớp lệnh bao quanh. Sau khi tạo tệp có thể chạy `dir H01-2846-*.txt` để xác nhận chúng có thật. Không đưa log đầy đủ lên GitHub trước khi ẩn danh.
+**Lưu ý:** Các lệnh trên dành cho CMD tương tác. Sau khi tạo tệp có thể chạy `dir H01-2846-*.txt` để xác nhận chúng có thật. Không đưa log đầy đủ lên GitHub trước khi ẩn danh.
