@@ -10,6 +10,7 @@
 | Launcher3 AutoHotspot v0.4 | REPORTED PASS | Sau reboot; chưa có kiểm tra tải lâu dài |
 | AudioTrack / ALSA output | FAIL / PAUSED | Không phát AAC; nhánh sửa audio tạm dừng |
 | Ứng dụng Hidden Settings | PARTIAL | Đã có mã/build; một số màn hình OEM có lỗi/giới hạn |
+| Mã 2846 / MMI menu OEM | MANIFEST VERIFIED / RUNTIME OPEN | Receiver MMI đăng ký host=2846; 30 bài test XML; chưa đối chiếu đường About → MMI khi nhập mã |
 | Điều chỉnh DPI | PARTIAL | Có mã công cụ; kiểm thử hoàn tác thực tế cần thận trọng |
 | Logo boot Nokia C3-00 | RESEARCH | Chưa phát hành patch boot/splash đã xác minh |
 | H01 App Control | PROPOSED | Kiến trúc quản lý tiến trình/ứng dụng cần nghiên cứu thêm |
