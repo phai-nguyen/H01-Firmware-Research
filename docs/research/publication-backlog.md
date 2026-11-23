@@ -46,3 +46,9 @@
 - [x] [Recovery readiness](../boot/recovery-readiness.md) — checklist, không phải bộ restore hoàn chỉnh.
 - [ ] Rà source tự viết của công cụ backup/recovery để phát hành riêng có unit tests và dry-run; không tải OEM binary.
 - [ ] Bổ sung toàn bộ mapping init import và kiểm chứng Netlink peer nếu có log đọc thụ động được phép.
+
+## Công cụ kiểm tra ZIP/IMG — 23/11/2026
+
+- [x] Đã đăng [ZIP auditor](../../tools/audit_backup_archives.py), [tài liệu](../tools/backup-archive-audit.md) và 12 bài kiểm thử tổng hợp.
+- [ ] Chưa chạy công cụ trên các ZIP nhiều GB trong kho riêng của H01; không ghi PASS thực địa khi chưa có kết quả.
+- [ ] Chưa tạo đối chiếu tự động **42 partition name/LBA/size** với mỗi IMG; checksum khớp không tự chứng minh đúng phân vùng.

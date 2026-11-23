@@ -20,3 +20,7 @@ python3 tools/verify_sha256.py /path/to/H01-boot-20261111.sha256 /path/to/H01-ve
 - `PASS`: checksum trùng khớp với sidecar. `MISMATCH`: nội dung khác, dừng sử dụng bản sao đó. `ERROR`: thiếu tệp hoặc sidecar sai định dạng.
 - **Không xác minh** bản sao đến đúng từ một vùng eMMC, chưa xác nhận chữ ký OEM, chưa chứng minh ảnh an toàn để flash.
 - Không chia sẻ cả sidecar của `userdata` nếu giá trị hash có thể tiết lộ hoặc liên kết một bản sao dữ liệu riêng cụ thể; không đưa ảnh `.img` vào repository.
+
+## Kiểm tra nhiều IMG bên trong ZIP
+
+Dùng [ZIP backup auditor](../../tools/audit_backup_archives.py) với [hướng dẫn](backup-archive-audit.md) để đọc ZIP đến EOF kiểm CRC và đối chiếu SHA-256 member bằng sidecar nằm cùng thư mục trong ZIP. Công cụ mới không thay thế kiểm tra tệp IMG riêng của verify_sha256.py hoặc kiểm chứng nguồn dump.

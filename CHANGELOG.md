@@ -1,5 +1,12 @@
 # Changelog
 
+## [Backup archive integrity auditor] — 2026-11-23
+
+- Đăng trình kiểm tra ZIP/IMG CRC + SHA-256 chỉ đọc, kèm 12 bài thử tổng hợp và tài liệu Windows 7/antiX.
+- Phân biệt bản sao khớp checksum với độ bao phủ GPT, tính xác thực firmware và khả năng restore; không đăng ảnh OEM hoặc sidecar riêng.
+
+
+
 ## [Kernel/init/boot and recovery readiness documentation] — 2026-11-23
 
 - Bổ sung bảy chuyên đề từ Notion: uknet.ko, init services Qualcomm/UCloudlink, /firmware DAC/mount, RAM/PSS, Verified Boot vs Fastboot flash, Magisk 30.7, readiness cứu hộ.

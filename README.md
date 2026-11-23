@@ -61,6 +61,12 @@ English: [README.en.md](README.en.md)
 - [Magisk 30.7: boot RAM và root cố định](docs/boot/magisk-root-timeline.md)
 - [Danh sách điều kiện cần có trước khi cứu hộ firmware](docs/boot/recovery-readiness.md)
 
+## Công cụ kiểm chứng ZIP sao lưu — 23/11/2026
+
+- [Chương trình kiểm tra ZIP/IMG ngoại tuyến](tools/audit_backup_archives.py): đọc hết ZIP member để xác minh CRC, kiểm tra sidecar SHA-256, không giải nén/ghi thiết bị.
+- [Hướng dẫn và giới hạn bằng chứng](docs/tools/backup-archive-audit.md): phân biệt MATCH, REVIEW, MISMATCH và ERROR.
+- [12 unit tests tổng hợp](tests/test_backup_archive_audit.py): không cần APK, IMG hay ZIP OEM.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |
