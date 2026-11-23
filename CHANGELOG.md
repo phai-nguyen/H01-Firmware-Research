@@ -1,5 +1,12 @@
 # Changelog
 
+### Bổ sung nghiên cứu mã 2846 — 2026-11-23 (sau v0.2.0)
+
+- Mở mã nguồn độc lập `tools/inspect_2846.py` (6/6 xác minh trên APK mẫu gốc).
+- Mở mã nguồn `tools/inspect_mmi_vdex.py` cho VDEX 010: constructor và `onReceive`, 1/1 + 9/9 chỉ mục quickening; 8/8 kiểm tra ngữ nghĩa trên VDEX mẫu H01.
+- Bổ sung 5 bài thử bằng dữ liệu VDEX tổng hợp, không kèm firmware gốc.
+- Xác nhận hai nhánh sử dụng mã `2846` khác nhau: About → AssistantActivity và `MMI.MySecretCodeReceiver` qua Telephony secret-code broadcast.
+
 ## [0.2.0] — 2026-11-23
 
 - Công khai bảng GPT 42 phân vùng từ snapshot ngày 11/11/2026, loại bỏ GUID/CRC riêng.
@@ -9,8 +16,6 @@
 - Mở rộng CI để chạy kiểm thử CSV, kiểm thử checksum và rà soát nội dung công khai.
 
 **Chưa xác minh thực địa:** script ADB chưa được thử chạy trên H01 sau khi phát hành. Tình trạng firmware, SIM và audio không thay đổi vì cập nhật repository.
-
-# Changelog
 
 ## [0.1.0] — 2026-11-23 (công khai trên GitHub)
 
