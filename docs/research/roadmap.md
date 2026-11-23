@@ -7,7 +7,7 @@
 - [x] Mốc kỹ thuật chính từ nguồn lưu trữ.
 - [x] Chính sách không công bố firmware gốc / thông tin nhạy cảm.
 - [x] Mẫu Issue và kiểm tra tệp public cơ bản.
-- [ ] Tạo repository GitHub Public mới và đẩy toàn bộ cây tài liệu.
+- [x] Tạo repository GitHub Public và đưa 26 tệp tài liệu/công cụ lên nhánh `main` (23/11/2026).
 
 ## v0.2 — Chứng cứ và công cụ
 
