@@ -18,6 +18,7 @@ English: [README.en.md](README.en.md)
 - [Hai kênh SIM logic / DSDS](docs/network/dual-sim.md)
 - [Đường âm thanh chưa hoạt động](docs/system/audio.md)
 - [Mã 2846: menu kỹ thuật ẩn trong About của GlocalmeHome](docs/system/glocalmehome-about-secret-code-2846.md)
+- [Phân tích VDEX010: MMI SecretCodeReceiver.onReceive và mã 2846](docs/system/mmi-secret-code-receiver.md)
 - [Danh mục 30 bài kiểm tra MMI](docs/system/mmi-factory-tests.md)
 - [Hướng dẫn ADB thủ công quan sát menu 2846 trên Windows 7](docs/tools/secret-2846-readonly.md)
 - [Launcher3 AutoHotspot v0.4](docs/projects/autohotspot.md)
@@ -52,6 +53,8 @@ Những giá trị trên là **snapshot từ một thiết bị/nhóm bản sao 
 - `tools/h01-readonly-win7.cmd`: dùng trực tiếp với ADB trên Windows 7, chỉ truy vấn thuộc tính và thống kê đã chọn.
 - `tools/h01-readonly-linux.sh`: phiên bản POSIX shell cho Linux/antiX.
 - `tools/verify_sha256.py`: kiểm tra SHA-256 ngoại tuyến từ các tệp sidecar, không đăng firmware hay checksum riêng lên mạng.
+- `tools/inspect_2846.py`: kiểm tra 6 điều kiện logic About → Assistant Function từ APK gốc, không cần ADB.
+- `tools/inspect_mmi_vdex.py`: đọc VDEX 010 và khôi phục riêng 9/9 tham chiếu quickening của `MySecretCodeReceiver.onReceive()`; chỉ xuất kết luận, không ghi bytecode OEM.
 - `tests/test_repository.py`: kiểm tra CSV GPT và logic xác minh hash bằng dữ liệu giả.
 
 Chạy thử trên PC bằng `python3 -m unittest discover -s tests -v`; không cần kết nối H01. Đây là **công cụ dành cho nghiên cứu**, chưa được kiểm thử trực tiếp trên mọi cấu hình H01.
