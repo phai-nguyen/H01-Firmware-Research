@@ -200,3 +200,29 @@ Bản thân layout `res/layout/assistant_activity.xml` có `android:onClick` cho
 - [x] Xác định điều hướng: **ARouter `/minilauncher/assistant`**.
 - [x] Xác định explicit Intent của ba nút.
 - [ ] Nếu cần phân tích cơ chế secret-code qua Dialer, khôi phục `MMI.vdex`/ODEX và kiểm tra `MySecretCodeReceiver.onReceive()` riêng, không lẫn với nhánh About.
+
+## 12. Phân tích MMI.vdex: nhánh nhận secret-code của Android (23/11/2026)
+
+**Nguồn gốc và tính toàn vẹn:** dùng bản sao riêng `20261119_184702.rar` từ kho nghiên cứu. Bên trong có `Apps/com.ukelink.dusk.mmi/arm/MMI.vdex` (**4.154.472 byte**) và `MMI.odex`. VDEX có signature **`vdex010`** (Android 8.1), một DEX 037 nhúng tại offset 28; class `Lcom/ukelink/dusk/mmi/MySecretCodeReceiver;` có method `<init>()` và `onReceive(Context, Intent)`.
+
+### Các chứng cứ trực tiếp trong DEX nhúng
+
+| Vị trí/method | Điều nhìn thấy trong instruction stream | Ý nghĩa |
+| --- | --- | --- |
+| `MySecretCodeReceiver.<init>()` | `const-string/jumbo` với literal `2846` và `iput-object-quick` | Gán mã `2846` vào field của Receiver (field `SECRETCODE`) |
+| `MySecretCodeReceiver.onReceive()` | `const-string/jumbo` với `android.provider.Telephony.SECRET_CODE` | Đối chiếu action secret-code của Android |
+| `onReceive()` | `iget-object-quick`, các nhánh `if-eqz` và `invoke-virtual-quick` | Có các bước kiểm tra điều kiện; cần unquicken để xác định chắc chắn tên từng method virtual |
+| `onReceive()` | `new-instance Landroid/content/Intent;` và `const-class Lcom/ukelink/dusk/mmi/MainActivity;` | Chuẩn bị Intent hướng tới MMI MainActivity |
+| `onReceive()` | `const/high16` giá trị `0x10000000` | Phù hợp với `FLAG_ACTIVITY_NEW_TASK` khi khởi chạy Activity từ receiver |
+
+Định dạng VDEX010 lưu DEX đã được ART tối ưu hóa. Các opcode `0xE5` (`iget-object-quick`), `0xE8` (`iput-object-quick`), `0xE9` (`invoke-virtual-quick`) dùng field/vtable offset thay vì method/field index thông thường. Vì vậy **chưa gọi đây là decompile hoàn chỉnh**; các method virtual tương ứng cần được **dequicken** nếu muốn ghi chính xác API được gọi từng bước. Bảng opcode tham khảo mã nguồn Android ART: https://android.googlesource.com/platform/art/+/a77f3c91ad7bd46fff8e98f582eef216892219b9/runtime/dex_instruction_list.h.
+
+### Hai cơ chế không nên nhầm lẫn
+
+**Đường A — Đã xác minh hoàn chỉnh từ APK gốc và video:** `About → 5 lần nhấn Version No. → nhập 2846 → MiniAboutActivity$5.onClick() → ARouter /minilauncher/assistant → AssistantActivity`. So sánh `2846` nằm trực tiếp trong `GlocalmeHome.apk`, **không cần gọi MMI Receiver**.
+
+**Đường B — Đã xác nhận static ở MMI VDEX:** `MySecretCodeReceiver` chứa logic nhận `android.provider.Telephony.SECRET_CODE`, mã `2846`, và tham chiếu khởi chạy `MainActivity`; rất phù hợp với việc kích hoạt từ một nguồn broadcast mã bí mật khác. **Chưa kiểm chứng runtime bằng broadcast trên H01**, không tự gửi broadcast hoặc kích hoạt menu để thử.
+
+Không đăng tệp `MMI.vdex`, `MMI.odex`, DEX nhúng hoặc dữ liệu riêng của thiết bị lên repository. Những phát hiện trong tài liệu là mô tả độc lập từ phân tích tĩnh.
+
+**Việc còn mở:** khôi phục quickening metadata/VDEX để giải được method reference cụ thể, đối chiếu `MySecretCodeReceiver.onReceive()` và xem thiết bị có đường gửi secret-code thực tế nào khác mà không thử các mục nguy hiểm trong factory menu.
