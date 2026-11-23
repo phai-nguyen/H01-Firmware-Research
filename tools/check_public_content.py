@@ -27,7 +27,7 @@ def list_files():
             return [ROOT / p.decode('utf-8') for p in result.stdout.split(b'\0') if p]
     except (OSError, subprocess.CalledProcessError):
         pass
-    return [p for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.parts]
+    return [p for p in ROOT.rglob('*') if p.is_file() and not any(part in {'.git', '__pycache__', '.venv', 'H01-READONLY-RESULTS', 'H01_READONLY_RESULTS'} for part in p.relative_to(ROOT).parts)]
 
 def main():
     errors = []

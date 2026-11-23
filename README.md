@@ -2,13 +2,16 @@
 
 **Dự án nghiên cứu mở, độc lập** về ZEUS H01 / GlocalMe K1: phần cứng, Android 8.1, firmware, bootloader, EDL, OTA, modem/SIM, các chức năng ẩn và ứng dụng tùy biến.
 
-> **Trạng thái: v0.1.0 — bộ khung tài liệu công khai.** Tài liệu được biên soạn lại từ ghi chép và báo cáo kiểm thử của dự án. Không phải firmware chính thức, không phải ROM phục hồi sẵn dùng, cũng không bảo đảm mọi kết quả áp dụng cho mọi biến thể H01.
+> **Trạng thái: v0.2.0 — tài liệu GPT đã lược bỏ định danh và công cụ kiểm tra chỉ đọc.** Tài liệu được biên soạn lại từ ghi chép và báo cáo kiểm thử của dự án. Không phải firmware chính thức, không phải ROM phục hồi sẵn dùng, cũng không bảo đảm mọi kết quả áp dụng cho mọi biến thể H01.
 
 English: [README.en.md](README.en.md)
 
 ## Bắt đầu
 
 - [Tổng quan phần cứng](docs/hardware/overview.md)
+- [Bảng GPT 42 phân vùng đã lược bỏ định danh](docs/firmware/gpt-layout.md)
+- [Thu thập báo cáo ADB chỉ đọc (Windows 7 / antiX)](docs/tools/read-only-report.md)
+- [Xác minh bản sao SHA-256 ngoại tuyến](docs/tools/backup-hashes.md)
 - [Bản đồ nghiên cứu firmware / phân vùng](docs/firmware/overview.md)
 - [OTA tăng dần, bản 81 → 87](docs/firmware/ota.md)
 - [Bootloader, Fastboot, EDL và root](docs/boot/root-and-recovery.md)
@@ -40,6 +43,15 @@ Những giá trị trên là **snapshot từ một thiết bị/nhóm bản sao 
 - **SIM:** quan sát `persist.radio.multisim.config=dsds` và hai kênh RIL logic; khả năng dùng hai SIM vật lý cùng lúc **chưa được xác minh**.
 - **Hotspot:** mô-đun Launcher3 AutoHotspot v0.4 được báo cáo PASS sau reboot; kiểm thử 24/7 và trên biến thể khác còn mở.
 - **Âm thanh:** thời điểm thử `/proc/asound/cards` không có sound card, Device Tree ghi `sound/status=disabled`; việc sửa âm thanh **chưa hoàn tất** và nhánh này đang **tạm dừng**.
+
+## Bộ công cụ v0.2.0
+
+- `tools/h01-readonly-win7.cmd`: dùng trực tiếp với ADB trên Windows 7, chỉ truy vấn thuộc tính và thống kê đã chọn.
+- `tools/h01-readonly-linux.sh`: phiên bản POSIX shell cho Linux/antiX.
+- `tools/verify_sha256.py`: kiểm tra SHA-256 ngoại tuyến từ các tệp sidecar, không đăng firmware hay checksum riêng lên mạng.
+- `tests/test_repository.py`: kiểm tra CSV GPT và logic xác minh hash bằng dữ liệu giả.
+
+Chạy thử trên PC bằng `python3 -m unittest discover -s tests -v`; không cần kết nối H01. Đây là **công cụ dành cho nghiên cứu**, chưa được kiểm thử trực tiếp trên mọi cấu hình H01.
 
 ## Đóng góp
 

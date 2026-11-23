@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0] — 2026-11-23
+
+- Công khai bảng GPT 42 phân vùng từ snapshot ngày 11/11/2026, loại bỏ GUID/CRC riêng.
+- Thêm script ADB chỉ đọc cho Windows 7 và Linux/antiX; không dùng root, flash hay cài APK.
+- Thêm trình xác minh SHA-256 sidecar ngoại tuyến và năm bài kiểm thử Python dùng dữ liệu giả.
+- Bổ sung hướng dẫn thu thập, ẩn danh kết quả và nguồn chứng cứ.
+- Mở rộng CI để chạy kiểm thử CSV, kiểm thử checksum và rà soát nội dung công khai.
+
+**Chưa xác minh thực địa:** script ADB chưa được thử chạy trên H01 sau khi phát hành. Tình trạng firmware, SIM và audio không thay đổi vì cập nhật repository.
+
+# Changelog
+
 ## [0.1.0] — 2026-11-23 (công khai trên GitHub)
 
 - README tiếng Việt/Anh, hướng dẫn đóng góp và bảo mật.

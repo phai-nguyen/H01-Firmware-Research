@@ -3,7 +3,7 @@
 | Chủ đề | Trạng thái | Ghi chú |
 | --- | --- | --- |
 | Android 8.1 / MSM8909 | OBSERVED | Thuộc tính và snapshot từ máy thử |
-| GPT / eMMC | OBSERVED | Có báo cáo 42 phân vùng; công bố bản map đã khử dữ liệu còn PENDING |
+| GPT / eMMC | OBSERVED | Có báo cáo 42 phân vùng; đã công bố bảng 42 mục loại bỏ GUID riêng của thiết bị |
 | Bootloader unlock + Magisk root | REPORTED PASS | Ghi chép thử nghiệm 18/11; không bảo đảm trên máy khác |
 | OTA incremental 81→87 | REPORTED VERIFIED | Có báo cáo kiểm tra chữ ký và block; chưa có factory ROM đầy đủ |
 | Dual SIM firmware DSDS | OBSERVED | Chưa xác minh hai SIM vật lý hoạt động đồng thời |
@@ -19,7 +19,7 @@
 
 ## Ưu tiên tiếp theo (không ghi flash)
 
-1. Chuẩn hóa bản đồ GPT không có thông tin nhận dạng.
+1. Đối chiếu bảng GPT v0.2.0 với các biến thể H01 khác, chỉ đọc.
 2. Bổ sung bảng phiên bản OTA đã nghiên cứu, không xuất gói OTA gốc.
-3. Hoàn thiện bộ test read-only Windows 7 và Linux chống lộ dữ liệu.
+3. Chạy thử bộ script ADB chỉ đọc Windows 7 và Linux trên H01, rà soát thủ công báo cáo trước khi gửi.
 4. Chia nhỏ Issues dựa trên các mục `OPEN`/`PARTIAL`; không tự động khôi phục nhánh `PAUSED`.

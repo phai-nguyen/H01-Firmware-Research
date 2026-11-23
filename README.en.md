@@ -2,7 +2,7 @@
 
 An independent, community-oriented research project documenting the **ZEUS H01 / GlocalMe K1** hardware and its Android 8.1 firmware, boot chain, EDL/Fastboot, OTA, SIM architecture, hidden services and companion applications.
 
-**Release v0.1.0 is a documentation scaffold**, not an official firmware image, recovery ROM or guaranteed flashing procedure. Observations refer to particular hardware/firmware snapshots.
+**Release v0.2.0 adds a sanitized GPT layout and host-side read-only tools**, not an official firmware image, recovery ROM or guaranteed flashing procedure. Observations refer to particular hardware/firmware snapshots.
 
 ## Highlights
 
@@ -13,6 +13,13 @@ An independent, community-oriented research project documenting the **ZEUS H01 /
 - AutoHotspot v0.4 reportedly passed after reboot; audio output recovery remains **unresolved and paused**.
 
 Browse the Vietnamese [main README](README.md), [research status](docs/research/status.md), [source provenance](docs/research/provenance.md), and [publication policy](docs/security/publication-policy.md).
+
+## v0.2.0 tools
+
+- [Sanitized 42-partition GPT map](docs/firmware/gpt-layout.md) (no per-device GUIDs, not a flashing recipe).
+- [ADB read-only survey guide](docs/tools/read-only-report.md) for Windows 7 and Linux/antiX.
+- [Offline SHA-256 verifier](docs/tools/backup-hashes.md) for independently held backups.
+- Basic checks: `python3 -m unittest discover -s tests -v`. These tools were unit-tested with synthetic data, not validated as a recovery workflow.
 
 ## License & contributions
 

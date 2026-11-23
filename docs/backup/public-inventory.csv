@@ -6,3 +6,4 @@ H01-userdata-20261111.img,5440510464,private-dropbox,NO,contains private user/de
 H01-GPT-map-20261111.txt,8084,private-dropbox,REVIEW,requires sanitization before publication
 H01-partitions-20261111.csv,5863,private-dropbox,REVIEW,requires sanitization before publication
 H01-verify-all-report.txt,4868,private-dropbox,REVIEW,requires sanitization before publication
+H01-partitions-20261111.csv,5863,private-dropbox,NO,contains device GUIDs - use sanitized public CSV

@@ -66,3 +66,7 @@ private/
 secrets/
 userdata/
 recovery-images/
+
+# Host-side survey reports
+H01-READONLY-RESULTS/
+H01_READONLY_RESULTS/

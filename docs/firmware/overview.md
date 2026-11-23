@@ -13,10 +13,14 @@ Thiết bị thử sử dụng Android 8.1 và sơ đồ GPT được ghi nhận
 | OTA | Đã nghiên cứu gói incremental 81→87, không phải factory image |
 | Full factory firmware | Chưa có gói cứu hộ chính thức được công bố/kiểm chứng trong repository |
 
+## GPT đã lược bỏ định danh
+
+Xem [bảng phân vùng 42 mục, thứ tự/LBA/kích thước](gpt-layout.md). Đây là bản đồ của một ảnh metadata đã thu thập; mọi GUID riêng của máy đã bị loại bỏ khỏi bản công khai.
+
 ## Không đăng firmware OEM
 
 Không commit ảnh phân vùng, boot image Magisk đã patch, modem, NV, phần mềm/driver OEM, khóa ký hoặc URL tải firmware có thông tin xác thực. Chỉ đưa hướng dẫn phân tích, các phát hiện phi nhạy cảm và công cụ do dự án tự viết.
 
 ## Kế hoạch công khai bản đồ phân vùng
 
-Dùng CSV **đã làm sạch**, ghi tên phân vùng, thứ tự, kích thước, bản build nguồn, thời gian quan sát và mức độ chắc chắn. Không sao chép nội dung `modemst*`, `fsg*`, `userdata`, `persist`, `keystore`, `productinfo` hay dữ liệu nhận dạng thiết bị vào kho công khai.
+Đã công bố CSV **đã làm sạch** gồm 42 phân vùng; bổ sung mô tả những khác biệt giữa các biến thể trong các bản cập nhật kế tiếp. Không sao chép nội dung `modemst*`, `fsg*`, `userdata`, `persist`, `keystore`, `productinfo` hay dữ liệu nhận dạng thiết bị vào kho công khai.
