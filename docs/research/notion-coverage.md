@@ -91,3 +91,16 @@ Mỗi tài liệu ghi rõ phạm vi kiểm chứng; không đồng nghĩa nội 
 | Scanner 8 APK/7 ODEX/7 VDEX (19/11) | [Hidden Activity & flags](../system/hidden-activity-and-oem-flags.md) |
 
 Các tệp chỉ biên soạn phát hiện đã lưu và giới hạn kiểm chứng; không kích hoạt thiết bị.
+
+## Chuyển chi tiết các trang Notion 19–21/11 (đăng 24/11/2026)
+
+| Trang nguồn đã đọc lại | Báo cáo chi tiết mới |
+| --- | --- |
+| Tự khởi động USB-C, phân tích ABOOT/LK/PMIC | [LK charger mode](../boot/lk-pmic-charger-analysis.md) |
+| Cùng trang: thử eMMC v0.6 và 3 chức năng ngày 21/11 | [Cold boot PASS](../boot/auto-power-on-cold-boot-evidence.md) |
+| SystemUI 4G slot 0, AutoShow v1.1 | [SystemUI slot0](../system/4g-slot0-systemui-evidence.md) |
+| Launcher3 AutoHotspot v0.3.1–v0.4 | [API & logs](../projects/autohotspot-api-history.md) |
+| SMS/TelephonyProvider và phân quyền ADB | [SMS evidence](../network/sms-telephony-permission-evidence.md) |
+| Sao lưu boot/đề xuất máy thứ hai (chỉ lịch sử) | [Boot reuse limitations](../firmware/boot-image-reuse-limitations.md) |
+
+Đây là bản tóm tắt bằng chứng đã thu, không phải ảnh thử mới hoặc yêu cầu có máy thứ hai.

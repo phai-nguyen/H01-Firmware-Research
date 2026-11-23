@@ -1,5 +1,13 @@
 # Changelog
 
+## [H01 legacy power/SIM/hotspot research documentation] — 2026-11-24
+
+- Đăng thêm 6 báo cáo lịch sử chi tiết từ Notion 19–21/11: LK/PMIC charger-mode, Auto Power-On v0.6 trên eMMC, AutoShow slot0, AutoHotspot API v0.3.1–v0.4, SMS Provider và giới hạn dùng lại ảnh boot trên máy khác.
+- Phân biệt các mốc FAIL trước v0.6 với PASS sau đó; không khẳng định hoạt động không pin/24 giờ hoặc khả năng dùng hai SIM.
+- Chỉ tài liệu: không tạo công cụ, không công bố firmware OEM hay dữ liệu riêng.
+
+
+
 ## [Keyguard and hidden component research] — 2026-11-23
 
 - Bổ sung bốn chuyên đề H01 từ hồ sơ Notion 19–20/11: Android Keyguard + UCloud sleep, crash BackKeyManager, UI LockSet/High contrast, danh mục Activity/cờ OEM.

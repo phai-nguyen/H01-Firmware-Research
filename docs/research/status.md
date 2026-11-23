@@ -85,3 +85,14 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | BackKeyManager | NPE trace VERIFIED; missing setup cause HYPOTHESIS | [Crash](../system/backkeymanager-lock-crash.md) |
 | LockSet | Activity/UI/high contrast PASS; PIN NEVER TESTED | [UI](../system/glocalme-lockscreen-ui-history.md) |
 | Activity/flags | 473 components STATIC; most runtime UNKNOWN | [Inventory](../system/hidden-activity-and-oem-flags.md) |
+
+## Chi tiết bổ sung từ nguồn 19–21/11 (đăng 24/11/2026)
+
+| Nhánh | Trạng thái | Báo cáo |
+| --- | --- | --- |
+| LK/PMIC Charger Mode | STATIC VERIFIED, thanh ghi thời điểm cấp nguồn NOT OBSERVED | [LK](../boot/lk-pmic-charger-analysis.md) |
+| Auto Power-On v0.6 | REPORTED PASS trên eMMC/cấp USB-C lạnh một H01; không pin NOT TESTED | [v0.6](../boot/auto-power-on-cold-boot-evidence.md) |
+| SystemUI 4G AutoShow | One-shot v1.1 REPORTED PASS; nguyên nhân cờ reset OPEN | [SIM1](../system/4g-slot0-systemui-evidence.md) |
+| AutoHotspot | v0.3.4 manual PASS; v0.4 after boot REPORTED PASS | [API](../projects/autohotspot-api-history.md) |
+| SMS | ISms/Provider OBSERVED, receive/send UNVERIFIED | [SMS](../network/sms-telephony-permission-evidence.md) |
+| Clone H01 | Historical proposal only; no second device | [Limitations](../firmware/boot-image-reuse-limitations.md) |

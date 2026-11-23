@@ -82,3 +82,11 @@
 - [x] [Danh mục Activity/flags OEM](../system/hidden-activity-and-oem-flags.md).
 - [ ] Không có bằng chứng PIN/Swipe tự khóa PASS; giữ trạng thái PAUSED.
 - [ ] Chưa thử thực tế mọi Activity/feature; manifest không đồng nghĩa có phần cứng.
+
+## Đã công bố thêm ngày 24/11/2026 — chỉ nghiên cứu
+
+- [x] [LK/PMIC](../boot/lk-pmic-charger-analysis.md) và [Auto Power-On v0.6 cold boot](../boot/auto-power-on-cold-boot-evidence.md).
+- [x] [SystemUI 4G slot0](../system/4g-slot0-systemui-evidence.md), [AutoHotspot API history](../projects/autohotspot-api-history.md).
+- [x] [SMS/Provider permission](../network/sms-telephony-permission-evidence.md), [giới hạn tái sử dụng boot](../firmware/boot-image-reuse-limitations.md).
+- [ ] Vẫn còn các báo cáo TXT/ZIP/ảnh/video và các mục Notion chưa đối chiếu đủ; không tự tuyên bố hoàn thành 100%.
+- [ ] Không thử H01 thứ hai, không tạo tool/app trong nhiệm vụ chỉ xuất bản nghiên cứu.

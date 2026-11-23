@@ -98,6 +98,16 @@ English: [README.en.md](README.en.md)
 
 Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **không tự thay đổi khóa, PIN hoặc firmware H01**.
 
+## Mốc nghiên cứu boot lạnh, SIM 1 và ứng dụng — 24/11/2026
+
+- [LK/PMIC và nhánh charger mode](docs/boot/lk-pmic-charger-analysis.md), [bằng chứng Auto Power-On v0.6 + AutoHotspot v0.4 + AutoShow v1.1](docs/boot/auto-power-on-cold-boot-evidence.md).
+- [SystemUI slot0 và nguyên nhân ẩn chữ 4G/vạch sóng](docs/system/4g-slot0-systemui-evidence.md).
+- [Lịch sử lỗi API và PASS AutoHotspot v0.3.1–v0.4](docs/projects/autohotspot-api-history.md).
+- [SMS: ISms/TelephonyProvider/READ_SMS](docs/network/sms-telephony-permission-evidence.md).
+- [Giới hạn của việc dùng lại boot Magisk cho H01 khác](docs/firmware/boot-image-reuse-limitations.md) — chỉ là ghi chép kế hoạch cũ, không yêu cầu máy thứ hai.
+
+**Chỉ lưu nghiên cứu:** không phát hành IMG, APK OEM, module/driver, dữ liệu SIM hoặc công cụ mới trong lô này.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |
