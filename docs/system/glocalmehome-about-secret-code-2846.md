@@ -187,7 +187,7 @@ Bản thân layout `res/layout/assistant_activity.xml` có `android:onClick` cho
 
 ### Kết luận kỹ thuật và giới hạn
 
-**Đã xác định bằng bytecode**: mã `2846` được so sánh **trực tiếp trong `MiniAboutActivity$5.onClick()`**, rồi chuyển tới `AssistantActivity` qua **ARouter**. Vì vậy, **không cần** `MMI.MySecretCodeReceiver` trong nhánh **About → Assistant Function** này. Receiver đăng ký host `2846` trong Manifest MMI vẫn tồn tại như một cơ chế khác; chưa phân tích body `onReceive()` và chưa loại trừ những đường kích hoạt riêng.
+**Đã xác định bằng bytecode**: mã `2846` được so sánh **trực tiếp trong `MiniAboutActivity$5.onClick()`**, rồi chuyển tới `AssistantActivity` qua **ARouter**. Vì vậy, **không cần** `MMI.MySecretCodeReceiver` trong nhánh **About → Assistant Function** này. Receiver đăng ký host `2846` trong Manifest MMI là một cơ chế khác; tham chiếu trong body `onReceive()` đã được khôi phục và ghi tại mục 13. Chưa thử kích hoạt receiver thực tế trên H01.
 
 **Đã đối chiếu runtime:** video H01 và ảnh CMD `dumpsys activity` xác nhận `MiniAboutActivity → AssistantActivity → MMI MainActivity`. Việc nhìn thấy lớp/callback trong DEX không tự động chứng minh các phiên bản firmware khác có cùng cơ chế.
 
@@ -225,4 +225,17 @@ Bản thân layout `res/layout/assistant_activity.xml` có `android:onClick` cho
 
 Không đăng tệp `MMI.vdex`, `MMI.odex`, DEX nhúng hoặc dữ liệu riêng của thiết bị lên repository. Những phát hiện trong tài liệu là mô tả độc lập từ phân tích tĩnh.
 
-**Việc còn mở:** khôi phục quickening metadata/VDEX để giải được method reference cụ thể, đối chiếu `MySecretCodeReceiver.onReceive()` và xem thiết bị có đường gửi secret-code thực tế nào khác mà không thử các mục nguy hiểm trong factory menu.
+**Cập nhật mốc 23/11/2026:** đã hoàn thành khôi phục 9/9 tham chiếu quickening của `onReceive()`; xem mục 13. Vẫn chưa kiểm thử runtime cho đường broadcast riêng.
+
+## 13. Khôi phục đầy đủ tham chiếu quickening MMI VDEX010 (23/11/2026)
+
+Phân tích lại `MMI.vdex` nguyên bản, trực tiếp đối chiếu bảng `(code_item_offset, quickening_offset)` và các field/method ID trong DEX nhúng. Đã phục hồi **1/1** tham chiếu ở constructor và **9/9** ở `MySecretCodeReceiver.onReceive(Context,Intent)`. Điều này giải quyết giới hạn nêu trong phần 12 về các lời gọi ART quickened.
+
+Các lời gọi đã xác định trong `onReceive` theo trình tự: `Intent.getAction()` → `String.equals()` kiểm tra action `android.provider.Telephony.SECRET_CODE` → `Intent.getData()` → `Uri.getHost()` → đọc trường `SECRETCODE` → `String.equals()` kiểm tra host → `new Intent` → `setClass(context, MainActivity.class)` → `setFlags(0x10000000)` → `Context.startActivity(intent)`. Constructor nạp `2846` vào `SECRETCODE`.
+
+- **8/8** phép đối chiếu ngữ nghĩa chạy PASS trên VDEX H01 lưu riêng.
+- **5/5** bài kiểm thử dữ liệu VDEX tổng hợp chạy PASS.
+- **Đã có mã nguồn công khai độc lập:** [inspect_mmi_vdex.py](../../tools/inspect_mmi_vdex.py), [inspect_2846.py](../../tools/inspect_2846.py), [tests/test_mmi_vdex.py](../../tests/test_mmi_vdex.py).
+- [Báo cáo chi tiết của nhánh MMI receiver](mmi-secret-code-receiver.md).
+
+**Quan trọng:** khôi phục tham chiếu bytecode **không** khẳng định H01 đã tiếp nhận broadcast thực tế từ một ứng dụng khác. Đường About vẫn được xử lý trực tiếp trong GlocalmeHome và mở `AssistantActivity`, độc lập với receiver của MMI. Không đăng firmware, APK, VDEX hoặc nội dung DEX gốc.
