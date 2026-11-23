@@ -159,3 +159,44 @@ copy /b H01-2846-About.txt+H01-2846-Assistant.txt+H01-2846-MMI.txt H01-2846-RESU
 ```
 
 **Lưu ý:** Các lệnh trên dành cho CMD tương tác. Sau khi tạo tệp có thể chạy `dir H01-2846-*.txt` để xác nhận chúng có thật. Không đưa log đầy đủ lên GitHub trước khi ẩn danh.
+
+## 11. Phân tích DEX/XML gốc: xác minh cơ chế mật khẩu 2846 (23/11/2026)
+
+**Nguồn thực tế, không phải dự đoán:** `GlocalmeHome.apk` được đọc trực tiếp từ kho tệp nghiên cứu, dung lượng **19.430.048 byte**, SHA-256 `c0c047bd6ad91e888becf9142fef0f09eb08fc1743a6e23781033507044a981c`, **khớp** báo cáo kiểm thử 19/11/2026. Gói có ba DEX; các method liên quan sau đây nằm trong `classes.dex` (DEX 037). Phân tích tĩnh theo cấu trúc DEX và Android Binary XML, **không sửa/chạy APK trên H01**.
+
+### Từ About tới hộp thoại mật khẩu
+
+1. `res/layout/about_settings_activity.xml`: `TextView` có id **`tv_version`**, text resource **`version_num`** (tiếng Anh: `Version No.:`) và thuộc tính `android:onClick="startAssistantFunction"`.
+2. `MiniAboutActivity.startAssistantFunction(View)`: đọc và tăng biến đếm `mClickCnt`; **khi đếm đủ 5 lần**, đặt lại đếm về 0, gọi `createPasswordDialog(Context)` rồi hiển thị hộp thoại.
+3. `MiniAboutActivity.createPasswordDialog(Context)`: nạp layout `dialog_input_pwd`, lấy `EditText` có id `et_assistant_pwd`, gắn listener xác nhận `MiniAboutActivity$5`.
+4. `MiniAboutActivity$5.onClick(View)`: nạp literal string **`2846`**, đọc `EditText.getText()`, so sánh qua **`java.lang.String.contentEquals(CharSequence)`**.
+   - **Đúng:** `Dialog.dismiss()`, `ARouter.getInstance().build("/minilauncher/assistant").navigation()`.
+   - **Sai:** hiển thị `Toast` dùng chuỗi resource `password_error`.
+
+### Assistant Function mở ba ứng dụng bằng explicit Intent
+
+Trong `com.glocalme.minilauncher.assistant.AssistantActivity`, code kiểm tra sự hiện diện của package qua `PackageUtil.isAppInstall(...)`, sau đó tạo `Intent`, gọi `setClassName(package, class)` và `startActivity(...)`:
+
+| Hàm | Package | Class đích |
+| --- | --- | --- |
+| `startMMI(View)` | `com.ukelink.dusk.mmi` | `com.ukelink.dusk.mmi.MainActivity` |
+| `startLogTools(View)` | `com.ucloudlink.feedback` | `com.ucloudlink.feedback.LogSettingActivity` |
+| `startSystemSettings(View)` | `com.android.settings` | `com.android.settings.Settings` |
+
+Bản thân layout `res/layout/assistant_activity.xml` có `android:onClick` cho cả ba nút trên.
+
+### Kết luận kỹ thuật và giới hạn
+
+**Đã xác định bằng bytecode**: mã `2846` được so sánh **trực tiếp trong `MiniAboutActivity$5.onClick()`**, rồi chuyển tới `AssistantActivity` qua **ARouter**. Vì vậy, **không cần** `MMI.MySecretCodeReceiver` trong nhánh **About → Assistant Function** này. Receiver đăng ký host `2846` trong Manifest MMI vẫn tồn tại như một cơ chế khác; chưa phân tích body `onReceive()` và chưa loại trừ những đường kích hoạt riêng.
+
+**Đã đối chiếu runtime:** video H01 và ảnh CMD `dumpsys activity` xác nhận `MiniAboutActivity → AssistantActivity → MMI MainActivity`. Việc nhìn thấy lớp/callback trong DEX không tự động chứng minh các phiên bản firmware khác có cùng cơ chế.
+
+**Phép kiểm tra ngoại tuyến:** tạo công cụ Python 3 tự viết `inspect_2846.py` để xác minh các tham chiếu method, literal và callback XML trên bản APK gốc; kết quả 6/6 kiểm tra PASS. Công cụ không kết nối ADB, không ghi thiết bị, không phát hành APK/DEX gốc. Bản công cụ có thể phân phối riêng dưới dạng mã nguồn độc lập.
+
+### Mốc việc tiếp theo
+
+- [x] Xác định nhãn được nhấn: **Version No.**, 5 lần.
+- [x] Xác định hàm đối chiếu mã: **MiniAboutActivity$5.onClick()**.
+- [x] Xác định điều hướng: **ARouter `/minilauncher/assistant`**.
+- [x] Xác định explicit Intent của ba nút.
+- [ ] Nếu cần phân tích cơ chế secret-code qua Dialer, khôi phục `MMI.vdex`/ODEX và kiểm tra `MySecretCodeReceiver.onReceive()` riêng, không lẫn với nhánh About.
