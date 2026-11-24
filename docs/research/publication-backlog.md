@@ -120,3 +120,9 @@
 - [x] [OTA server cache v15](../firmware/ota-server-cache-v15-evidence.md), [audio test matrix](../system/audio-playback-test-matrix-20261121.md), [ẩn tính năng scanner](../system/hidden-scanner-parser-failure-and-recovery.md), [Log Tools 2846](../system/assistant-2846-log-tools-safety-evidence.md).
 - [x] [FOTA VDEX](../firmware/fota-vdex010-dequickening-evidence.md), [UService VDEX](../system/uservice-vdex010-recovery-progression.md), [UCloudlink ELF](../network/ucloudlink-elf-library-symbol-inventory.md).
 - [ ] Phải kiểm đầy đủ chứng cứ từng mục/đính kèm, không báo 100% nội dung từ bảng liên kết.
+
+## Chốt thêm hai mốc lịch sử PIN/OTA — 24/11/2026
+
+- [x] [LockSet High Contrast](../system/lockset-high-contrast-ui-validation.md): UI PASS, khóa PIN chưa thử; không mở lại nhánh thử nghiệm.
+- [x] [Recovery version và OTA trust](../firmware/ota-recovery-version-trace-and-trust-levels.md): chỉ lưu dấu vết bản cũ, không phát gói/credential.
+- [ ] Vẫn chưa có kiểm toán nội dung từng đoạn của tất cả 207 mục và mọi đính kèm/tệp riêng; không xác nhận 100%.

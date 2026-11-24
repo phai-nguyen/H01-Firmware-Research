@@ -1,5 +1,12 @@
 # Changelog
 
+## [H01 LockSet and OTA recovery-source clarifications] — 2026-11-24
+
+- Công bố hai báo cáo chi tiết: LockSet/High Contrast UI và lịch sử bản OTA cũ trong Recovery, phân biệt HTTP/TLS với chữ ký CMS OTA.
+- Cập nhật đường dẫn bảng Notion chuyên đề và tình trạng: **giao diện khóa PASS, PIN chưa thử; incremental 81→87 không phải ROM factory**.
+
+
+
 ## [Notion specialist sources and FOTA/UService archival reports] — 2026-11-24
 
 - Xuất bản bảng 17 trang Notion H01 (trang tổng + 16 trang chuyên đề) tới các báo cáo liên quan; không suy 100% nội dung đã hoàn thành.

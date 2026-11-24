@@ -10,7 +10,7 @@ Bảng dưới đây cho biết **đã có báo cáo GitHub liên quan** cho t�
 | 2 | [Biểu tượng 4G slot 0 / SystemUI](https://app.notion.com/p/41ec5d5277a9813fbeebe77a1c3617f2) | [Xem tài liệu](../system/4g-slot0-systemui-evidence.md) |
 | 3 | [AudioTrack / ALSA / Audio HAL](https://app.notion.com/p/41fc5d5277a9814eb9e5f4324e25fba9) | [Xem tài liệu](../system/audio-playback-test-matrix-20261121.md) |
 | 4 | [Sao lưu boot / tái sử dụng cấu hình](https://app.notion.com/p/41ec5d5277a98103978ce6392e948073) | [Xem tài liệu](../firmware/boot-image-reuse-limitations.md) |
-| 5 | [PIN LockSet / High contrast text](https://app.notion.com/p/41dc5d5277a98195a387cbc89b6c1a81) | [Xem tài liệu](../system/glocalme-lockscreen-ui-history.md) |
+| 5 | [PIN LockSet / High contrast text](https://app.notion.com/p/41dc5d5277a98195a387cbc89b6c1a81) | [Xem chi tiết](../system/lockset-high-contrast-ui-validation.md) |
 | 6 | [OTA / Recovery / server cache / v16](https://app.notion.com/p/420c5d5277a981ddbe17ca37e72e91df) | [Xem tài liệu](../firmware/ota-server-cache-v15-evidence.md) |
 | 7 | [Mã kỹ thuật 2846 / Log Tools](https://app.notion.com/p/421c5d5277a98192b864cbdb37b94203) | [Xem tài liệu](../system/assistant-2846-log-tools-safety-evidence.md) |
 | 8 | [Nhật ký tổng (207 đề mục)](https://app.notion.com/p/414c5d5277a981898f7be2712da8f7cd) | [Xem tài liệu](../research/notion-207-routing-map.md) |
@@ -23,6 +23,11 @@ Bảng dưới đây cho biết **đã có báo cáo GitHub liên quan** cho t�
 | 15 | [Keyguard mặc định bị vô hiệu hóa](https://app.notion.com/p/41ec5d5277a981879644efda02037161) | [Xem tài liệu](../system/keyguard-framework-vdex-ucloud-sleep.md) |
 | 16 | [Crash BackKeyManager/LockScreen](https://app.notion.com/p/41dc5d5277a98151bda6fc8ec359addd) | [Xem tài liệu](../system/backkeymanager-lock-crash.md) |
 | 17 | [UCloud Keyguard / K1,K2 / sleep](https://app.notion.com/p/41ec5d5277a981feaf8ede50c6148510) | [Xem tài liệu](../system/keyguard-framework-vdex-ucloud-sleep.md) |
+
+## Báo cáo chéo từ cùng nguồn
+
+- Trang **OTA** còn có [dấu vết bản cũ trong Recovery và phân loại xác thực OTA](../firmware/ota-recovery-version-trace-and-trust-levels.md). Lịch sử nhận gói 81→87 không phải thông báo có cập nhật mới cho build 87 đang chạy.
+- Trang **PIN LockSet** được ghi cụ thể tại [báo cáo High Contrast](../system/lockset-high-contrast-ui-validation.md), không chuyển từ PASS giao diện thành PASS khóa PIN.
 
 ## Phần chưa thể kết luận hoàn tất
 

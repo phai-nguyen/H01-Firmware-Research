@@ -128,3 +128,7 @@ Toàn bộ 207 đề mục đã được **gắn tuyến đến báo cáo liên 
 ## Trang Notion H01 chuyên đề — lập bảng ngày 24/11
 
 Đã lập [bảng 17 trang](notion-specialist-source-matrix.md), mỗi trang có đường tới ít nhất một báo cáo công khai liên quan. Bảng này **không** phải công bố toàn văn 16 trang hay tất cả đính kèm. Kết quả nguồn cần kiểm thêm theo tiêu chí ở trang bảng đối chiếu.
+
+## Bổ sung chi tiết PIN và Recovery OTA — 24/11/2026
+
+Đã chuyển [kết quả LockSet/High Contrast](../system/lockset-high-contrast-ui-validation.md), chỉ PASS hiển thị menu, **chưa PASS PIN**; và [dấu vết Recovery phiên bản cũ cùng các lớp tin cậy OTA](../firmware/ota-recovery-version-trace-and-trust-levels.md), không suy có bản cập nhật mới cho firmware hiện tại.

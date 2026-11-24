@@ -106,3 +106,11 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | Launcher3 / IME trên B | REPORTED PASS; IME input và persistence là hai snapshot khác nhau | [IME](../system/device-b-launcher-ime-evidence.md) |
 | Xoay trên B | REPORTED PASS; dọc 0 sau một boot, chưa xác nhận giữ qua boot tiếp theo | [Xoay](../system/device-b-rotation-evidence.md) |
 | Share Server v0.1.4 | REPORTED PASS tải/gửi trên H01 thử trước; chưa chứng minh truyền trên B | [Protocol](../projects/share-server-protocol-v014.md) |
+
+## Rà nguồn lại ngày 24/11/2026
+
+| Nhánh | Kết luận lưu trữ | Chi tiết |
+| --- | --- | --- |
+| LockSet PIN | Menu/UI và tương phản PASS; tạo PIN/sleep/reboot chưa thử | [High Contrast](../system/lockset-high-contrast-ui-validation.md) |
+| OTA Recovery | Recovery còn version cũ; có incremental 81→87, không cài, không có new update được xác nhận cho build hiện tại | [Recovery trace](../firmware/ota-recovery-version-trace-and-trust-levels.md) |
+| Cache server v15 | Host fixture PASS, không có kết quả thực trên H01 | [v15](../firmware/ota-server-cache-v15-evidence.md) |

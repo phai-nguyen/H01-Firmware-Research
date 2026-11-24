@@ -135,6 +135,8 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 ## Đối chiếu 17 nguồn Notion và những kết quả vừa công bố
 
 - [Bảng **17 trang Notion** H01 → báo cáo công khai](docs/research/notion-specialist-source-matrix.md). Báo cáo liên quan **không đồng nghĩa 100% nội dung đã chuyển**.
+- [LockSet: High Contrast Text giúp nhìn thấy Change/Enable, PIN chưa PASS](docs/system/lockset-high-contrast-ui-validation.md).
+- [Lịch sử bản OTA trong Recovery, khác biệt TLS và chữ ký OTA](docs/firmware/ota-recovery-version-trace-and-trust-levels.md).
 - [OTA v15: cache máy chủ, host PASS nhưng chưa chạy H01](docs/firmware/ota-server-cache-v15-evidence.md).
 - [Ma trận thử audio H.264/AAC và bằng chứng ALSA](docs/system/audio-playback-test-matrix-20261121.md).
 - [Lỗi parser bộ quét chức năng ẩn](docs/system/hidden-scanner-parser-failure-and-recovery.md), [Log Tools trong 2846](docs/system/assistant-2846-log-tools-safety-evidence.md).
