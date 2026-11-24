@@ -4,7 +4,7 @@
 
 Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã được trích/đối chiếu toàn văn.
 
-**Bổ sung 24/11:** H007–H013 đã được chuyển từ liên kết tổng quan sang báo cáo đối chiếu mốc lịch sử và ma trận ứng dụng hệ thống. Đó là **7 tuyến có phân tích theo mục**, không phải chứng nhận đã duyệt mọi file đính kèm. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
+**Bổ sung 24/11:** H142–H170 đã có bảng đối chiếu riêng theo từng mốc; H007–H013 đã được chuyển từ liên kết tổng quan sang báo cáo đối chiếu mốc lịch sử và ma trận ứng dụng hệ thống. Đó là **7 tuyến có phân tích theo mục**, không phải chứng nhận đã duyệt mọi file đính kèm. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
 
 | Mục | Tiêu đề nguyên thứ tự trong danh mục công khai | Báo cáo liên quan |
 | --- | --- | --- |
@@ -149,35 +149,35 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H139 | 136. Xác minh ba tệp Boot1 đã tải lên Dropbox (14/11/2026) | [Liên quan](../firmware/emmc-boot-areas.md) |
 | H140 | 137. Phân tích đầy đủ log đọc PPN 1 / Boot1 (14/11/2026) | [Liên quan](../firmware/emmc-boot-areas.md) |
 | H141 | 138. Phân tích log đọc eMMC PPN 2 / Boot2 và đối chiếu PPN 1 (14/11/2026) | [Liên quan](../firmware/emmc-boot-areas.md) |
-| H142 | 139. Điều tra lần OEM Unlock ngày 14/11/2026: lệnh OKAY nhưng trạng thái vẫn khóa | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H143 | 32. Cập nhật 14/11/2026 – Nghiên cứu mở khóa OEM sau khi reset | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H144 | 33. Nghiên cứu các đường mở khóa khác – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H145 | 34. Phân tích trực tiếp bootloader H01 và cập nhật đường unlock – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H146 | 35. Xác nhận unlock khi phím âm lượng không hoạt động – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H147 | 36. Kết quả thử lệnh mở khóa Fastboot – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H148 | 37. Không xuất hiện prompt sau lệnh chuẩn – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H149 | 38. Kết quả thử alias OEM – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H150 | 39. Kết quả kiểm tra sau oem unlock-go – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H151 | 40. Phân tích tĩnh bước đầu về phản hồi OKAY – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H152 | 41. Đối chiếu sâu hơn handler OEM unlock với source Qualcomm LK công khai – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H153 | 42. Lần theo bảng lệnh và handler bằng giải mã ARM ngoại tuyến – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H154 | 43. Đối chiếu handler getvar/device-info với cờ trong unlock-go – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H155 | 44. Cờ get_unlock_ability lấy từ FRP và rà lại chuỗi ảnh – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H156 | 45. Đối chiếu ảnh mới: ADB sau unlock-go và build ID – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H157 | 46. Đọc bootmode đúng cú pháp – ảnh mới | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H158 | 47. Thuộc tính boot bổ sung từ ADB | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H159 | 48. Toàn bộ property ro.boot từ ảnh mới | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H160 | 49. Xác nhận nguồn dump aboot và ảnh thử truy vấn Fastboot | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H161 | 50. Kết quả truy vấn Fastboot có mục tiêu | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H162 | 51. Hoàn tất truy vấn Fastboot – trạng thái vẫn khóa | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H163 | 52. Trạng thái thiết bị hiện tại | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H164 | 53. Kiểm kê baseline EDL trên Dropbox cho phương án tiếp theo | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H165 | 54. Bước thao tác tiếp theo đã chốt: đọc mới devinfo và misc | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H166 | 55. Đối chiếu lần thử QFIL trên Windows và hướng quay lại antiX | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H167 | 56. Đối chiếu cơ chế Fastboot với chuẩn Android – tiếp tục nghiên cứu, chưa dùng antiX | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H168 | 57. Rà nguồn gốc dump aboot và giới hạn bằng chứng EDL | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H169 | 58. Phân tích trực tiếp dump aboot đính kèm – 14/11/2026 | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
-| H170 | 59. Lần theo luồng mã của fastboot unlock – xác nhận UI và giới hạn phím cứng | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
+| H142 | 139. Điều tra lần OEM Unlock ngày 14/11/2026: lệnh OKAY nhưng trạng thái vẫn khóa | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H143 | 32. Cập nhật 14/11/2026 – Nghiên cứu mở khóa OEM sau khi reset | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H144 | 33. Nghiên cứu các đường mở khóa khác – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H145 | 34. Phân tích trực tiếp bootloader H01 và cập nhật đường unlock – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H146 | 35. Xác nhận unlock khi phím âm lượng không hoạt động – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H147 | 36. Kết quả thử lệnh mở khóa Fastboot – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H148 | 37. Không xuất hiện prompt sau lệnh chuẩn – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H149 | 38. Kết quả thử alias OEM – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H150 | 39. Kết quả kiểm tra sau oem unlock-go – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H151 | 40. Phân tích tĩnh bước đầu về phản hồi OKAY – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H152 | 41. Đối chiếu sâu hơn handler OEM unlock với source Qualcomm LK công khai – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H153 | 42. Lần theo bảng lệnh và handler bằng giải mã ARM ngoại tuyến – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H154 | 43. Đối chiếu handler getvar/device-info với cờ trong unlock-go – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H155 | 44. Cờ get_unlock_ability lấy từ FRP và rà lại chuỗi ảnh – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H156 | 45. Đối chiếu ảnh mới: ADB sau unlock-go và build ID – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H157 | 46. Đọc bootmode đúng cú pháp – ảnh mới | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H158 | 47. Thuộc tính boot bổ sung từ ADB | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H159 | 48. Toàn bộ property ro.boot từ ảnh mới | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H160 | 49. Xác nhận nguồn dump aboot và ảnh thử truy vấn Fastboot | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H161 | 50. Kết quả truy vấn Fastboot có mục tiêu | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H162 | 51. Hoàn tất truy vấn Fastboot – trạng thái vẫn khóa | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H163 | 52. Trạng thái thiết bị hiện tại | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H164 | 53. Kiểm kê baseline EDL trên Dropbox cho phương án tiếp theo | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H165 | 54. Bước thao tác tiếp theo đã chốt: đọc mới devinfo và misc | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H166 | 55. Đối chiếu lần thử QFIL trên Windows và hướng quay lại antiX | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H167 | 56. Đối chiếu cơ chế Fastboot với chuẩn Android – tiếp tục nghiên cứu, chưa dùng antiX | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H168 | 57. Rà nguồn gốc dump aboot và giới hạn bằng chứng EDL | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H169 | 58. Phân tích trực tiếp dump aboot đính kèm – 14/11/2026 | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
+| H170 | 59. Lần theo luồng mã của fastboot unlock – xác nhận UI và giới hạn phím cứng | [Liên quan](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) |
 | H171 | 60. Mở khóa bootloader H01 — PASS trên thiết bị thật | [Liên quan](../boot/oem-unlock-research.md) |
 | H172 | 61. Phương án tiếp theo: kiểm chứng boot qua RAM, rồi nghiên cứu root/cứu hộ | [Liên quan](../boot/magisk-root-timeline.md) |
 | H173 | 62. Cài J2ME Loader: xác định danh sách nguồn cài được phép | [Liên quan](../projects/j2me-kiss-launcher-source-tests.md) |
