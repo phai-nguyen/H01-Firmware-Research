@@ -6,7 +6,7 @@
 - Công bố 5 báo cáo tổng hợp mới: H001–H034 (**34 mục**), H088–H099 (**12 mục**), H100–H141 (**42 mục**), H171–H207 (**37 mục**) và bảng 16 trang chuyên đề; những nhóm H035–H087 và H142–H170 đã có từ đợt trước.
 - Bổ sung liên kết truy vết **125 mục** vào bảng 207, giữ nguyên các báo cáo chuyên sâu hiện có; tổng 207/207 mục có báo cáo theo mốc.
 - Thêm chính sách [Notion-only](docs/research/notion-only-publication-policy-20261124.md) để không tự đưa nghiên cứu từ chat/nguồn khác lên GitHub trước khi ghi Notion.
-- Rút bài Wi-Fi 5 GHz chưa có ghi chép tương ứng trong 17 trang Notion đã đối chiếu khỏi nhánh chính và gỡ liên kết; commit cũ vẫn có thể tồn tại trong lịch sử Git.
+- Rút một báo cáo chưa có nguồn Notion khỏi nhánh chính và gỡ liên kết; commit cũ vẫn có thể tồn tại trong lịch sử Git.
 - Chưa chứng nhận đã xuất bản 100% đính kèm hoặc đầy đủ toàn văn; không đăng binary hãng, dữ liệu nhận dạng, SIM/NV hay công cụ flash có rủi ro.
 
 ## [Notion H035–H087: 53-step EDL/eMMC evidence audit] — 2026-11-24
