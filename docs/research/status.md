@@ -144,3 +144,13 @@ Xem [FOTA metadata](../firmware/fota-filesystem-metadata-source-audit.md), [Hidd
 | Rootctl v1.1 | `hash` alias lỗi ở mksh; host 12/12 PASS; device readback v1.1 PASS | [Rootctl](../boot/rootctl-mksh-hash-alias-regression.md) |
 | Navbar | Phím Back/Home/Recents dùng thử PASS, sau boot mới module=enabled/NavigationBar VISIBLE | [Navbar](../system/native-navbar-debug-flags-and-persistence.md) |
 | FOTA/Feedback | Installed=true, enabled=3 user0; chủ thiết bị quyết định **không uninstall** | [Package scope](../system/fota-feedback-disable-vs-uninstall-final-state.md) |
+
+## Công bố bổ sung — 24/11/2026 (H007–H013, Wi-Fi và package risk)
+
+| Nhánh | Trạng thái tại mốc công bố | Báo cáo |
+| --- | --- | --- |
+| Notion H007–H013 | Đã biên soạn kết luận từng mục; **chưa kiểm hết đính kèm** | [Đối chiếu lịch sử](h007-h013-initial-baseline-reconciliation-20261124.md) |
+| Wi-Fi 5 GHz hotspot | Config `hostapd_dual` OBSERVED; chọn 5 GHz tắt AP USER-REPORTED; phần cứng/driver UNKNOWN | [Bằng chứng Wi-Fi](../network/wifi-24ghz-5ghz-hotspot-evidence-20261124.md) |
+| App Control / dependency | PACKAGE/PROCESS OBSERVED; dependency chưa đủ để tắt/gỡ an toàn | [Ma trận rủi ro](../system/system-app-dependency-baseline-20261124.md) |
+
+**Không cộng 7 tuyến mới vào tỷ lệ “hoàn tất nội dung Notion”.** 207/207 là số tiêu đề đã có tuyến dẫn; chưa phải 207/207 báo cáo hoàn chỉnh và mọi đính kèm an toàn.
