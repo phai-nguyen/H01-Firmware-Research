@@ -14,3 +14,5 @@ Cơ sở: [kiểm kê 473 component](../system/hidden-feature-inventory.md), [Hi
 Điều kiện triển khai: phân nhóm rủi ro, xác minh mỗi hành động, lưu trạng thái trước/sau, hạn chế các service mạng/modem/OTA, và có phương án bật lại qua ADB nếu UI mất. Không làm nút “Tắt tất cả” hay ẩn GlocalmeHome/Launcher3 mù.
 
 **Nguồn:** chủ đề nghiên cứu App Control và tối ưu RAM H01 ngày 17–21/11/2026; chưa phải ứng dụng hoàn thiện.
+
+**Bổ sung kiểm kê 24/11:** [ma trận package / process / init service và mức rủi ro](../system/system-app-dependency-baseline-20261124.md) ghi các thành phần cần bảo toàn, kết quả FOTA/Feedback disabled-user và điều kiện kiểm chứng trước bất kỳ thao tác tắt/gỡ nào. Đây vẫn là **tài liệu nghiên cứu**, không có app App Control đã PASS.
