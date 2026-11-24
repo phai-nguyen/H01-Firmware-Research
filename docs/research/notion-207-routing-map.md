@@ -4,7 +4,7 @@
 
 Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã được trích/đối chiếu toàn văn.
 
-**Bổ sung 24/11:** H142–H170 đã có bảng đối chiếu riêng theo từng mốc; H007–H013 đã được chuyển từ liên kết tổng quan sang báo cáo đối chiếu mốc lịch sử và ma trận ứng dụng hệ thống. Riêng H007–H013 là **7 tuyến có phân tích theo mục**; H142–H170 bổ sung **29 tuyến theo mốc Fastboot/EDL**. Chưa chứng nhận đã duyệt mọi tệp đính kèm. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
+**Bổ sung 24/11:** H035–H087 có bảng chứng cứ từng bước (53 mục); H142–H170 đã có bảng đối chiếu riêng theo từng mốc; H007–H013 đã được chuyển từ liên kết tổng quan sang báo cáo đối chiếu mốc lịch sử và ma trận ứng dụng hệ thống. Riêng H007–H013 là **7 tuyến có phân tích theo mục**; H142–H170 bổ sung **29 tuyến theo mốc Fastboot/EDL**. Chưa chứng nhận đã duyệt mọi tệp đính kèm. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
 
 | Mục | Tiêu đề nguyên thứ tự trong danh mục công khai | Báo cáo liên quan |
 | --- | --- | --- |
@@ -42,59 +42,59 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H032 | 31. Bootloader, Recovery và Qualcomm EDL – kết quả xác minh trực tiếp (10/11/2026) | [Liên quan](../firmware/edl-firehose-diagnostics.md) |
 | H033 | 32. Firehose hoạt động và đọc GPT eMMC thành công (10/11/2026) | [Liên quan](../firmware/edl-firehose-diagnostics.md) |
 | H034 | 33. Phân tích cấu trúc GPT và chuẩn bị sao lưu phân vùng chỉ đọc (10/11/2026) | [Liên quan](../firmware/edl-firehose-diagnostics.md) |
-| H035 | 34. Sao lưu phân vùng splash thành công qua Firehose (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H036 | 35. Chuyển bản sao splash sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H037 | 36. Chuyển bản sao boot sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H038 | 37. Chuyển bản sao recovery sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H039 | 38. Kế hoạch sao lưu boot chain – bắt đầu với sbl1 (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H040 | 39. Sao lưu phân vùng sbl1 thành công qua Firehose (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H041 | 40. Chuyển bản sao sbl1 sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H042 | 41. Sao lưu và chuyển sbl1bak sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H043 | 42. Sao lưu aboot thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H044 | 43. Sao lưu abootbak thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H045 | 44. Kế hoạch sao lưu RPM boot-chain (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H046 | 45. Sao lưu rpm thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H047 | 46. Kế hoạch sao lưu RPM backup (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H048 | 47. Sao lưu rpmbak thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H049 | 48. Kế hoạch sao lưu TZ (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H050 | 49. Sao lưu tz thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H051 | 50. Kế hoạch sao lưu TZ backup (10/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H052 | 51. Sao lưu tzbak thành công và chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H053 | 52. Kế hoạch sao lưu devcfg (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H054 | 53. Nghiên cứu đọc nhiều phân vùng trong một lần chạy EDL (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H055 | 54. Xác nhận EDL V3.62 hỗ trợ đọc nhiều partition (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H056 | 55. Batch đọc thành công 5 phân vùng devcfg / cmnlib / keymaster (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H057 | 56. Xác minh checksum và đóng gói batch boot-security thành công (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H058 | 57. Chuyển batch boot-security gồm 5 partition sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H059 | 58. Nghiên cứu GPT và kế hoạch batch APDP / PAD / MISC (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H060 | 59. Batch APDP / PAD / MISC đã sao lưu, kiểm tra và chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H061 | 60. Bước tiếp theo sau batch APDP/PAD/MISC: kiểm tra lưu trữ và batch CONFIG/OEM (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H062 | 61. Chuyển thư mục backup tạm từ overlay antiX sang ổ cứng DATA của laptop (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H063 | 62. Người dùng xác nhận format /dev/sda6 làm kho H01 (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H064 | 63. Đã format và mount kho H01DATA thành công (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H065 | 64. Xác nhận quyền ghi kho H01DATA và sẵn sàng dump trực tiếp (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H066 | 65. Batch OEM + CONFIG đã khởi chạy, đang chờ H01 vào EDL (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H067 | 66. Batch OEM + CONFIG dump hoàn tất vào ổ H01DATA (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H068 | 67. Batch OEM + CONFIG đã chuyển đủ 4 tệp sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H069 | 68. Kế hoạch batch hai phân vùng lớn VENDOR + SYSTEM (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H070 | 69. Batch VENDOR + SYSTEM đã dump đủ kích thước (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H071 | 70. Batch VENDOR + SYSTEM đã chuyển 4 tệp sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H072 | 71. Kế hoạch batch kế tiếp: PRODUCTINFO + BOOT + PERSIST + RECOVERY (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H073 | 72. Batch PRODUCTINFO + BOOT + PERSIST + RECOVERY đã dump đủ kích thước (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H074 | 73. Batch PRODUCTINFO + BOOT + PERSIST + RECOVERY đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H075 | 74. Đối chiếu GPT và batch kế tiếp: MODEM / RADIO / SECURITY (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H076 | 75. Batch MODEM + RADIO + SECURITY: đã dump đủ 15 phân vùng (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H077 | 76. Batch MODEM + RADIO + SECURITY: checksum và ZIP đã xác minh (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H078 | 77. Batch MODEM + RADIO + SECURITY đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H079 | 78. Các phân vùng còn lại và thứ tự tiếp tục | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H080 | 79. Phân vùng CACHE đã dump xong (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H081 | 80. CACHE: checksum và ZIP đạt, các thành phần đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H082 | 81. Chuẩn bị backup USERDATA (chưa chạy) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H083 | 82. Kiểm tra dung lượng trước khi sao lưu USERDATA (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H084 | 83. USERDATA đã dump và SHA-256 xác minh thành công (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H085 | 84. USERDATA đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H086 | 85. Trạng thái tổng kết sao lưu H01 | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
-| H087 | 86. Bảng kiểm kê đầy đủ 42 phân vùng GPT H01 (11/11/2026) | [Liên quan](../firmware/edl-partition-backup-batches-20261110-11.md) |
+| H035 | 34. Sao lưu phân vùng splash thành công qua Firehose (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H036 | 35. Chuyển bản sao splash sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H037 | 36. Chuyển bản sao boot sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H038 | 37. Chuyển bản sao recovery sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H039 | 38. Kế hoạch sao lưu boot chain – bắt đầu với sbl1 (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H040 | 39. Sao lưu phân vùng sbl1 thành công qua Firehose (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H041 | 40. Chuyển bản sao sbl1 sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H042 | 41. Sao lưu và chuyển sbl1bak sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H043 | 42. Sao lưu aboot thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H044 | 43. Sao lưu abootbak thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H045 | 44. Kế hoạch sao lưu RPM boot-chain (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H046 | 45. Sao lưu rpm thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H047 | 46. Kế hoạch sao lưu RPM backup (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H048 | 47. Sao lưu rpmbak thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H049 | 48. Kế hoạch sao lưu TZ (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H050 | 49. Sao lưu tz thành công và chuyển sang iPhone (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H051 | 50. Kế hoạch sao lưu TZ backup (10/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H052 | 51. Sao lưu tzbak thành công và chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H053 | 52. Kế hoạch sao lưu devcfg (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H054 | 53. Nghiên cứu đọc nhiều phân vùng trong một lần chạy EDL (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H055 | 54. Xác nhận EDL V3.62 hỗ trợ đọc nhiều partition (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H056 | 55. Batch đọc thành công 5 phân vùng devcfg / cmnlib / keymaster (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H057 | 56. Xác minh checksum và đóng gói batch boot-security thành công (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H058 | 57. Chuyển batch boot-security gồm 5 partition sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H059 | 58. Nghiên cứu GPT và kế hoạch batch APDP / PAD / MISC (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H060 | 59. Batch APDP / PAD / MISC đã sao lưu, kiểm tra và chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H061 | 60. Bước tiếp theo sau batch APDP/PAD/MISC: kiểm tra lưu trữ và batch CONFIG/OEM (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H062 | 61. Chuyển thư mục backup tạm từ overlay antiX sang ổ cứng DATA của laptop (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H063 | 62. Người dùng xác nhận format /dev/sda6 làm kho H01 (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H064 | 63. Đã format và mount kho H01DATA thành công (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H065 | 64. Xác nhận quyền ghi kho H01DATA và sẵn sàng dump trực tiếp (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H066 | 65. Batch OEM + CONFIG đã khởi chạy, đang chờ H01 vào EDL (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H067 | 66. Batch OEM + CONFIG dump hoàn tất vào ổ H01DATA (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H068 | 67. Batch OEM + CONFIG đã chuyển đủ 4 tệp sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H069 | 68. Kế hoạch batch hai phân vùng lớn VENDOR + SYSTEM (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H070 | 69. Batch VENDOR + SYSTEM đã dump đủ kích thước (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H071 | 70. Batch VENDOR + SYSTEM đã chuyển 4 tệp sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H072 | 71. Kế hoạch batch kế tiếp: PRODUCTINFO + BOOT + PERSIST + RECOVERY (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H073 | 72. Batch PRODUCTINFO + BOOT + PERSIST + RECOVERY đã dump đủ kích thước (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H074 | 73. Batch PRODUCTINFO + BOOT + PERSIST + RECOVERY đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H075 | 74. Đối chiếu GPT và batch kế tiếp: MODEM / RADIO / SECURITY (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H076 | 75. Batch MODEM + RADIO + SECURITY: đã dump đủ 15 phân vùng (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H077 | 76. Batch MODEM + RADIO + SECURITY: checksum và ZIP đã xác minh (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H078 | 77. Batch MODEM + RADIO + SECURITY đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H079 | 78. Các phân vùng còn lại và thứ tự tiếp tục | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H080 | 79. Phân vùng CACHE đã dump xong (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H081 | 80. CACHE: checksum và ZIP đạt, các thành phần đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H082 | 81. Chuẩn bị backup USERDATA (chưa chạy) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H083 | 82. Kiểm tra dung lượng trước khi sao lưu USERDATA (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H084 | 83. USERDATA đã dump và SHA-256 xác minh thành công (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H085 | 84. USERDATA đã chuyển sang iPhone (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H086 | 85. Trạng thái tổng kết sao lưu H01 | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
+| H087 | 86. Bảng kiểm kê đầy đủ 42 phân vùng GPT H01 (11/11/2026) | [Liên quan](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) |
 | H088 | 87. Giai đoạn tiếp theo: xác minh SHA-256 trên iPhone và sao lưu raw GPT sectors (11/11/2026) | [Liên quan](../firmware/emmc-iphone-gpt-integrity-timeline.md) |
 | H089 | 88. Primary GPT raw dump hoàn tất (11/11/2026) | [Liên quan](../firmware/emmc-iphone-gpt-integrity-timeline.md) |
 | H090 | 89. Backup GPT raw dump hoàn tất (11/11/2026) | [Liên quan](../firmware/emmc-iphone-gpt-integrity-timeline.md) |
