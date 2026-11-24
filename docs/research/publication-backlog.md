@@ -100,3 +100,9 @@
 - [ ] Nội dung các hồ sơ khác, TXT/ZIP/ảnh/video còn phải kiểm kê và lọc dữ liệu. Không coi có mục lục 207 tiêu đề là đã xuất bản toàn bộ.
 
 **Điều chỉnh mốc thời gian:** dòng “không thử H01 thứ hai” trong kế hoạch ngày 24/11 là giới hạn **không thực hiện thử mới trong nhiệm vụ công bố**. Nó không phủ định nhật ký Notion 23–24/11 ghi các phép thử đã xảy ra trên máy B; đã biên soạn và [ẩn định danh ở đây](h01-device-b-comparison-20261124.md).
+
+## Tiến độ kiểm kê 207 mục (24/11/2026)
+
+- [x] [Bảng liên kết 207 đề mục đến báo cáo theo chủ đề](notion-207-routing-map.md) — **không phải hoàn tất nội dung 207/207**.
+- [x] [Kết quả đọc batch eMMC](../firmware/edl-partition-backup-batches-20261110-11.md), [đối chiếu ZIP/IMG/GPT trên iPhone](../firmware/emmc-iphone-gpt-integrity-timeline.md).
+- [ ] Chưa kiểm soát nội dung chi tiết từng đoạn của toàn bộ 207 mục và mọi file log/ảnh/video; chỉ công bố bản biên soạn đã lược dữ liệu riêng.

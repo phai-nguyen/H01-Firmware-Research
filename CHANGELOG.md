@@ -1,5 +1,12 @@
 # Changelog
 
+## [H01 207-section routing map and backup evidence] — 2026-11-24
+
+- Xuất bản bảng 207 mục gốc → tài liệu GitHub liên quan, chỉ để truy vết nguồn, **không báo cáo đã chuyển đủ 100%**.
+- Bổ sung nhật ký batch EDL và kiểm chứng sao lưu trên iPhone/GPT; không phát hành dump OEM.
+
+
+
 ## [H01 secondary-device research and Share Server documentation] — 2026-11-24
 
 - Bổ sung **5 báo cáo** từ trang Notion H01 23–24/11 và mục Share Server v0.1.4: đối chiếu máy A/B, EDL/unlock/root, DPI/Launcher3/IME, xoay persistent, giao thức truyền file.

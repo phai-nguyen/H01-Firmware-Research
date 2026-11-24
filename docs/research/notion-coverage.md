@@ -116,3 +116,7 @@ Các tệp chỉ biên soạn phát hiện đã lưu và giới hạn kiểm ch�
 | Nhật ký tổng, mục Share Server v0.1.4 | [Giao thức và kết quả thử](../projects/share-server-protocol-v014.md) |
 
 Bằng chứng B tách khỏi A; phần danh sách tệp riêng ở Notion không được sao chép sang repo. Các tệp công khai là **bản biên soạn đã lọc**, không phải toàn văn hồ sơ.
+
+## Bảng truy vết mới (24/11/2026)
+
+Toàn bộ 207 đề mục đã được **gắn tuyến đến báo cáo liên quan** trong [bảng mapping 207 mục](notion-207-routing-map.md). Chưa đối chiếu đủ từng đoạn nội dung; không coi 207 link là 207 báo cáo hoàn chỉnh. Bổ sung [batch EDL](../firmware/edl-partition-backup-batches-20261110-11.md) và [kiểm chứng ZIP/GPT](../firmware/emmc-iphone-gpt-integrity-timeline.md).

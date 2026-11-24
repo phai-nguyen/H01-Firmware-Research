@@ -118,6 +118,11 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 
 Đây là **báo cáo từ nhật ký nghiên cứu đã lưu**, không phải phép thử mới hay hướng dẫn ghi flash. Giữ riêng boot/DEVINFO, serial, HWID, file OEM và dữ liệu cá nhân.
 
+## Kiểm kê và đối chiếu nguồn — 24/11/2026
+
+- [Bảng 207 đề mục H01 liên kết đến báo cáo liên quan](docs/research/notion-207-routing-map.md): **sơ đồ truy vết**, không đồng nghĩa chuyển đủ toàn văn.
+- [Nhật ký sao lưu từng batch EDL](docs/firmware/edl-partition-backup-batches-20261110-11.md) và [kiểm chứng ZIP/GPT trên iPhone](docs/firmware/emmc-iphone-gpt-integrity-timeline.md).
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |
