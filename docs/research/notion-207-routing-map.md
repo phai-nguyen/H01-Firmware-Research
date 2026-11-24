@@ -184,15 +184,15 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H176 | 65. Bản thử H01 Home 0.1: launcher, cử chỉ và quản lý tệp | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
 | H177 | 66. H01 Home 0.2 — mở giao diện GlocalMe và tìm HOME-only | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
 | H178 | 67. Phương án ghép toàn bộ firmware H01 — đối chiếu ngày 18/11/2026 | [Liên quan](../firmware/user-area-reconstruction-overlap-and-gaps.md) |
-| H179 | Nghiên cứu root H01 — chọn Magisk và thử boot RAM | [Liên quan](../boot/magisk-root-timeline.md) |
-| H180 | H01 thật: thử boot RAM ảnh gốc và marker đã đạt | [Liên quan](../boot/magisk-root-timeline.md) |
+| H179 | Nghiên cứu root H01 — chọn Magisk và thử boot RAM | [Liên quan](../boot/magisk-311-vs-307-boot-compatibility.md) |
+| H180 | H01 thật: thử boot RAM ảnh gốc và marker đã đạt | [Liên quan](../boot/magisk-311-vs-307-boot-compatibility.md) |
 | H181 | H01: user_rotation không vượt được yêu cầu ngang — chuẩn bị thử lớp phủ | [Liên quan](../boot/magisk-root-timeline.md) |
-| H182 | Mốc mới: root Magisk 30.7 qua boot RAM đã PASS trên H01 thật | [Liên quan](../boot/magisk-root-timeline.md) |
-| H183 | Thử bật thanh phím Android gốc sau khi có root | [Liên quan](../boot/magisk-root-timeline.md) |
-| H184 | Chuẩn bị root cố định và tự bật thanh phím | [Liên quan](../boot/magisk-root-timeline.md) |
-| H185 | Root cố định đã PASS sau lần ghi boot và khởi động bình thường | [Liên quan](../boot/magisk-root-timeline.md) |
-| H186 | Module tự bật thanh phím đã nạp sau reboot | [Liên quan](../boot/magisk-root-timeline.md) |
-| H187 | Nghiên cứu gỡ FOTA và GlocalMe Feedback | [Liên quan](../system/package-install-and-fota-feedback.md) |
+| H182 | Mốc mới: root Magisk 30.7 qua boot RAM đã PASS trên H01 thật | [Liên quan](../boot/magisk-311-vs-307-boot-compatibility.md) |
+| H183 | Thử bật thanh phím Android gốc sau khi có root | [Liên quan](../system/native-navbar-debug-flags-and-persistence.md) |
+| H184 | Chuẩn bị root cố định và tự bật thanh phím | [Liên quan](../boot/rootctl-mksh-hash-alias-regression.md) |
+| H185 | Root cố định đã PASS sau lần ghi boot và khởi động bình thường | [Liên quan](../boot/rootctl-mksh-hash-alias-regression.md) |
+| H186 | Module tự bật thanh phím đã nạp sau reboot | [Liên quan](../system/native-navbar-debug-flags-and-persistence.md) |
+| H187 | Nghiên cứu gỡ FOTA và GlocalMe Feedback | [Liên quan](../system/fota-feedback-disable-vs-uninstall-final-state.md) |
 | H188 | H01 Home 0.4: bản thử cài APK trực tiếp bằng root | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
 | H189 | Cài APK trực tiếp bằng H01 Home 0.4 đã PASS trên H01 thật | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
 | H190 | Đổi phạm vi: giữ disable, rà ứng dụng để giảm RAM | [Liên quan](../system/ram-and-package-audit.md) |

@@ -156,3 +156,12 @@ Các tài liệu lưu lại diễn biến và phân loại bằng chứng, khôn
 - [Control plane cập nhật UService v16](../system/uservice-update-control-plane-v16.md) — mode runtime chưa đo.
 
 Chỉ là bổ sung phân tích và nguồn chứng cứ; bảng [207 đề mục](notion-207-routing-map.md) vẫn không được phép diễn giải thành 100% nội dung đã chuyển.
+
+## Đối chiếu thêm nhật ký H179–H191 (24/11/2026)
+
+- [Magisk compatibility 31.1/30.7](../boot/magisk-311-vs-307-boot-compatibility.md) tách root RAM và root sau ghi boot.
+- [Root Control mksh hash alias v1.1](../boot/rootctl-mksh-hash-alias-regression.md) có mốc host reproduction và readback sau này.
+- [Thanh điều hướng Android gốc](../system/native-navbar-debug-flags-and-persistence.md) có USER UI PASS và module persistence PASS nhưng không đồng nhất phép thử thao tác phím sau module.
+- [FOTA/Feedback](../system/fota-feedback-disable-vs-uninstall-final-state.md) xác nhận **disable, chưa uninstall** theo quyết định cuối.
+
+Tất cả được biên soạn từ các mục đã đọc trực tiếp trong trang tổng, không phát hành ảnh boot, Magisk module hoặc log nguyên bản.

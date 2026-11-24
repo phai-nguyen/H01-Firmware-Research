@@ -150,3 +150,11 @@
 - [x] [Ma trận Activity và cờ OEM có khả năng ẩn, theo mức rủi ro](../system/hidden-features-manifest-risk-matrix.md), không tự mở chức năng modem/Factory.
 - [x] [Control plane UService v16](../system/uservice-update-control-plane-v16.md), giữ rõ static trigger khác runtime active.
 - [ ] Chưa đọc/đánh giá hết các ảnh/video/log kèm theo từ những phiên thử đã lưu; không công bố bản nhị phân OEM hoặc dữ liệu định danh.
+
+## Tài liệu chuyên sâu về root, navbar và trạng thái package (24/11/2026)
+
+- [x] [Root Magisk: bản 31.1 lỗi unpack, 30.7 boot RAM + root PASS](../boot/magisk-311-vs-307-boot-compatibility.md), H179–H182.
+- [x] [Kiểm hash rootctl v1.1 trên mksh](../boot/rootctl-mksh-hash-alias-regression.md), H184–H185.
+- [x] [Ba phím Android gốc tự hiện sau reboot qua Magisk module](../system/native-navbar-debug-flags-and-persistence.md), H183/H186.
+- [x] [Trạng thái cuối FOTA/Feedback là disabled-user, không uninstall](../system/fota-feedback-disable-vs-uninstall-final-state.md), H187/H190–H191.
+- [ ] Nhật ký ảnh/video/file ZIP gốc còn cần rà soát riêng; không coi 207/207 tiêu đề đã link là 207/207 nội dung hoàn chỉnh.

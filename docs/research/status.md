@@ -135,3 +135,12 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | UService updates | Ba đường FOTA/APK/binary trong code v16 | Mode hiệu lực, lịch và hot-update runtime chưa được đo |
 
 Xem [FOTA metadata](../firmware/fota-filesystem-metadata-source-audit.md), [Hidden Matrix](../system/hidden-features-manifest-risk-matrix.md), [UService v16](../system/uservice-update-control-plane-v16.md).
+
+## Mốc bổ sung — Magisk/Root Control/Navbar/FOTA (24/11/2026)
+
+| Nhánh | Bằng chứng | Tài liệu |
+| --- | --- | --- |
+| Magisk 31.1 vs 30.7 | 31.1 unpack FAIL; 30.7 root RAM REPORTED PASS, bản sau đã root cố định | [Compatibility](../boot/magisk-311-vs-307-boot-compatibility.md) |
+| Rootctl v1.1 | `hash` alias lỗi ở mksh; host 12/12 PASS; device readback v1.1 PASS | [Rootctl](../boot/rootctl-mksh-hash-alias-regression.md) |
+| Navbar | Phím Back/Home/Recents dùng thử PASS, sau boot mới module=enabled/NavigationBar VISIBLE | [Navbar](../system/native-navbar-debug-flags-and-persistence.md) |
+| FOTA/Feedback | Installed=true, enabled=3 user0; chủ thiết bị quyết định **không uninstall** | [Package scope](../system/fota-feedback-disable-vs-uninstall-final-state.md) |

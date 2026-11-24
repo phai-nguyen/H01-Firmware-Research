@@ -163,6 +163,13 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 - [Ma trận Activity/flag ẩn trong H01](docs/system/hidden-features-manifest-risk-matrix.md): phân biệt chức năng hiện diện trong mã, màn hình mở được và phần cứng thực sự hoạt động.
 - [Ba cơ chế cập nhật UService v16 và lịch kiểm tra trong mã](docs/system/uservice-update-control-plane-v16.md): **chưa đo mode tự cập nhật hiệu lực trên H01**.
 
+## Nghiên cứu Magisk, Root Control và thanh phím Android — 24/11/2026
+
+- [Magisk 31.1 lỗi unpack, Magisk 30.7 đã root RAM PASS](docs/boot/magisk-311-vs-307-boot-compatibility.md): phân biệt bản lỗi với bản đã kiểm thử.
+- [Root Control v1.1: chẩn đoán lỗi `hash` trên shell mksh](docs/boot/rootctl-mksh-hash-alias-regression.md): không nhầm lỗi công cụ với lỗi ảnh boot.
+- [Thanh điều hướng Android gốc qua module Magisk](docs/system/native-navbar-debug-flags-and-persistence.md): bằng chứng bật tạm, root cố định và persistence theo từng boot.
+- [FOTA/Feedback: giữ trạng thái disabled-user thay vì uninstall](docs/system/fota-feedback-disable-vs-uninstall-final-state.md): quyết định cuối cùng và các giới hạn RAM.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

@@ -1,5 +1,15 @@
 # Changelog
 
+## [Magisk compatibility, mksh hash fix, navbar persistence and package-state history] — 2026-11-24
+
+- Từ các mục Notion H179–H187 và H190–H191, công bố **4 báo cáo** về Magisk 31.1/30.7, Root Control v1.1, thanh điều hướng Android và trạng thái FOTA/Feedback.
+- Tách `fastboot boot` thử RAM và root cố định sau flash; không suy Magisk được OEM ký lại.
+- Ghi lỗi tên hàm `hash` trong mksh và phép kiểm 12 fixture host, không suy false negative thành mismatch ảnh.
+- Ghi rõ người dùng quyết định **giữ hai package disabled-user, không uninstall**, dù có giai đoạn đề xuất gỡ.
+- Cập nhật 8 tuyến trong mục lục Notion 207 mục tới báo cáo chuyên sâu hơn; không đăng IMG/JAR/OEM binaries hay log chứa ID thiết bị.
+
+
+
 ## [FOTA filesystem metadata, hidden Activity risk and UService v16] — 2026-11-24
 
 - Đọc trực tiếp file `H01-FOTA-files.txt` trên Dropbox: `FOTA.apk` 577.817 byte, `FOTA.odex` 74.208 byte, `FOTA.vdex` 2.865.228 byte; mtime 2008 không được diễn giải thành ngày build.
