@@ -1,5 +1,12 @@
 # Kế hoạch công bố toàn bộ nghiên cứu H01
 
+## Công cụ mở khóa bootloader và root — mã nguồn đã phát hành
+
+- [x] [H01 offline DEVINFO tool](../../tools/h01_unlock/README.md): có script tạo và xác minh candidate bằng ảnh từ máy sở hữu; không có lệnh ghi EDL/ảnh OEM.
+- [x] [H01 Magisk 30.7 root tool](../../tools/h01_root/README.md): có script kiểm hash/boot RAM/backup/flash có xác nhận, lấy từ quy trình bộ gốc ghi trong Notion.
+- [x] [Kiểm thử offline](../../tests/test_h01_toolkits.py) trên dữ liệu giả; không đăng dump/hashes/serial riêng của máy.
+- [ ] Bản công khai tổng quát hóa **chưa thử trên H01 thật**, không đồng nhất kết quả với kit v1.1 đã PASS thực địa trong Notion.
+
 ## Hướng dẫn bootloader và root từ Notion
 
 - [x] Đã biên soạn [quy trình mở khóa bootloader H01](../boot/h01-bootloader-unlock-notion-procedure-20261124.md): chỉ dẫn kiểm Fastboot, bước thực nghiệm DEVINFO được chấp thuận, readback và xác nhận reboot.
