@@ -1,5 +1,12 @@
 # Changelog
 
+## [Notion H035–H087: 53-step EDL/eMMC evidence audit] — 2026-11-24
+
+- Biên soạn **53 dòng truy vết** từ Notion về READ, integrity, chuyển file và các bước chỉ là kế hoạch; phân tách log công cụ với chứng nhận restore.
+- Đối chiếu mốc 42/42 phân vùng, 46/46 ảnh và danh mục 48 IMG của các lượt khác nhau, không cộng lẫn.
+- Cập nhật 53 tuyến trong bản đồ Notion và liên kết README/trạng thái/backlog; không công bố IMG OEM hay dữ liệu người dùng.
+- Chưa có ảnh User Area nguyên dải hoặc khôi phục end-to-end đã PASS.
+
 ## [Notion H142–H170: 29-item OEM unlock evidence chronology] — 2026-11-24
 
 - Đối chiếu 29 mục liên tiếp của nhật ký Fastboot 14/11: OKAY không đồng nghĩa unlock, phân tích ABOOT là tĩnh và QFIL 9008 chỉ xác nhận kết nối host.
