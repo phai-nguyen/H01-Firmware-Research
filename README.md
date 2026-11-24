@@ -148,6 +148,15 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 - [Vendor init RC: **26 dòng stanza** có thể nhận diện, HAL và hostapd](docs/system/vendor-init-hals-hostapd-20261114.md); có `hostapd_dual` không có nghĩa Wi-Fi 5 GHz chạy được.
 - [FOTA ngày 10/11: hai lần status 2101, không có bản cập nhật](docs/firmware/fota-nov10-runtime-no-update-evidence.md). Chỉ là hai lượt lịch sử, không phải dịch vụ OTA hiện tại.
 
+## Nghiên cứu chi tiết J2ME, Home, xoay và ghép eMMC — 24/11/2026
+
+- [Độ phủ ba vùng ngoài phân vùng và chồng lấn GPT backup với userdata](docs/firmware/user-area-reconstruction-overlap-and-gaps.md): **còn thiếu 158.953.472 byte** trong danh sách đã kiểm, chưa có ảnh User Area gốc đầy đủ.
+- [J2ME Loader và KISS Launcher thử trên H01](docs/projects/j2me-kiss-launcher-source-tests.md): **PASS cài/mở UI**, không suy game JAR đã chạy.
+- [Treble/recovery props và lý do ROM/GSI chưa PASS](docs/firmware/h01-treble-recovery-flags-and-rom-decision.md).
+- [H01 Home v0.1–v0.4: lỗi quyền Magisk rồi PASS cài APK thử](docs/projects/h01-home-versions-and-root-installer-evidence.md).
+- [IME v0.1–v0.3: chính sách cửa sổ và mốc PASS](docs/system/ime-nav-policy-window-evidence-v01-v03.md).
+- [Xoay v0.2→v0.3.1: lỗi JNI/Binder và PASS persistent](docs/system/rotation-v02-v031-regression-evidence.md).
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

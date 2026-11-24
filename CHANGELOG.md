@@ -1,5 +1,14 @@
 # Changelog
 
+## [Detailed firmware reconstruction, launcher and UI regression evidence] — 2026-11-24
+
+- Công bố 6 nghiên cứu chi tiết từ các mục H173–H178, H188–H189, H192–H206 của Notion.
+- Đính chính rõ khoảng GPT không phân vùng 159.001.600 byte so với phần dữ liệu chưa nằm trong bộ ảnh đã lưu 158.953.472 byte; cửa sổ backup GPT chồng 95 sector với cuối userdata.
+- Tách kết quả emulator và H01 thật của J2ME/KISS/H01 Home; phân biệt lỗi không cấp root với PASS cài APK ở bản 0.4.
+- Lưu riêng các mốc lỗi JNI preflight, lỗi Binder khi boot và PASS persistent; không đưa bytecode OEM/JAR/modules lên GitHub.
+
+
+
 ## [Direct Dropbox evidence: GPT, vendor init and FOTA] — 2026-11-24
 
 - Đọc lại GPT TXT ngày 11/11 và so từng dòng với CSV GitHub: 42/42 partition metadata trùng ở index, name, LBA, sector count, bytes.

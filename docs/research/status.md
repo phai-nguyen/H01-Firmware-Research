@@ -114,3 +114,14 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | LockSet PIN | Menu/UI và tương phản PASS; tạo PIN/sleep/reboot chưa thử | [High Contrast](../system/lockset-high-contrast-ui-validation.md) |
 | OTA Recovery | Recovery còn version cũ; có incremental 81→87, không cài, không có new update được xác nhận cho build hiện tại | [Recovery trace](../firmware/ota-recovery-version-trace-and-trust-levels.md) |
 | Cache server v15 | Host fixture PASS, không có kết quả thực trên H01 | [v15](../firmware/ota-server-cache-v15-evidence.md) |
+
+## Các kết quả kỹ thuật vừa đối chiếu sâu — 24/11/2026
+
+| Nhánh | Mức bằng chứng | Báo cáo |
+| --- | --- | --- |
+| eMMC User Area reconstruction | 42 ảnh ứng viên size match, **158.953.472 byte gap còn thiếu** ở mốc 18/11; NO FULL IMAGE | [Coverage](../firmware/user-area-reconstruction-overlap-and-gaps.md) |
+| J2ME/KISS | INSTALL/LAUNCHER UI REPORTED PASS; JAR/game not tested | [Tests](../projects/j2me-kiss-launcher-source-tests.md) |
+| Treble GSI | Recovery prop `ro.treble.enabled=true` OBSERVED; no compatible GSI PASS | [Analysis](../firmware/h01-treble-recovery-flags-and-rom-decision.md) |
+| H01 Home v0.4 | Root denied first; app install trial REPORTED PASS after grant | [Home](../projects/h01-home-versions-and-root-installer-evidence.md) |
+| IME navigation | IME open/HIDDEN v0.2 real; module persistent v0.3 after reboot; notification OPEN | [IME](../system/ime-nav-policy-window-evidence-v01-v03.md) |
+| Orientation | v0.2 preflight JNI FAIL; v0.2.1 rotation PASS; v0.3.1 reboot/persistent PASS | [Rotation](../system/rotation-v02-v031-regression-evidence.md) |

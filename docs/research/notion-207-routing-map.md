@@ -178,12 +178,12 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H170 | 59. Lần theo luồng mã của fastboot unlock – xác nhận UI và giới hạn phím cứng | [Liên quan](../boot/oem-unlock-failed-attempts.md) |
 | H171 | 60. Mở khóa bootloader H01 — PASS trên thiết bị thật | [Liên quan](../boot/oem-unlock-research.md) |
 | H172 | 61. Phương án tiếp theo: kiểm chứng boot qua RAM, rồi nghiên cứu root/cứu hộ | [Liên quan](../boot/magisk-root-timeline.md) |
-| H173 | 62. Cài J2ME Loader: xác định danh sách nguồn cài được phép | [Liên quan](../projects/launcher-and-j2me-history.md) |
-| H174 | 63. Nghiên cứu launcher hiển thị danh sách ứng dụng trên H01 | [Liên quan](../projects/launcher-and-j2me-history.md) |
-| H175 | 64. Chọn hướng mở rộng H01: mod firmware gốc hay thay Android | [Liên quan](../projects/launcher-and-j2me-history.md) |
-| H176 | 65. Bản thử H01 Home 0.1: launcher, cử chỉ và quản lý tệp | [Liên quan](../projects/launcher-and-j2me-history.md) |
-| H177 | 66. H01 Home 0.2 — mở giao diện GlocalMe và tìm HOME-only | [Liên quan](../projects/launcher-and-j2me-history.md) |
-| H178 | 67. Phương án ghép toàn bộ firmware H01 — đối chiếu ngày 18/11/2026 | [Liên quan](../firmware/backup-and-reconstruction.md) |
+| H173 | 62. Cài J2ME Loader: xác định danh sách nguồn cài được phép | [Liên quan](../projects/j2me-kiss-launcher-source-tests.md) |
+| H174 | 63. Nghiên cứu launcher hiển thị danh sách ứng dụng trên H01 | [Liên quan](../projects/j2me-kiss-launcher-source-tests.md) |
+| H175 | 64. Chọn hướng mở rộng H01: mod firmware gốc hay thay Android | [Liên quan](../firmware/h01-treble-recovery-flags-and-rom-decision.md) |
+| H176 | 65. Bản thử H01 Home 0.1: launcher, cử chỉ và quản lý tệp | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
+| H177 | 66. H01 Home 0.2 — mở giao diện GlocalMe và tìm HOME-only | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
+| H178 | 67. Phương án ghép toàn bộ firmware H01 — đối chiếu ngày 18/11/2026 | [Liên quan](../firmware/user-area-reconstruction-overlap-and-gaps.md) |
 | H179 | Nghiên cứu root H01 — chọn Magisk và thử boot RAM | [Liên quan](../boot/magisk-root-timeline.md) |
 | H180 | H01 thật: thử boot RAM ảnh gốc và marker đã đạt | [Liên quan](../boot/magisk-root-timeline.md) |
 | H181 | H01: user_rotation không vượt được yêu cầu ngang — chuẩn bị thử lớp phủ | [Liên quan](../boot/magisk-root-timeline.md) |
@@ -193,25 +193,25 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H185 | Root cố định đã PASS sau lần ghi boot và khởi động bình thường | [Liên quan](../boot/magisk-root-timeline.md) |
 | H186 | Module tự bật thanh phím đã nạp sau reboot | [Liên quan](../boot/magisk-root-timeline.md) |
 | H187 | Nghiên cứu gỡ FOTA và GlocalMe Feedback | [Liên quan](../system/package-install-and-fota-feedback.md) |
-| H188 | H01 Home 0.4: bản thử cài APK trực tiếp bằng root | [Liên quan](../projects/h01-home-installer.md) |
-| H189 | Cài APK trực tiếp bằng H01 Home 0.4 đã PASS trên H01 thật | [Liên quan](../projects/h01-home-installer.md) |
+| H188 | H01 Home 0.4: bản thử cài APK trực tiếp bằng root | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
+| H189 | Cài APK trực tiếp bằng H01 Home 0.4 đã PASS trên H01 thật | [Liên quan](../projects/h01-home-versions-and-root-installer-evidence.md) |
 | H190 | Đổi phạm vi: giữ disable, rà ứng dụng để giảm RAM | [Liên quan](../system/ram-and-package-audit.md) |
 | H191 | Kết quả đo RAM trên H01 thật và bước tối ưu tiếp theo | [Liên quan](../system/ram-and-package-audit.md) |
-| H192 | Nghiên cứu tự ẩn thanh điều hướng sau 5 giây | [Liên quan](../system/ime-navigation-research-timeline.md) |
-| H193 | Xác nhận bằng hai báo cáo cửa sổ và thiết kế sửa từng phần | [Liên quan](../system/ime-navigation-research-timeline.md) |
-| H194 | Đã dựng bản IME v0.1 và gói kiểm tra trước khi cài | [Liên quan](../system/ime-navigation-research-timeline.md) |
-| H195 | v0.1 PASS trên H01; đã chuẩn bị v0.2 thử tạm toàn hệ thống | [Liên quan](../system/ime-navigation-research-timeline.md) |
-| H196 | v0.2 đã PASS thực tế; v0.3 nạp qua Magisk lúc khởi động đã đóng gói | [Liên quan](../system/ime-navigation-research-timeline.md) |
-| H197 | v0.3 đã PASS: giữ cố định và nạp lại sau khởi động | [Liên quan](../system/ime-navigation-research-timeline.md) |
-| H198 | Hướng xoay dọc: xác định khóa trong firmware | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H199 | Bộ thử xoay dọc v0.1 đã dựng, chờ kiểm tra H01 | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H200 | Xoay dọc v0.1 PASS thực tế; nghiên cứu cảm biến và khóa hướng | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H201 | Chuyển dọc/ngang thủ công v0.2: đã dựng gói thử | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H202 | Sửa lỗi bộ kiểm tra xoay tay: v0.2.1 | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H203 | Xoay thủ công v0.2.1 đã PASS trên H01 | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H204 | Gói giữ hướng qua khởi động v0.3 đã tạo | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H205 | Sửa gói cố định v0.3.1: hai trạng thái lỗi đã được phân biệt | [Liên quan](../system/rotation-and-sensors-timeline.md) |
-| H206 | Hoàn tất kiểm chứng khóa xoay v0.3.1 sau khởi động lại | [Liên quan](../system/rotation-and-sensors-timeline.md) |
+| H192 | Nghiên cứu tự ẩn thanh điều hướng sau 5 giây | [Liên quan](../system/ime-nav-policy-window-evidence-v01-v03.md) |
+| H193 | Xác nhận bằng hai báo cáo cửa sổ và thiết kế sửa từng phần | [Liên quan](../system/ime-nav-policy-window-evidence-v01-v03.md) |
+| H194 | Đã dựng bản IME v0.1 và gói kiểm tra trước khi cài | [Liên quan](../system/ime-nav-policy-window-evidence-v01-v03.md) |
+| H195 | v0.1 PASS trên H01; đã chuẩn bị v0.2 thử tạm toàn hệ thống | [Liên quan](../system/ime-nav-policy-window-evidence-v01-v03.md) |
+| H196 | v0.2 đã PASS thực tế; v0.3 nạp qua Magisk lúc khởi động đã đóng gói | [Liên quan](../system/ime-nav-policy-window-evidence-v01-v03.md) |
+| H197 | v0.3 đã PASS: giữ cố định và nạp lại sau khởi động | [Liên quan](../system/ime-nav-policy-window-evidence-v01-v03.md) |
+| H198 | Hướng xoay dọc: xác định khóa trong firmware | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H199 | Bộ thử xoay dọc v0.1 đã dựng, chờ kiểm tra H01 | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H200 | Xoay dọc v0.1 PASS thực tế; nghiên cứu cảm biến và khóa hướng | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H201 | Chuyển dọc/ngang thủ công v0.2: đã dựng gói thử | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H202 | Sửa lỗi bộ kiểm tra xoay tay: v0.2.1 | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H203 | Xoay thủ công v0.2.1 đã PASS trên H01 | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H204 | Gói giữ hướng qua khởi động v0.3 đã tạo | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H205 | Sửa gói cố định v0.3.1: hai trạng thái lỗi đã được phân biệt | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
+| H206 | Hoàn tất kiểm chứng khóa xoay v0.3.1 sau khởi động lại | [Liên quan](../system/rotation-v02-v031-regression-evidence.md) |
 | H207 | Share Server H01 — chốt bản ổn định cuối v0.1.4 | [Liên quan](../projects/share-server-protocol-v014.md) |
 
 ## Cách đọc kết quả

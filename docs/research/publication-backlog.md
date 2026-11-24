@@ -133,3 +133,13 @@
 - [x] [Vendor init HAL/hostapd](../system/vendor-init-hals-hostapd-20261114.md): hai bản text trùng, 26 stanza có thể nhận diện; không khẳng định hoạt động dual-band.
 - [x] [FOTA 10/11/2026, hai phản hồi 2101](../firmware/fota-nov10-runtime-no-update-evidence.md); không chia sẻ credential/request.
 - [ ] Rà tiếp các tệp nguồn chưa có bản biên soạn công khai an toàn; không đăng IMG/ZIP firmware OEM, log định danh hoặc profile SIM.
+
+## Bổ sung chi tiết H173–H206 — 24/11/2026
+
+- [x] [Độ phủ eMMC, gap và chồng lấn backup GPT/userdata](../firmware/user-area-reconstruction-overlap-and-gaps.md): **NOT A FULL RESTORE IMAGE**.
+- [x] [J2ME Loader 1.8.2 và KISS v3.27.1](../projects/j2me-kiss-launcher-source-tests.md): chỉ PASS install/UI, chưa PASS chạy JAR.
+- [x] [Treble/recovery property, đối chiếu ROM/GSI](../firmware/h01-treble-recovery-flags-and-rom-decision.md): không có ROM mới đã PASS.
+- [x] [H01 Home v0.1–0.4 và cài APK bằng root](../projects/h01-home-versions-and-root-installer-evidence.md).
+- [x] [IME/nav v0.1–0.3 và các flag khi bàn phím mở](../system/ime-nav-policy-window-evidence-v01-v03.md).
+- [x] [Xoay v0.2, v0.2.1 và v0.3.1](../system/rotation-v02-v031-regression-evidence.md).
+- [ ] Vẫn còn các đính kèm cần kiểm theo mức độ riêng; không đánh dấu mọi nội dung Notion hoàn thành vì có liên kết chủ đề.

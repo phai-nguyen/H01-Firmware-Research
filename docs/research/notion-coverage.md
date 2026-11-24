@@ -140,3 +140,11 @@ Toàn bộ 207 đề mục đã được **gắn tuyến đến báo cáo liên 
 - [FOTA 10/11 đã trả 2101 ở hai lần hỏi](../firmware/fota-nov10-runtime-no-update-evidence.md).
 
 Đây là nội dung biên soạn từ các TXT đã kiểm, không tự tính là bằng chứng cập nhật mới hoặc tăng tỷ lệ 207 đề mục gốc đã hoàn tất.
+
+## Đối chiếu cụ thể thêm các mục H173–H206 (24/11)
+
+- [J2ME/KISS](../projects/j2me-kiss-launcher-source-tests.md) (H173–174), [Treble/ROM](../firmware/h01-treble-recovery-flags-and-rom-decision.md) (H175).
+- [H01 Home](../projects/h01-home-versions-and-root-installer-evidence.md) (H176–177, H188–189), [bộ ảnh User Area](../firmware/user-area-reconstruction-overlap-and-gaps.md) (H178).
+- [IME](../system/ime-nav-policy-window-evidence-v01-v03.md) (H192–197), [xoay thủ công/persistent](../system/rotation-v02-v031-regression-evidence.md) (H198–206).
+
+Các tài liệu lưu lại diễn biến và phân loại bằng chứng, không đưa APK/IMG/JAR OEM hoặc nhật ký riêng lên repository.
