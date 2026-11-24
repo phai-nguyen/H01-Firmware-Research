@@ -168,3 +168,9 @@
 - [ ] Kiểm từng mục H001–H207 ở cấp đoạn và tất cả đính kèm liên quan; bản đồ 207/207 chỉ là mục lục truy vết.
 - [ ] Đối chiếu thêm các nguồn TXT/ZIP/ảnh/video trong kho riêng đã khử định danh, không đăng firmware OEM, dữ liệu SIM hoặc định danh.
 - [ ] Chưa có log 5 GHz cùng thời điểm lỗi, danh sách khả năng radio hoặc thiết bị khác xác nhận SoftAP 5 GHz PASS.
+
+## Nhóm H142–H170: đối chiếu chi tiết OEM Unlock
+
+- [x] [Báo cáo 29 mục H142–H170](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md): tách phản hồi Fastboot, ABOOT tĩnh, snapshot Android và nguồn EDL.
+- [x] Đã cập nhật 29 liên kết trong [bảng 207 mục](notion-207-routing-map.md), không còn phụ thuộc một bài tóm tắt chung.
+- [ ] Còn ảnh CMD, TXT, dump ABOOT/DEVINFO trong kho riêng phải rà quyền phát hành/ẩn định danh; chỉ đăng phân tích an toàn, không đăng bản nhị phân OEM.
