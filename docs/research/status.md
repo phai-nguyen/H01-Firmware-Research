@@ -125,3 +125,13 @@ Xem [bản đồ nguồn](notion-coverage.md) và [backlog công bố](publicati
 | H01 Home v0.4 | Root denied first; app install trial REPORTED PASS after grant | [Home](../projects/h01-home-versions-and-root-installer-evidence.md) |
 | IME navigation | IME open/HIDDEN v0.2 real; module persistent v0.3 after reboot; notification OPEN | [IME](../system/ime-nav-policy-window-evidence-v01-v03.md) |
 | Orientation | v0.2 preflight JNI FAIL; v0.2.1 rotation PASS; v0.3.1 reboot/persistent PASS | [Rotation](../system/rotation-v02-v031-regression-evidence.md) |
+
+## Bằng chứng công bố bổ sung — 24/11/2026
+
+| Phần | Phạm vi đã xác nhận từ nguồn | Giới hạn |
+| --- | --- | --- |
+| FOTA files | APK/ODEX/VDEX sizes MATCH giữa Dropbox TXT và Notion | Tên file/mtime không xác minh build, không tính lại binary hash |
+| Hidden Activity | Manifest/DEX và cờ OEM có mặt trong các mẫu phân tích | Chưa chạy tất cả Activity, không xác nhận tính năng phần cứng |
+| UService updates | Ba đường FOTA/APK/binary trong code v16 | Mode hiệu lực, lịch và hot-update runtime chưa được đo |
+
+Xem [FOTA metadata](../firmware/fota-filesystem-metadata-source-audit.md), [Hidden Matrix](../system/hidden-features-manifest-risk-matrix.md), [UService v16](../system/uservice-update-control-plane-v16.md).

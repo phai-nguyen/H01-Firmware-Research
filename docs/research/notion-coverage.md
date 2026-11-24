@@ -148,3 +148,11 @@ Toàn bộ 207 đề mục đã được **gắn tuyến đến báo cáo liên 
 - [IME](../system/ime-nav-policy-window-evidence-v01-v03.md) (H192–197), [xoay thủ công/persistent](../system/rotation-v02-v031-regression-evidence.md) (H198–206).
 
 Các tài liệu lưu lại diễn biến và phân loại bằng chứng, không đưa APK/IMG/JAR OEM hoặc nhật ký riêng lên repository.
+
+## Đối chiếu FOTA metadata và các chuyên đề (24/11/2026)
+
+- [FOTA file list từ Dropbox](../firmware/fota-filesystem-metadata-source-audit.md) — nguồn là TXT liệt kê, không phải bytecode dump mới.
+- [Risk matrix của Activity/flags ẩn](../system/hidden-features-manifest-risk-matrix.md) — dựa trực tiếp Notion ngày 19/11, chưa chứng minh tất cả Activity mở được.
+- [Control plane cập nhật UService v16](../system/uservice-update-control-plane-v16.md) — mode runtime chưa đo.
+
+Chỉ là bổ sung phân tích và nguồn chứng cứ; bảng [207 đề mục](notion-207-routing-map.md) vẫn không được phép diễn giải thành 100% nội dung đã chuyển.

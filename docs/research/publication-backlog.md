@@ -143,3 +143,10 @@
 - [x] [IME/nav v0.1–0.3 và các flag khi bàn phím mở](../system/ime-nav-policy-window-evidence-v01-v03.md).
 - [x] [Xoay v0.2, v0.2.1 và v0.3.1](../system/rotation-v02-v031-regression-evidence.md).
 - [ ] Vẫn còn các đính kèm cần kiểm theo mức độ riêng; không đánh dấu mọi nội dung Notion hoàn thành vì có liên kết chủ đề.
+
+## Nguồn FOTA/Hidden/UService đối chiếu lại (24/11/2026)
+
+- [x] [Bản liệt kê FOTA.apk/ODEX/VDEX trực tiếp từ Dropbox](../firmware/fota-filesystem-metadata-source-audit.md), không coi timestamp 2008 là ngày phát hành.
+- [x] [Ma trận Activity và cờ OEM có khả năng ẩn, theo mức rủi ro](../system/hidden-features-manifest-risk-matrix.md), không tự mở chức năng modem/Factory.
+- [x] [Control plane UService v16](../system/uservice-update-control-plane-v16.md), giữ rõ static trigger khác runtime active.
+- [ ] Chưa đọc/đánh giá hết các ảnh/video/log kèm theo từ những phiên thử đã lưu; không công bố bản nhị phân OEM hoặc dữ liệu định danh.

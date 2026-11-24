@@ -50,3 +50,11 @@ Không kiểm thử thiết bị hoặc nạp module trong lần xuất bản n�
 ## Đọc lại trực tiếp Dropbox — 24/11/2026
 
 Nguồn đã mở: `H01-GPT-map-20261111.txt`, `H01-vendor-init-rc.txt`, `H01-vendor-init-rc 2.txt`, `H01-ota-check-current.txt`. Kết quả: [bảng GPT 42/42 khớp](../firmware/gpt-dropbox-csv-direct-audit-20261124.md), [service init/HAL](../system/vendor-init-hals-hostapd-20261114.md), [hai log FOTA 2101](../firmware/fota-nov10-runtime-no-update-evidence.md). Không đưa Disk GUID, partition Unique GUID, request URL có product/device ID, signature, IMEI hoặc dữ liệu riêng vào GitHub.
+
+## Nguồn bổ sung ngày 24/11/2026 — FOTA, Hidden Activity, UService
+
+- **Dropbox `/H01/H01-FOTA-files.txt`:** đã mở trực tiếp bản liệt kê và xác nhận ba kích thước APK/ODEX/VDEX so với [Notion tổng H01 mục 4](https://app.notion.com/p/414c5d5277a981898f7be2712da8f7cd). Chỉ công bố metadata [ở đây](../firmware/fota-filesystem-metadata-source-audit.md); không tải APK.
+- **Notion “Phân tích chức năng ẩn từ APK/ODEX/VDEX” (19/11):** đọc lại các mục 4, 5 và 7, biên soạn [ma trận chức năng/Activity](../system/hidden-features-manifest-risk-matrix.md).
+- **Notion “Nghiên cứu OTA” (22/11), mục 20 — v16:** đọc lại các mode/trigger và rủi ro state-changing, biên soạn [báo cáo cập nhật UService](../system/uservice-update-control-plane-v16.md).
+
+Cả ba nguồn chứa hoặc tham chiếu tệp riêng. Không công bố ciphertext/khóa, URLs có credentials, serial, IMEI, dữ liệu SIM, APK/ODEX/VDEX hoặc toàn bộ log.

@@ -157,6 +157,12 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 - [IME v0.1–v0.3: chính sách cửa sổ và mốc PASS](docs/system/ime-nav-policy-window-evidence-v01-v03.md).
 - [Xoay v0.2→v0.3.1: lỗi JNI/Binder và PASS persistent](docs/system/rotation-v02-v031-regression-evidence.md).
 
+## Bổ sung chứng cứ FOTA, UService và tính năng ẩn — 24/11/2026
+
+- [Danh sách FOTA.apk/ODEX/VDEX từ Dropbox](docs/firmware/fota-filesystem-metadata-source-audit.md): kích thước khớp hồ sơ Notion; **mtime 2008 không chứng minh ngày build firmware**.
+- [Ma trận Activity/flag ẩn trong H01](docs/system/hidden-features-manifest-risk-matrix.md): phân biệt chức năng hiện diện trong mã, màn hình mở được và phần cứng thực sự hoạt động.
+- [Ba cơ chế cập nhật UService v16 và lịch kiểm tra trong mã](docs/system/uservice-update-control-plane-v16.md): **chưa đo mode tự cập nhật hiệu lực trên H01**.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

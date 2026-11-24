@@ -1,5 +1,14 @@
 # Changelog
 
+## [FOTA filesystem metadata, hidden Activity risk and UService v16] — 2026-11-24
+
+- Đọc trực tiếp file `H01-FOTA-files.txt` trên Dropbox: `FOTA.apk` 577.817 byte, `FOTA.odex` 74.208 byte, `FOTA.vdex` 2.865.228 byte; mtime 2008 không được diễn giải thành ngày build.
+- Đối chiếu trang Notion 19/11 để lập ma trận Activity, OEM flags, feature declarations và rủi ro thử nghiệm; không kích hoạt chức năng ẩn.
+- Từ nghiên cứu UService v16, phân biệt ba cơ chế update và các trigger nguồn tĩnh với mode runtime chưa được đo.
+- Chỉ bổ sung Markdown; không phát hành binary OEM, request credentials hoặc dữ liệu máy.
+
+
+
 ## [Detailed firmware reconstruction, launcher and UI regression evidence] — 2026-11-24
 
 - Công bố 6 nghiên cứu chi tiết từ các mục H173–H178, H188–H189, H192–H206 của Notion.
