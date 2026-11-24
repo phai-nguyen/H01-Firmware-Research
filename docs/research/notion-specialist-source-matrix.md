@@ -1,5 +1,7 @@
 # H01 — bảng đối chiếu nguồn Notion chuyên đề (24/11/2026)
 
+**Bổ sung:** [Kiểm toán theo kết luận của 16 trang Notion chuyên đề](notion-16-specialist-pages-publication-audit-20261124.md) và [quy định chỉ công bố thông tin đã ghi Notion](notion-only-publication-policy-20261124.md). Ma trận hiện tại vẫn giữ các báo cáo chuyên sâu đã công bố, không thay bằng bảng tóm tắt một dòng.
+
 **Phạm vi:** 17 trang H01 được trả về khi tìm kiếm theo từ khóa "H01" trong Notion, gồm **1 trang tổng với 207 đề mục** và **16 trang chuyên đề**. Đây là kết quả tìm kiếm tại thời điểm khảo sát, **không xác nhận đã tìm được mọi tài liệu H01 trong toàn bộ workspace**.
 
 Bảng dưới đây cho biết **đã có báo cáo GitHub liên quan** cho từng trang, **không có nghĩa toàn văn trang và mọi đính kèm đã được chuyển**. Báo cáo công khai là bản biên soạn, giữ nguyên các cấp độ VERIFIED / REPORTED PASS / OPEN và tình trạng đã tạm dừng khi phù hợp.
