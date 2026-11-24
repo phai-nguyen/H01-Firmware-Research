@@ -6,6 +6,22 @@
 
 English: [README.en.md](README.en.md)
 
+## Phạm vi công bố chốt ngày 24/11/2026 — chỉ từ Notion
+
+**Theo quyết định của chủ dự án, mọi báo cáo H01 mới chỉ được công bố sau khi thông tin đã có trong Notion.** Những thử nghiệm và ý tưởng chưa ghi vào Notion để trạng thái chờ. Xem [quy định nguồn](docs/research/notion-only-publication-policy-20261124.md).
+
+Đã xuất bản bản đối chiếu kết luận nghiên cứu theo toàn bộ **207/207 đề mục** của trang Notion tổng và **16/16 trang chuyên đề H01 đã tìm thấy**:
+
+- [H001–H034: ghi chép firmware ban đầu](docs/research/notion-h001-h034-early-firmware-notes-audit-20261124.md)
+- [H035–H087: chuỗi sao lưu EDL/eMMC](docs/firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md)
+- [H088–H099: GPT và kiểm SHA-256 trên iPhone](docs/firmware/notion-h088-h099-gpt-iphone-integrity-audit-20261124.md)
+- [H100–H141: boot, Secure World, EDL và MMC](docs/research/notion-h100-h141-boot-security-firehose-mmc-audit-20261124.md)
+- [H142–H170: diễn biến mở khóa OEM](docs/boot/oem-unlock-h142-h170-evidence-chronology-20261124.md)
+- [H171–H207: J2ME, root, IME, xoay, Share Server](docs/research/notion-h171-h207-app-root-ime-rotation-timeline-20261124.md)
+- [Kiểm toán 16 trang Notion chuyên đề](docs/research/notion-16-specialist-pages-publication-audit-20261124.md)
+
+**Chú ý:** Đây là **độ phủ mục lục/kết luận đã lọc**, không phải 100% toàn văn, ảnh, TXT, ZIP, RAR hoặc ROM được xuất bản. Các nguồn gốc chứa dữ liệu riêng và binary hãng tiếp tục được giữ khỏi repository công khai.
+
 ## Báo cáo bổ sung — đối chiếu mục còn thiếu (24/11/2026)
 
 - [Kiểm toán từng bước EDL/eMMC H035–H087](docs/firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md): **53 mục** về đọc, sao lưu, kiểm integrity và chuyển file; chưa phải bộ cứu hộ firmware.
