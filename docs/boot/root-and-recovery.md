@@ -16,3 +16,10 @@
 - Cấu hình đã PASS của một máy **không** chứng minh an toàn cho máy khác.
 
 Tài liệu thực hành chi tiết sẽ được bổ sung sau khi tẩy dữ liệu nhạy cảm khỏi log và xây dựng quy trình cứu hộ đã xác minh.
+
+## Hướng dẫn theo trình tự đã ghi trong Notion
+
+- [Mở khóa bootloader H01: cơ chế OEM/DEVINFO và cách xác minh](h01-bootloader-unlock-notion-procedure-20261124.md).
+- [Root Magisk 30.7: vá boot đúng máy, boot RAM, root cố định](h01-magisk-root-notion-procedure-20261124.md).
+
+Hai tài liệu mô tả kết quả từng bước và điều kiện dừng, **không** cung cấp script ghi DEVINFO/boot đại trà cho mọi H01.
