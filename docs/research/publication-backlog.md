@@ -158,3 +158,13 @@
 - [x] [Ba phím Android gốc tự hiện sau reboot qua Magisk module](../system/native-navbar-debug-flags-and-persistence.md), H183/H186.
 - [x] [Trạng thái cuối FOTA/Feedback là disabled-user, không uninstall](../system/fota-feedback-disable-vs-uninstall-final-state.md), H187/H190–H191.
 - [ ] Nhật ký ảnh/video/file ZIP gốc còn cần rà soát riêng; không coi 207/207 tiêu đề đã link là 207/207 nội dung hoàn chỉnh.
+
+## Lô bổ sung ngày 24/11/2026 — sửa khoảng trống H007–H013
+
+- [x] [Phân tích lịch sử H007–H013](h007-h013-initial-baseline-reconciliation-20261124.md): khắc phục tuyến `overview.md`, đánh dấu kết luận đã được thay thế theo thời gian.
+- [x] [Ma trận package và dependency](../system/system-app-dependency-baseline-20261124.md): kiểm kê ứng dụng H008, FOTA/Feedback cuối cùng và các dịch vụ không được tắt tùy tiện.
+- [x] [Bằng chứng Wi-Fi 2,4/5 GHz](../network/wifi-24ghz-5ghz-hotspot-evidence-20261124.md): chỉ tách config/vendor init, hiện tượng do người dùng báo cáo và những phép thử còn thiếu.
+- [x] Đã sửa 7 tuyến trong [bản đồ 207 mục](notion-207-routing-map.md); báo cáo có nội dung cụ thể, không còn trỏ generic firmware overview.
+- [ ] Kiểm từng mục H001–H207 ở cấp đoạn và tất cả đính kèm liên quan; bản đồ 207/207 chỉ là mục lục truy vết.
+- [ ] Đối chiếu thêm các nguồn TXT/ZIP/ảnh/video trong kho riêng đã khử định danh, không đăng firmware OEM, dữ liệu SIM hoặc định danh.
+- [ ] Chưa có log 5 GHz cùng thời điểm lỗi, danh sách khả năng radio hoặc thiết bị khác xác nhận SoftAP 5 GHz PASS.
