@@ -31,3 +31,5 @@ Thư mục `~/edl` ban đầu nằm trên **overlay/RAM** của antiX Live (~1,5
 Nguồn tổng hợp ngày 11/11 ghi **42/42 phân vùng GPT có ảnh và sidecar**, nhưng số IMG có thể vượt 42 khi tính cả ảnh GPT metadata và các thế hệ dump. Không đăng ảnh OEM, userdata, dữ liệu SIM/NV hoặc đường dẫn riêng.
 
 Xem [đối chiếu ZIP/iPhone](emmc-iphone-gpt-integrity-timeline.md), [GPT gaps](gpt-unallocated-regions-and-integrity.md).
+
+**Bổ sung kiểm toán 24/11:** [Bảng truy vết riêng cả 53 đề mục H035–H087](edl-h035-h087-per-item-acquisition-audit-20261124.md) phân biệt kế hoạch, từng lần READ, kiểm integrity và chuyển file. Báo cáo tóm tắt này vẫn là tổng quan lịch sử, không phải ảnh cứu hộ hoàn chỉnh.
