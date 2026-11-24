@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy to config.local.json; fill values only from THIS H01. Never commit private config.",
+  "serial": "REPLACE_WITH_YOUR_H01_SERIAL",
+  "stock_image": "boot-goc.img",
+  "patched_image": "boot-root.img",
+  "stock_sha256": "REPLACE_WITH_INDEPENDENT_STOCK_SHA256",
+  "patched_sha256": "REPLACE_WITH_INDEPENDENT_PATCHED_SHA256"
+}
