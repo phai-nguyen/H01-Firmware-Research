@@ -20,7 +20,7 @@ Việc tìm Notion theo từ khóa **H01** tại thời điểm kiểm kê đưa
 
 ## Nội dung được giữ lại ở trạng thái chờ
 
-- Phân tích **Wi-Fi hotspot 5 GHz bị tắt** khi đổi băng tần: trong 17 trang Notion đã kiểm, chưa tìm thấy một đoạn ghi nhận hiện tượng thử nghiệm đó. Đã rút báo cáo được soạn từ cuộc trò chuyện khỏi nhánh công khai chính của repository và gỡ liên kết trong các trang chỉ mục; Git vẫn có thể lưu lịch sử commit cũ, việc rút khỏi nhánh hiện tại **không** tương đương xóa khỏi lịch sử.
+- Các ghi nhận thử nghiệm chỉ xuất hiện trong cuộc trò chuyện, chưa được ghi Notion: không đưa vào báo cáo công khai. Một báo cáo trước đó không đáp ứng điều kiện nguồn đã được rút khỏi nhánh chính và gỡ liên kết; Git vẫn có thể lưu lịch sử commit cũ, việc rút khỏi nhánh hiện tại **không** tương đương xóa khỏi lịch sử.
 - Các nghiên cứu H01 phát sinh về sau hoặc chưa được ghi vào Notion **không tự nhập** vào tập báo cáo công khai.
 
 ## Chưa được chứng nhận
