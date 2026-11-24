@@ -158,3 +158,11 @@ Xem [FOTA metadata](../firmware/fota-filesystem-metadata-source-audit.md), [Hidd
 ## Bổ sung truy vết H142–H170 — 24/11/2026
 
 **29/29 đề mục** trong nhánh OEM Unlock ngày 14/11 đã có bảng phân biệt lệnh OKAY, trạng thái `locked` quan sát được và các bước phân tích tĩnh. Mốc kết quả sau ngày 18/11 vẫn được giữ riêng ở H171. [Xem báo cáo](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md). **Không đồng nghĩa 29/29 file nguồn đã được xử lý/công bố toàn văn.**
+
+## Bổ sung kiểm toán H035–H087 — 24/11/2026
+
+| Nhánh | Độ phủ mới | Giới hạn |
+| --- | --- | --- |
+| EDL/eMMC 10–11/11 | [53/53 đề mục có một dòng bằng chứng riêng](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md) | Chưa có toàn văn ảnh/log/ZIP công khai, không có restore PASS |
+
+Báo cáo này phân biệt **kế hoạch**, **READ 100%**, **SHA/ZIP báo PASS** và **tệp đã chuyển**; chúng không thay thế cho nhau.
