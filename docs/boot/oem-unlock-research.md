@@ -25,3 +25,5 @@ Trong dump ABOOT, hai nhãn metadata dẫn đến những nhánh khởi tạo c�
 - Nhánh OEM có thể yêu cầu xác nhận hoặc **wipe userdata**. Không chạy lại unlock/ghi metadata trên H01 đang hoạt động tốt khi không có backup và đường cứu hộ.
 
 **Liên quan:** [root/recovery](root-and-recovery.md), [kiểm tra eMMC](../firmware/emmc-backup-verification.md), [Firehose](../firmware/edl-firehose-diagnostics.md).
+
+**Bản hướng dẫn có thứ tự các bước từ Notion:** [H01 bootloader unlock procedure](h01-bootloader-unlock-notion-procedure-20261124.md). Chỉ áp dụng phạm vi và mức bằng chứng đã nêu; không cung cấp patch/ảnh DEVINFO dùng chung.
