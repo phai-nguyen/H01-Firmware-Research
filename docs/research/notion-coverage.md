@@ -124,3 +124,7 @@ Toàn bộ 207 đề mục đã được **gắn tuyến đến báo cáo liên 
 ## Nguồn ngoài nhật ký tổng (24/11/2026)
 
 Đã tóm tắt báo cáo TXT trực tiếp trên Dropbox về [USB host/EDL](../firmware/edl-usb-host-endpoint-diagnostics-20261114.md) và [MMC/sysfs](../hardware/mmc-hosts-sysfs-dac-evidence-20261114.md); đồng thời chuyển các mục phần cứng/ADB/Fastboot lịch sử thành [PCB](../hardware/h01-board-pads-and-identification.md), [ADB](../system/adb-pre-root-baseline-and-limitations.md), [Fastboot](../boot/fastboot-device-info-gpt-audit.md). Xem [ranh giới nguồn](source-boundaries-and-coverage.md). Không công bố nguyên bản log và số định danh.
+
+## Trang Notion H01 chuyên đề — lập bảng ngày 24/11
+
+Đã lập [bảng 17 trang](notion-specialist-source-matrix.md), mỗi trang có đường tới ít nhất một báo cáo công khai liên quan. Bảng này **không** phải công bố toàn văn 16 trang hay tất cả đính kèm. Kết quả nguồn cần kiểm thêm theo tiêu chí ở trang bảng đối chiếu.

@@ -9,9 +9,9 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H001 | 1. Thiết bị và môi trường nghiên cứu | [Liên quan](../hardware/h01-board-pads-and-identification.md) |
 | H002 | 2. Mục tiêu và phạm vi | [Liên quan](../hardware/h01-board-pads-and-identification.md) |
 | H003 | 3. ADB và giới hạn quyền | [Liên quan](../system/adb-pre-root-baseline-and-limitations.md) |
-| H004 | 4. Nhánh FOTA / ABUP | [Liên quan](../firmware/overview.md) |
-| H005 | 5. Nhánh UCloudlink native libraries | [Liên quan](../firmware/overview.md) |
-| H006 | 6. Nhánh UService | [Liên quan](../firmware/overview.md) |
+| H004 | 4. Nhánh FOTA / ABUP | [Liên quan](../firmware/fota-vdex010-dequickening-evidence.md) |
+| H005 | 5. Nhánh UCloudlink native libraries | [Liên quan](../network/ucloudlink-elf-library-symbol-inventory.md) |
+| H006 | 6. Nhánh UService | [Liên quan](../system/uservice-vdex010-recovery-progression.md) |
 | H007 | 7. Daemon UCloudlink và tiến trình runtime | [Liên quan](../firmware/overview.md) |
 | H008 | 8. Ứng dụng và hệ thống khác đã nhận diện | [Liên quan](../firmware/overview.md) |
 | H009 | 9. Những điều chưa được xác minh | [Liên quan](../firmware/overview.md) |
@@ -19,7 +19,7 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H011 | 11. Tệp và dữ liệu đã thu thập | [Liên quan](../firmware/overview.md) |
 | H012 | 12. Quy tắc vận hành và an toàn | [Liên quan](../firmware/overview.md) |
 | H013 | 13. Nhật ký các kết luận chính | [Liên quan](../firmware/overview.md) |
-| H014 | 14. Bổ sung ngày 10/11/2026 – Khôi phục DEX UService và phân tích loader | [Liên quan](../system/uservice-loader.md) |
+| H014 | 14. Bổ sung ngày 10/11/2026 – Khôi phục DEX UService và phân tích loader | [Liên quan](../system/uservice-vdex010-recovery-progression.md) |
 | H015 | 15. Bổ sung ngày 10/11/2026 – Phân tích socket runtime | [Liên quan](../network/ucloud-daemons-and-sockets.md) |
 | H016 | 16. Bổ sung – Snapshot PID daemon đối chiếu socket (ảnh CMD mới) | [Liên quan](../system/adb-pre-root-baseline-and-limitations.md) |
 | H017 | 17. Bổ sung – Không đọc được file descriptor của daemon root | [Liên quan](../system/adb-pre-root-baseline-and-limitations.md) |

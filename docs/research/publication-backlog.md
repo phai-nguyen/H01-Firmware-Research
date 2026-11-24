@@ -113,3 +113,10 @@
 - [x] [USB 9008/PyUSB](../firmware/edl-usb-host-endpoint-diagnostics-20261114.md) và [MMC/sysfs](../hardware/mmc-hosts-sysfs-dac-evidence-20261114.md) được rút từ các báo cáo TXT có thật trên Dropbox.
 - [x] [Ranh giới các nguồn đã kiểm kê](source-boundaries-and-coverage.md).
 - [ ] Chưa duyệt từng nguồn log/ZIP/video còn lại để xác định phần nào có thể công bố thêm; không được đăng firmware OEM, dữ liệu SIM hay định danh.
+
+## Rà các chuyên đề Notion (24/11/2026)
+
+- [x] [Bảng tra 17 trang H01](notion-specialist-source-matrix.md) và [207 mục tổng](notion-207-routing-map.md).
+- [x] [OTA server cache v15](../firmware/ota-server-cache-v15-evidence.md), [audio test matrix](../system/audio-playback-test-matrix-20261121.md), [ẩn tính năng scanner](../system/hidden-scanner-parser-failure-and-recovery.md), [Log Tools 2846](../system/assistant-2846-log-tools-safety-evidence.md).
+- [x] [FOTA VDEX](../firmware/fota-vdex010-dequickening-evidence.md), [UService VDEX](../system/uservice-vdex010-recovery-progression.md), [UCloudlink ELF](../network/ucloudlink-elf-library-symbol-inventory.md).
+- [ ] Phải kiểm đầy đủ chứng cứ từng mục/đính kèm, không báo 100% nội dung từ bảng liên kết.

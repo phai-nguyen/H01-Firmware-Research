@@ -1,5 +1,13 @@
 # Changelog
 
+## [Notion specialist sources and FOTA/UService archival reports] — 2026-11-24
+
+- Xuất bản bảng 17 trang Notion H01 (trang tổng + 16 trang chuyên đề) tới các báo cáo liên quan; không suy 100% nội dung đã hoàn thành.
+- Bổ sung báo cáo OTA cache v15 chưa chạy trên thiết bị, ma trận AudioTrack/ALSA, lỗi parser scanner, menu 2846 Log Tools, FOTA/UService VDEX dequickening và UCloudlink ELF library.
+- Chỉnh tuyến H004/H005/H006/H014 trong bản đồ 207 đề mục tới tài liệu chuyên sâu hơn; vẫn giữ tư liệu OEM và thông tin riêng ngoài repository.
+
+
+
 ## [H01 board, ADB, Fastboot and Dropbox evidence] — 2026-11-24
 
 - Bổ sung 5 báo cáo: nhận dạng PCB/pad, ADB trước root, Fastboot/GPT baseline, PyUSB 9008 endpoint, MMC/sysfs/DAC.

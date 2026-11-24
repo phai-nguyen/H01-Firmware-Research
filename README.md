@@ -132,6 +132,14 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 - [MMC host, RPMB node, DAC/SELinux](docs/hardware/mmc-hosts-sysfs-dac-evidence-20261114.md)
 - [Phạm vi nguồn đã đọc và các giới hạn công bố](docs/research/source-boundaries-and-coverage.md)
 
+## Đối chiếu 17 nguồn Notion và những kết quả vừa công bố
+
+- [Bảng **17 trang Notion** H01 → báo cáo công khai](docs/research/notion-specialist-source-matrix.md). Báo cáo liên quan **không đồng nghĩa 100% nội dung đã chuyển**.
+- [OTA v15: cache máy chủ, host PASS nhưng chưa chạy H01](docs/firmware/ota-server-cache-v15-evidence.md).
+- [Ma trận thử audio H.264/AAC và bằng chứng ALSA](docs/system/audio-playback-test-matrix-20261121.md).
+- [Lỗi parser bộ quét chức năng ẩn](docs/system/hidden-scanner-parser-failure-and-recovery.md), [Log Tools trong 2846](docs/system/assistant-2846-log-tools-safety-evidence.md).
+- [FOTA DEX VDEX010](docs/firmware/fota-vdex010-dequickening-evidence.md), [UService DEX VDEX010](docs/system/uservice-vdex010-recovery-progression.md), [12 thư viện ELF UCloudlink](docs/network/ucloudlink-elf-library-symbol-inventory.md).
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |
