@@ -4,7 +4,7 @@
 
 Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã được trích/đối chiếu toàn văn.
 
-**Bổ sung 24/11:** H142–H170 đã có bảng đối chiếu riêng theo từng mốc; H007–H013 đã được chuyển từ liên kết tổng quan sang báo cáo đối chiếu mốc lịch sử và ma trận ứng dụng hệ thống. Đó là **7 tuyến có phân tích theo mục**, không phải chứng nhận đã duyệt mọi file đính kèm. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
+**Bổ sung 24/11:** H142–H170 đã có bảng đối chiếu riêng theo từng mốc; H007–H013 đã được chuyển từ liên kết tổng quan sang báo cáo đối chiếu mốc lịch sử và ma trận ứng dụng hệ thống. Riêng H007–H013 là **7 tuyến có phân tích theo mục**; H142–H170 bổ sung **29 tuyến theo mốc Fastboot/EDL**. Chưa chứng nhận đã duyệt mọi tệp đính kèm. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
 
 | Mục | Tiêu đề nguyên thứ tự trong danh mục công khai | Báo cáo liên quan |
 | --- | --- | --- |
