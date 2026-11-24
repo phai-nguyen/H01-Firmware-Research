@@ -30,3 +30,5 @@ Bằng chứng khác ngày 21/11 đã ghi Audio HAL process tồn tại nhưng *
 Không công bố nguyên văn vendor RC của hãng, cấu hình chứa Wi-Fi password, firmware OEM hoặc lệnh start/stop service.
 
 Xem [init service map](init-service-map.md), [âm thanh](audio.md), [Dual SIM](../network/dual-sim-ril-pcb-evidence.md).
+
+**Đối chiếu quan sát mới ngày 24/11:** [Wi-Fi 2,4 / 5 GHz và triệu chứng hotspot tắt](../network/wifi-24ghz-5ghz-hotspot-evidence-20261124.md). Báo cáo mới giữ riêng dữ kiện cấu hình `hostapd_dual5g.conf`, hiện tượng do người thử báo và năng lực phần cứng chưa kiểm chứng.
