@@ -123,6 +123,15 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 - [Bảng 207 đề mục H01 liên kết đến báo cáo liên quan](docs/research/notion-207-routing-map.md): **sơ đồ truy vết**, không đồng nghĩa chuyển đủ toàn văn.
 - [Nhật ký sao lưu từng batch EDL](docs/firmware/edl-partition-backup-batches-20261110-11.md) và [kiểm chứng ZIP/GPT trên iPhone](docs/firmware/emmc-iphone-gpt-integrity-timeline.md).
 
+## Bằng chứng bổ sung từ nguồn gốc 11–14/11/2026
+
+- [PCB, SoC, ký hiệu các pad chưa xác minh](docs/hardware/h01-board-pads-and-identification.md)
+- [ADB shell trước root và giới hạn đọc procfs](docs/system/adb-pre-root-baseline-and-limitations.md)
+- [Fastboot getvar/device-info đối chiếu GPT](docs/boot/fastboot-device-info-gpt-audit.md)
+- [Descriptor USB EDL 9008 và host PyUSB](docs/firmware/edl-usb-host-endpoint-diagnostics-20261114.md)
+- [MMC host, RPMB node, DAC/SELinux](docs/hardware/mmc-hosts-sysfs-dac-evidence-20261114.md)
+- [Phạm vi nguồn đã đọc và các giới hạn công bố](docs/research/source-boundaries-and-coverage.md)
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

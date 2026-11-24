@@ -6,9 +6,9 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 
 | Mục | Tiêu đề nguyên thứ tự trong danh mục công khai | Báo cáo liên quan |
 | --- | --- | --- |
-| H001 | 1. Thiết bị và môi trường nghiên cứu | [Liên quan](../firmware/overview.md) |
-| H002 | 2. Mục tiêu và phạm vi | [Liên quan](../firmware/overview.md) |
-| H003 | 3. ADB và giới hạn quyền | [Liên quan](../firmware/overview.md) |
+| H001 | 1. Thiết bị và môi trường nghiên cứu | [Liên quan](../hardware/h01-board-pads-and-identification.md) |
+| H002 | 2. Mục tiêu và phạm vi | [Liên quan](../hardware/h01-board-pads-and-identification.md) |
+| H003 | 3. ADB và giới hạn quyền | [Liên quan](../system/adb-pre-root-baseline-and-limitations.md) |
 | H004 | 4. Nhánh FOTA / ABUP | [Liên quan](../firmware/overview.md) |
 | H005 | 5. Nhánh UCloudlink native libraries | [Liên quan](../firmware/overview.md) |
 | H006 | 6. Nhánh UService | [Liên quan](../firmware/overview.md) |
@@ -21,8 +21,8 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H013 | 13. Nhật ký các kết luận chính | [Liên quan](../firmware/overview.md) |
 | H014 | 14. Bổ sung ngày 10/11/2026 – Khôi phục DEX UService và phân tích loader | [Liên quan](../system/uservice-loader.md) |
 | H015 | 15. Bổ sung ngày 10/11/2026 – Phân tích socket runtime | [Liên quan](../network/ucloud-daemons-and-sockets.md) |
-| H016 | 16. Bổ sung – Snapshot PID daemon đối chiếu socket (ảnh CMD mới) | [Liên quan](../network/ucloud-daemons-and-sockets.md) |
-| H017 | 17. Bổ sung – Không đọc được file descriptor của daemon root | [Liên quan](../network/ucloud-daemons-and-sockets.md) |
+| H016 | 16. Bổ sung – Snapshot PID daemon đối chiếu socket (ảnh CMD mới) | [Liên quan](../system/adb-pre-root-baseline-and-limitations.md) |
+| H017 | 17. Bổ sung – Không đọc được file descriptor của daemon root | [Liên quan](../system/adb-pre-root-baseline-and-limitations.md) |
 | H018 | 18. Bổ sung – Danh sách init RC và kết quả netstat -anp (ảnh ngày 10/11/2026) | [Liên quan](../network/ucloud-daemons-and-sockets.md) |
 | H019 | 19. Phân tích trực tiếp hai file init RC | [Liên quan](../system/init-service-map.md) |
 | H020 | 20. Bổ sung – Qualcomm init files và giới hạn kiểm tra kernel modules | [Liên quan](../system/init-service-map.md) |
@@ -109,8 +109,8 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H101 | 99. Nghiên cứu khả năng mở khóa bootloader H01 (11/11/2026) | [Liên quan](../boot/boot-verification-chain.md) |
 | H102 | 100. Phân tích nhị phân ABOOT và ABOOTBAK – xác định cổng OEM Unlock của H01 (11/11/2026) | [Liên quan](../boot/boot-verification-chain.md) |
 | H103 | 101. Xác minh CONFIG và DEVINFO từ hai ZIP người dùng gửi (11/11/2026) | [Liên quan](../boot/boot-verification-chain.md) |
-| H104 | 102. Xác minh Fastboot trực tiếp trên H01 – 11/11/2026 | [Liên quan](../boot/boot-verification-chain.md) |
-| H105 | 103. Phân tích Fastboot getvar, cờ secure và mô hình phân vùng (11/11/2026) | [Liên quan](../boot/boot-verification-chain.md) |
+| H104 | 102. Xác minh Fastboot trực tiếp trên H01 – 11/11/2026 | [Liên quan](../boot/fastboot-device-info-gpt-audit.md) |
+| H105 | 103. Phân tích Fastboot getvar, cờ secure và mô hình phân vùng (11/11/2026) | [Liên quan](../boot/fastboot-device-info-gpt-audit.md) |
 | H106 | 104. Phân tích sâu ABOOT: SCM secure-state, image verification và Fastboot flash gates (11/11/2026) | [Liên quan](../boot/boot-verification-chain.md) |
 | H107 | 105. Giải mã sâu response SCM và luồng boot_verifier trong ABOOT H01 (11/11/2026) | [Liên quan](../boot/boot-verification-chain.md) |
 | H108 | 106. Xác định ý nghĩa field QSEE version và ngưỡng 0x01000000 (11/11/2026) | [Liên quan](../boot/boot-verification-chain.md) |

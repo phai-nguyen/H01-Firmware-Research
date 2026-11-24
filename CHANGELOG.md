@@ -1,5 +1,13 @@
 # Changelog
 
+## [H01 board, ADB, Fastboot and Dropbox evidence] — 2026-11-24
+
+- Bổ sung 5 báo cáo: nhận dạng PCB/pad, ADB trước root, Fastboot/GPT baseline, PyUSB 9008 endpoint, MMC/sysfs/DAC.
+- Chỉnh đường định tuyến các mục H001–H003, H016–H017 và H104–H105 tới tài liệu chi tiết hơn.
+- Có thêm bảng ranh giới các nguồn Notion/Dropbox đã đọc; không đăng log gốc chứa serial, APK/IMG OEM hoặc khóa.
+
+
+
 ## [H01 207-section routing map and backup evidence] — 2026-11-24
 
 - Xuất bản bảng 207 mục gốc → tài liệu GitHub liên quan, chỉ để truy vết nguồn, **không báo cáo đã chuyển đủ 100%**.

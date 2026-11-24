@@ -106,3 +106,10 @@
 - [x] [Bảng liên kết 207 đề mục đến báo cáo theo chủ đề](notion-207-routing-map.md) — **không phải hoàn tất nội dung 207/207**.
 - [x] [Kết quả đọc batch eMMC](../firmware/edl-partition-backup-batches-20261110-11.md), [đối chiếu ZIP/IMG/GPT trên iPhone](../firmware/emmc-iphone-gpt-integrity-timeline.md).
 - [ ] Chưa kiểm soát nội dung chi tiết từng đoạn của toàn bộ 207 mục và mọi file log/ảnh/video; chỉ công bố bản biên soạn đã lược dữ liệu riêng.
+
+## Mốc kiểm chứng bổ sung (24/11/2026)
+
+- [x] [PCB/pad](../hardware/h01-board-pads-and-identification.md), [ADB trước root](../system/adb-pre-root-baseline-and-limitations.md), [Fastboot/GPT](../boot/fastboot-device-info-gpt-audit.md).
+- [x] [USB 9008/PyUSB](../firmware/edl-usb-host-endpoint-diagnostics-20261114.md) và [MMC/sysfs](../hardware/mmc-hosts-sysfs-dac-evidence-20261114.md) được rút từ các báo cáo TXT có thật trên Dropbox.
+- [x] [Ranh giới các nguồn đã kiểm kê](source-boundaries-and-coverage.md).
+- [ ] Chưa duyệt từng nguồn log/ZIP/video còn lại để xác định phần nào có thể công bố thêm; không được đăng firmware OEM, dữ liệu SIM hay định danh.

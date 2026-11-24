@@ -42,3 +42,7 @@ Không kiểm thử thiết bị hoặc nạp module trong lần xuất bản n�
 ## Tài liệu nguồn chuyên đề 20–22/11, công bố 23/11/2026
 
 Đã đọc trực tiếp trang [Notion OTA (22/11)](https://app.notion.com/p/420c5d5277a981ddbe17ca37e72e91df), [Audio K1 (21/11)](https://app.notion.com/p/41fc5d5277a9814eb9e5f4324e25fba9), [Dual SIM/PCB (20/11)](https://app.notion.com/p/41ec5d5277a9811a916cc87d0bac9d3b). Phân biệt **kết quả phân tích tĩnh**, **snapshot đã thu**, **đối chiếu bản sao** và **những điều chưa thử**. Không trích đăng binary OEM, log nguyên vẹn, khóa hay định danh máy.
+
+## Lần đối chiếu nguồn Notion + Dropbox — 24/11/2026
+
+Đã mở lại nhật ký tổng Notion H001–H003, H016–H018, H101–H105 và đọc trực tiếp báo cáo Dropbox `H01-firehose-usb-diagnostic-20261114.txt`, `H01-firehose-source-check-20261114.txt`, `H01-mmc-inspect-20261114.txt`, `H01-mmc-nodes-20261114.txt`, `H01-sysfs-mmc-attrs-20261114.txt`. **Không đăng nguyên tệp**; đã lọc serial và chi tiết riêng, chỉ công bố kết luận xác minh. Xem [source boundary](source-boundaries-and-coverage.md).

@@ -120,3 +120,7 @@ Bằng chứng B tách khỏi A; phần danh sách tệp riêng ở Notion khôn
 ## Bảng truy vết mới (24/11/2026)
 
 Toàn bộ 207 đề mục đã được **gắn tuyến đến báo cáo liên quan** trong [bảng mapping 207 mục](notion-207-routing-map.md). Chưa đối chiếu đủ từng đoạn nội dung; không coi 207 link là 207 báo cáo hoàn chỉnh. Bổ sung [batch EDL](../firmware/edl-partition-backup-batches-20261110-11.md) và [kiểm chứng ZIP/GPT](../firmware/emmc-iphone-gpt-integrity-timeline.md).
+
+## Nguồn ngoài nhật ký tổng (24/11/2026)
+
+Đã tóm tắt báo cáo TXT trực tiếp trên Dropbox về [USB host/EDL](../firmware/edl-usb-host-endpoint-diagnostics-20261114.md) và [MMC/sysfs](../hardware/mmc-hosts-sysfs-dac-evidence-20261114.md); đồng thời chuyển các mục phần cứng/ADB/Fastboot lịch sử thành [PCB](../hardware/h01-board-pads-and-identification.md), [ADB](../system/adb-pre-root-baseline-and-limitations.md), [Fastboot](../boot/fastboot-device-info-gpt-audit.md). Xem [ranh giới nguồn](source-boundaries-and-coverage.md). Không công bố nguyên bản log và số định danh.
