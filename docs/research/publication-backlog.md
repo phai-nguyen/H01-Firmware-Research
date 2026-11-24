@@ -39,7 +39,6 @@
 | Rotation/IME/navigation | DOCUMENTED, PARTIAL | App compatibility, nguồn chập chờn |
 | H01 Home / Share Server | REPORTED PASS | Phát hành source sau review license |
 | H01 App Control | PROPOSED | Cấu trúc service dependency, rollback |
-| Nokia logo boot | RESEARCH | Review video/bản vá trước khi chốt |
 | Camera/NewPipe/YouTube | RESEARCH | Chưa có kết quả fix PASS để phát hành |
 | Log, ảnh, TXT, ZIP, OEM APK/IMG | PRIVATE/NEEDS REVIEW | Ẩn danh, xét quyền phân phối |
 
