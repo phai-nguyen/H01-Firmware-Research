@@ -1,5 +1,12 @@
 # Changelog
 
+## [Publish H01 unlock/root tool source without OEM device images] — 2026-11-24
+
+- Đọc các gói thực tế `H01-MAY2-UNLOCK-20261123.zip`, `H01-MAY2-ROOT-RAM-Win7.zip`, `H01-Root-Co-Dinh-20261118.zip` và `H01_Phan_tich_2_dump_va_ban_thu_20261117.zip` từ thư viện riêng; đối chiếu với các mục Notion unlock/root đã lưu.
+- Công bố source-only [offline DEVINFO utility](tools/h01_unlock/README.md) và [Magisk 30.7 host root tool](tools/h01_root/README.md) tổng quát hóa từ script/bộ gốc; không đăng `aboot`, `devinfo`, `boot` đã vá, programmer hay khóa/serial/hashes máy A/B.
+- Thêm [9 bài kiểm tra offline trên dữ liệu giả](tests/test_h01_toolkits.py), các đường flash chỉ thực hiện sau kiểm tra nhiều điều kiện/chuỗi xác nhận; **chưa được thử lại trên H01 thật sau khi tổng quát hóa**.
+- Bộ root nguyên bản đã từng PASS theo Notion không được nhầm là bộ mới có bảo đảm thực địa; download ZIP của GitHub chỉ bao gồm mã nguồn dự án.
+
 ## [Documented bootloader unlock and Magisk root procedures from Notion] — 2026-11-24
 
 - Bổ sung hai hướng dẫn kỹ thuật: [mở khóa bootloader](docs/boot/h01-bootloader-unlock-notion-procedure-20261124.md) và [root Magisk 30.7](docs/boot/h01-magisk-root-notion-procedure-20261124.md), chỉ tổng hợp các bước có trong Notion.
