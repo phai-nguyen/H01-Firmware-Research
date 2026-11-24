@@ -1,5 +1,11 @@
 # Changelog
 
+## [Documented bootloader unlock and Magisk root procedures from Notion] — 2026-11-24
+
+- Bổ sung hai hướng dẫn kỹ thuật: [mở khóa bootloader](docs/boot/h01-bootloader-unlock-notion-procedure-20261124.md) và [root Magisk 30.7](docs/boot/h01-magisk-root-notion-procedure-20261124.md), chỉ tổng hợp các bước có trong Notion.
+- Phân biệt Fastboot OKAY với unlock PASS, Magisk root RAM với root cố định và tình trạng các phép kiểm sau reboot.
+- Không phát hành ảnh DEVINFO/boot đã vá, lệnh ghi metadata dùng chung hoặc checksum/định danh máy; thao tác ghi đòi hỏi backup và kiểm đúng thiết bị.
+
 ## [Notion-only publication: 207 source sections + 16 specialist pages] — 2026-11-24
 
 - Theo chỉ đạo chủ dự án: chỉ công bố thông tin H01 có **nguồn trong Notion**; các kết quả mới chưa lưu Notion sẽ giữ lại để đối chiếu nội bộ.
