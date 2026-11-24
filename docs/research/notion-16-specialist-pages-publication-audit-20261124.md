@@ -32,7 +32,7 @@
 
 ## Ngoài phạm vi đợt công bố này
 
-- Vấn đề Wi-Fi 5 GHz và hiện tượng chọn băng tần làm tắt hotspot đang được nghiên cứu nhưng **không tìm thấy ghi chép tương ứng trong 17 trang Notion H01 kiểm tra**. Không đưa thành báo cáo Notion-only; nếu sau này ghi nhận vào Notion và có bằng chứng mới, mới đưa vào danh sách chờ kiểm duyệt.
+- Các thử nghiệm mới chưa được ghi trên Notion sẽ không được đưa thành báo cáo Notion-only; chỉ xem xét công bố sau khi có nguồn Notion cụ thể và rà soát an toàn.
 - Không công bố firmware OEM, programmer, APK/ODEX/VDEX/ELF, dữ liệu SIM/NV/SoftSIM, IMEI/serial, mật khẩu hotspot, log chứa danh tính, token, ảnh/tệp riêng hoặc script ghi/xóa flash chưa kiểm chứng.
 
 ## Trạng thái chuyển giao
