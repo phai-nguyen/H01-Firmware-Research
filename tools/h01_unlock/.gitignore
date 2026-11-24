@@ -1,0 +1,6 @@
+*.img
+*.bin
+*.zip
+*.json
+!example-config.json
+__pycache__/
