@@ -1,5 +1,15 @@
 # Kế hoạch công bố toàn bộ nghiên cứu H01
 
+## Chốt phạm vi từ 24/11/2026: chỉ thông tin đã có trên Notion
+
+- [x] Kiểm kê 1 trang tổng **207 đề mục** và **16 trang chuyên đề H01** trong phạm vi kết quả tìm kiếm hiện có.
+- [x] Công bố kết luận theo mục cho [H001–H034](notion-h001-h034-early-firmware-notes-audit-20261124.md), [H035–H087](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md), [H088–H099](../firmware/notion-h088-h099-gpt-iphone-integrity-audit-20261124.md), [H100–H141](notion-h100-h141-boot-security-firehose-mmc-audit-20261124.md), [H142–H170](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md) và [H171–H207](notion-h171-h207-app-root-ime-rotation-timeline-20261124.md).
+- [x] Kiểm kê kết luận [16 trang chuyên đề](notion-16-specialist-pages-publication-audit-20261124.md) và cập nhật [bản đồ 207 mục](notion-207-routing-map.md).
+- [x] Rút báo cáo Wi-Fi 5 GHz **chưa được ghi trên Notion** ra khỏi main; ngừng thêm nghiên cứu từ chat trước khi ghi Notion.
+- [x] Ban hành [chính sách Notion-only](notion-only-publication-policy-20261124.md).
+- [ ] Chưa kiểm toán toàn văn từng đoạn và đính kèm mà dự án có quyền công bố; không chấm 100% theo số dòng chỉ mục.
+- [ ] Không đăng ảnh/tệp OEM, gói firmware, dữ liệu SIM/SoftSIM, ảnh/video/ZIP/RAR chứa định danh, ngay cả khi chúng được nhắc tên trong Notion.
+
 **23/11/2026:** Các mảng đã ghi tài liệu ≠ đã phát hành toàn bộ file/source/binary. Tiêu chí: tài liệu có nguồn và mức độ chứng cứ, không tiết lộ dữ liệu riêng.
 
 | Nhánh | Mức hiện tại | Còn thiếu |
