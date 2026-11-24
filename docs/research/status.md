@@ -4,7 +4,7 @@
 
 - **207/207** đề mục H01 trong trang Notion tổng có liên kết báo cáo theo mốc; các bản này là **tóm tắt kết luận an toàn**, không phải chuyển đủ mọi đoạn/ảnh/log.
 - **16/16** trang chuyên đề H01 tìm được đã có kết luận đối chiếu tới GitHub; không khẳng định tìm được toàn bộ workspace.
-- **Wi-Fi 5 GHz** chưa được ghi trên các trang Notion đã kiểm; bài trước đó đã rút khỏi nhánh main để chờ ghi nguồn.
+- Các kết quả chỉ có trong hội thoại mà **chưa được ghi vào Notion** được giữ ngoài nhánh công khai cho đến khi có nguồn.
 - Đã chốt [chính sách Notion-only](notion-only-publication-policy-20261124.md). **Tiến độ công bố toàn văn và đính kèm: chưa kiểm toán đủ để tính %.**
 
 | Chủ đề | Trạng thái | Ghi chú |
