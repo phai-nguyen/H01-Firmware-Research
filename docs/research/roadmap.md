@@ -14,7 +14,7 @@
 - [x] Bảng GPT 42 phân vùng (không chứa GUID riêng của thiết bị) và kiểm tra tính nhất quán trong CI.
 - [x] Mẫu báo cáo ADB read-only Windows 7 / Linux; cần kiểm thử thực tế trên H01.
 - [x] Mở rộng bảng phân loại PASS/FAIL/PENDING; chứng cứ raw tiếp tục ở kho riêng.
-- [x] Đã mở các chủ đề GPT, OTA, Dual SIM, App Control và logo khởi động (liên kết trong Issues).
+- [x] Đã mở các chủ đề GPT, OTA, Dual SIM và App Control (liên kết trong Issues).
 
 ## v0.3 — Cộng đồng
 
