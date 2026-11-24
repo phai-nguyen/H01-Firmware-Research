@@ -6,6 +6,13 @@
 
 English: [README.en.md](README.en.md)
 
+## Hướng dẫn kỹ thuật từ Notion: Unlock & Root H01
+
+- [Mở khóa bootloader: kiểm tra Fastboot, cơ chế DEVINFO, tiêu chí PASS và giới hạn](docs/boot/h01-bootloader-unlock-notion-procedure-20261124.md).
+- [Root Magisk 30.7: vá boot trên đúng máy, thử RAM, root cố định và kiểm tra sau reboot](docs/boot/h01-magisk-root-notion-procedure-20261124.md).
+
+Hai hướng dẫn tổng hợp từ các thử nghiệm **đã ghi trên Notion**; quy trình ghi DEVINFO và boot image không được phát hành dưới dạng bộ vá/flash áp dụng đại trà. Có nguy cơ brick hoặc mất userdata khi sử dụng sai.
+
 ## Phạm vi công bố chốt ngày 24/11/2026 — chỉ từ Notion
 
 **Theo quyết định của chủ dự án, mọi báo cáo H01 mới chỉ được công bố sau khi thông tin đã có trong Notion.** Những thử nghiệm và ý tưởng chưa ghi vào Notion để trạng thái chờ. Xem [quy định nguồn](docs/research/notion-only-publication-policy-20261124.md).
