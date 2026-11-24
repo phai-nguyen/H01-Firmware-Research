@@ -1,5 +1,13 @@
 # Changelog
 
+## [Historical baseline reconciliation, Wi-Fi band evidence and app safety matrix] — 2026-11-24
+
+- Thêm báo cáo đối chiếu **H007–H013**, tách trạng thái lịch sử (10/11) khỏi các kết quả OTA, EDL, eMMC, UService, unlock/root về sau.
+- Đổi **7 tuyến** Notion 207 mục từ báo cáo tổng quan sang tài liệu theo mục hoặc ma trận hệ thống.
+- Công bố hiện tượng chọn 5 GHz làm hotspot tắt dưới nhãn **USER-REPORTED**, không suy từ `hostapd_dual5g.conf` rằng radio hỗ trợ 5 GHz.
+- Biên soạn ma trận package/process/native init để không đề xuất vô hiệu hóa dịch vụ mạng/launcher khi chưa có rollback.
+- Không đăng OEM binary, dump, log raw hoặc dữ liệu định danh; chưa kiểm duyệt hết 207 mục/đính kèm.
+
 ## [Magisk compatibility, mksh hash fix, navbar persistence and package-state history] — 2026-11-24
 
 - Từ các mục Notion H179–H187 và H190–H191, công bố **4 báo cáo** về Magisk 31.1/30.7, Root Control v1.1, thanh điều hướng Android và trạng thái FOTA/Feedback.
