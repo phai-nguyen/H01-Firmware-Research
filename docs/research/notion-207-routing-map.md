@@ -2,7 +2,9 @@
 
 **Nguồn:** [mục lục 207 đề mục đã công bố](notion-master-index.md) và [Notion gốc](https://app.notion.com/p/414c5d5277a981898f7be2712da8f7cd). **Mốc kiểm kê 24/11/2026.**
 
-Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã được trích/đối chiếu toàn văn. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
+Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã được trích/đối chiếu toàn văn.
+
+**Bổ sung 24/11:** H007–H013 đã được chuyển từ liên kết tổng quan sang báo cáo đối chiếu mốc lịch sử và ma trận ứng dụng hệ thống. Đó là **7 tuyến có phân tích theo mục**, không phải chứng nhận đã duyệt mọi file đính kèm. Có mục chỉ được tóm tắt chung; với mọi mục cần kiểm nguồn, thời gian, log và ngoại lệ trước khi gắn nhãn hoàn tất.
 
 | Mục | Tiêu đề nguyên thứ tự trong danh mục công khai | Báo cáo liên quan |
 | --- | --- | --- |
@@ -12,13 +14,13 @@ Bảng **liên kết theo chủ đề**, không xác nhận từng mục đã đ
 | H004 | 4. Nhánh FOTA / ABUP | [Liên quan](../firmware/fota-vdex010-dequickening-evidence.md) |
 | H005 | 5. Nhánh UCloudlink native libraries | [Liên quan](../network/ucloudlink-elf-library-symbol-inventory.md) |
 | H006 | 6. Nhánh UService | [Liên quan](../system/uservice-vdex010-recovery-progression.md) |
-| H007 | 7. Daemon UCloudlink và tiến trình runtime | [Liên quan](../firmware/overview.md) |
-| H008 | 8. Ứng dụng và hệ thống khác đã nhận diện | [Liên quan](../firmware/overview.md) |
-| H009 | 9. Những điều chưa được xác minh | [Liên quan](../firmware/overview.md) |
-| H010 | 10. Kế hoạch tiếp theo | [Liên quan](../firmware/overview.md) |
-| H011 | 11. Tệp và dữ liệu đã thu thập | [Liên quan](../firmware/overview.md) |
-| H012 | 12. Quy tắc vận hành và an toàn | [Liên quan](../firmware/overview.md) |
-| H013 | 13. Nhật ký các kết luận chính | [Liên quan](../firmware/overview.md) |
+| H007 | 7. Daemon UCloudlink và tiến trình runtime | [Liên quan](../research/h007-h013-initial-baseline-reconciliation-20261124.md) |
+| H008 | 8. Ứng dụng và hệ thống khác đã nhận diện | [Liên quan](../system/system-app-dependency-baseline-20261124.md) |
+| H009 | 9. Những điều chưa được xác minh | [Liên quan](../research/h007-h013-initial-baseline-reconciliation-20261124.md) |
+| H010 | 10. Kế hoạch tiếp theo | [Liên quan](../research/h007-h013-initial-baseline-reconciliation-20261124.md) |
+| H011 | 11. Tệp và dữ liệu đã thu thập | [Liên quan](../research/h007-h013-initial-baseline-reconciliation-20261124.md) |
+| H012 | 12. Quy tắc vận hành và an toàn | [Liên quan](../research/h007-h013-initial-baseline-reconciliation-20261124.md) |
+| H013 | 13. Nhật ký các kết luận chính | [Liên quan](../research/h007-h013-initial-baseline-reconciliation-20261124.md) |
 | H014 | 14. Bổ sung ngày 10/11/2026 – Khôi phục DEX UService và phân tích loader | [Liên quan](../system/uservice-vdex010-recovery-progression.md) |
 | H015 | 15. Bổ sung ngày 10/11/2026 – Phân tích socket runtime | [Liên quan](../network/ucloud-daemons-and-sockets.md) |
 | H016 | 16. Bổ sung – Snapshot PID daemon đối chiếu socket (ảnh CMD mới) | [Liên quan](../system/adb-pre-root-baseline-and-limitations.md) |
