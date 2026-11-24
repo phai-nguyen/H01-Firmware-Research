@@ -80,3 +80,7 @@ Không suy từ `orange` rằng mọi cổng Fastboot flash đều mở hoặc S
 - Có thể flash tùy ý mọi phân vùng chỉ vì `critical unlocked=true`.
 
 **Liên quan:** [lịch sử thử unlock thất bại](oem-unlock-failed-attempts.md), [mục H142–H170](oem-unlock-h142-h170-evidence-chronology-20261124.md), [mốc unlock PASS](oem-unlock-research.md), [thiết bị B](device-b-unlock-root-evidence.md), [Magisk 30.7](h01-magisk-root-notion-procedure-20261124.md), [chính sách công bố](../research/notion-only-publication-policy-20261124.md).
+
+## Công cụ mã nguồn công khai
+
+- [`tools/h01_unlock/offline_devinfo.py`](../../tools/h01_unlock/README.md): kiểm hash từ ABOOT/DEVINFO **của chính máy**, xác minh candidate hoặc chuẩn bị candidate ngoại tuyến. **Không ghi partition**, không kèm binary OEM, không khẳng định unlock PASS khi chỉ có file candidate. Bản biên soạn công khai chưa được thử lại trên H01 thật.
