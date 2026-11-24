@@ -26,3 +26,5 @@ Những mục cũ trước lần flash ghi “root chưa cố định”, nhưng
 - Không flash lại boot gốc khi ba tính năng Auto Power-On/AutoHotspot/4G đang PASS, trừ khi có kế hoạch rollback rõ và chủ máy chấp thuận.
 
 **Liên quan:** [mở khóa](oem-unlock-research.md), [Auto Power-On v0.6](auto-power-on-usb.md), [kiểm kê bản sao](../firmware/emmc-backup-verification.md), [quy trình cứu hộ thận trọng](recovery-readiness.md).
+
+**Hướng dẫn theo từng bước đã ghi trên Notion:** [H01 root Magisk 30.7](h01-magisk-root-notion-procedure-20261124.md). Cần boot gốc và ảnh vá của **đúng máy** trước khi thử.
