@@ -154,3 +154,7 @@ Xem [FOTA metadata](../firmware/fota-filesystem-metadata-source-audit.md), [Hidd
 | App Control / dependency | PACKAGE/PROCESS OBSERVED; dependency chưa đủ để tắt/gỡ an toàn | [Ma trận rủi ro](../system/system-app-dependency-baseline-20261124.md) |
 
 **Không cộng 7 tuyến mới vào tỷ lệ “hoàn tất nội dung Notion”.** 207/207 là số tiêu đề đã có tuyến dẫn; chưa phải 207/207 báo cáo hoàn chỉnh và mọi đính kèm an toàn.
+
+## Bổ sung truy vết H142–H170 — 24/11/2026
+
+**29/29 đề mục** trong nhánh OEM Unlock ngày 14/11 đã có bảng phân biệt lệnh OKAY, trạng thái `locked` quan sát được và các bước phân tích tĩnh. Mốc kết quả sau ngày 18/11 vẫn được giữ riêng ở H171. [Xem báo cáo](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md). **Không đồng nghĩa 29/29 file nguồn đã được xử lý/công bố toàn văn.**
