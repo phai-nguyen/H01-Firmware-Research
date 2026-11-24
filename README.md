@@ -2,9 +2,17 @@
 
 **Dự án nghiên cứu mở, độc lập** về ZEUS H01 / GlocalMe K1: phần cứng, Android 8.1, firmware, bootloader, EDL, OTA, modem/SIM, các chức năng ẩn và ứng dụng tùy biến.
 
-> **Trạng thái: v0.2.0 — tài liệu GPT đã lược bỏ định danh và công cụ kiểm tra chỉ đọc.** Tài liệu được biên soạn lại từ ghi chép và báo cáo kiểm thử của dự án. Không phải firmware chính thức, không phải ROM phục hồi sẵn dùng, cũng không bảo đảm mọi kết quả áp dụng cho mọi biến thể H01.
+> **Trạng thái: tài liệu nghiên cứu và công cụ mã nguồn đã lọc; các lệnh có khả năng ghi flash chỉ chạy sau xác minh và xác nhận riêng.** Tài liệu được biên soạn lại từ ghi chép và báo cáo kiểm thử của dự án. Không phải firmware chính thức, không phải ROM phục hồi sẵn dùng, cũng không bảo đảm mọi kết quả áp dụng cho mọi biến thể H01.
 
 English: [README.en.md](README.en.md)
+
+## Mã nguồn công cụ Unlock và Root H01 (chỉ lấy từ các bộ đã ghi Notion)
+
+- 🔓 [**H01 Unlock — kiểm DEVINFO và tạo candidate ngoại tuyến**](tools/h01_unlock/README.md): script `offline_devinfo.py` chuyển biên từ bộ kiểm tra DEVINFO đã ghi Notion; **không kết nối EDL, không flash**, không kèm ảnh DEVINFO.
+- 🛠️ [**H01 Magisk Root 30.7 — công cụ máy tính**](tools/h01_root/README.md): script `root_tool.py` kiểm hash, boot thử qua RAM, kiểm `uid=0`, sao lưu và chỉ ghi boot khi đã qua điều kiện chặn cùng xác nhận. Không kèm ảnh boot/Magisk APK.
+- [**9 bài kiểm thử offline**](tests/test_h01_toolkits.py) dùng dữ liệu giả; không đồng nghĩa hai script công khai đã PASS trên H01 thật. Các gói nguyên bản được ghi Notion đã có PASS, nhưng bản chuyển biên/khử thông tin máy **chưa** được kiểm thử thực địa.
+
+**Lưu ý:** mã nguồn được công bố; tải cả repository bằng GitHub → Code → Download ZIP để dùng các script. Cần tự cung cấp IMG/metadata từ **chính H01 của mình**, không có ZIP flash chung hoặc firmware OEM trong kho.
 
 ## Hướng dẫn kỹ thuật từ Notion: Unlock & Root H01
 
