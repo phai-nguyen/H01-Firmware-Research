@@ -1,5 +1,11 @@
 # Kế hoạch công bố toàn bộ nghiên cứu H01
 
+## Hướng dẫn bootloader và root từ Notion
+
+- [x] Đã biên soạn [quy trình mở khóa bootloader H01](../boot/h01-bootloader-unlock-notion-procedure-20261124.md): chỉ dẫn kiểm Fastboot, bước thực nghiệm DEVINFO được chấp thuận, readback và xác nhận reboot.
+- [x] Đã biên soạn [quy trình root Magisk 30.7](../boot/h01-magisk-root-notion-procedure-20261124.md): ảnh đúng máy, RAM boot, cấp quyền Shell, root cố định và kiểm reboot.
+- [ ] Không xuất bản patch DEVINFO tự động/ảnh đã sửa và lệnh flash tùy tiện cho mọi H01; điều kiện phần cứng/rollback chưa xác nhận phổ quát.
+
 ## Chốt phạm vi từ 24/11/2026: chỉ thông tin đã có trên Notion
 
 - [x] Kiểm kê 1 trang tổng **207 đề mục** và **16 trang chuyên đề H01** trong phạm vi kết quả tìm kiếm hiện có.
