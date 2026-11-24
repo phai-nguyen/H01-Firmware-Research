@@ -174,3 +174,9 @@
 - [x] [Báo cáo 29 mục H142–H170](../boot/oem-unlock-h142-h170-evidence-chronology-20261124.md): tách phản hồi Fastboot, ABOOT tĩnh, snapshot Android và nguồn EDL.
 - [x] Đã cập nhật 29 liên kết trong [bảng 207 mục](notion-207-routing-map.md), không còn phụ thuộc một bài tóm tắt chung.
 - [ ] Còn ảnh CMD, TXT, dump ABOOT/DEVINFO trong kho riêng phải rà quyền phát hành/ẩn định danh; chỉ đăng phân tích an toàn, không đăng bản nhị phân OEM.
+
+## Nhóm H035–H087: kiểm toán chuỗi sao lưu EDL/eMMC
+
+- [x] [53 dòng truy vết từng mục](../firmware/edl-h035-h087-per-item-acquisition-audit-20261124.md): tách READ/PLAN/HASH/TRANSFER theo thời gian từ 10–11/11.
+- [x] Đã sửa 53 liên kết trong [mục lục 207 đề mục](notion-207-routing-map.md).
+- [ ] Chưa đối chiếu độc lập từng ảnh CMD/ZIP/IMG gốc và từng offset LBA của 42 phân vùng; có tên/kích thước/hash sao lưu không đồng nghĩa restore image đầy đủ.
