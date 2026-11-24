@@ -20,7 +20,6 @@
 | Assistant Function / Log Tools | STATIC ROUTES VERIFIED | Đã đối chiếu 3 Intent và guard PackageUtil; Feedback APK chưa có để phân tích; không cần máy H01 thứ hai |
 | Mã 2846 / MMI menu OEM | STATIC + RUNTIME VERIFIED | About → Assistant → MMI đã xác minh qua ADB; receiver 2846 khôi phục từ MMI VDEX; phương thức xử lý được phân tích ngoại tuyến |
 | Điều chỉnh DPI | PARTIAL | Có mã công cụ; kiểm thử hoàn tác thực tế cần thận trọng |
-| Logo boot Nokia C3-00 | RESEARCH | Chưa phát hành patch boot/splash đã xác minh |
 | H01 App Control | PROPOSED | Kiến trúc quản lý tiến trình/ứng dụng cần nghiên cứu thêm |
 | Bộ firmware phục hồi đầy đủ | OPEN | Chưa có bản phục hồi đầu-cuối công khai được xác nhận |
 
