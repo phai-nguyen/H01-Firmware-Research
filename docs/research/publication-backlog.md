@@ -126,3 +126,10 @@
 - [x] [LockSet High Contrast](../system/lockset-high-contrast-ui-validation.md): UI PASS, khóa PIN chưa thử; không mở lại nhánh thử nghiệm.
 - [x] [Recovery version và OTA trust](../firmware/ota-recovery-version-trace-and-trust-levels.md): chỉ lưu dấu vết bản cũ, không phát gói/credential.
 - [ ] Vẫn chưa có kiểm toán nội dung từng đoạn của tất cả 207 mục và mọi đính kèm/tệp riêng; không xác nhận 100%.
+
+## Đối chiếu TXT Dropbox bổ sung — 24/11/2026
+
+- [x] [GPT TXT gốc so với CSV public: **42/42 khớp, 0 sai khác**](../firmware/gpt-dropbox-csv-direct-audit-20261124.md) — chưa chứng minh độ chính xác từng IMG hoặc phục hồi.
+- [x] [Vendor init HAL/hostapd](../system/vendor-init-hals-hostapd-20261114.md): hai bản text trùng, 26 stanza có thể nhận diện; không khẳng định hoạt động dual-band.
+- [x] [FOTA 10/11/2026, hai phản hồi 2101](../firmware/fota-nov10-runtime-no-update-evidence.md); không chia sẻ credential/request.
+- [ ] Rà tiếp các tệp nguồn chưa có bản biên soạn công khai an toàn; không đăng IMG/ZIP firmware OEM, log định danh hoặc profile SIM.

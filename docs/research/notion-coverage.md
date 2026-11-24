@@ -132,3 +132,11 @@ Toàn bộ 207 đề mục đã được **gắn tuyến đến báo cáo liên 
 ## Bổ sung chi tiết PIN và Recovery OTA — 24/11/2026
 
 Đã chuyển [kết quả LockSet/High Contrast](../system/lockset-high-contrast-ui-validation.md), chỉ PASS hiển thị menu, **chưa PASS PIN**; và [dấu vết Recovery phiên bản cũ cùng các lớp tin cậy OTA](../firmware/ota-recovery-version-trace-and-trust-levels.md), không suy có bản cập nhật mới cho firmware hiện tại.
+
+## Báo cáo Dropbox đã đối chiếu chi tiết — 24/11/2026
+
+- [GPT 42/42 khớp với CSV trên GitHub](../firmware/gpt-dropbox-csv-direct-audit-20261124.md).
+- [HAL/hostapd từ vendor init RC](../system/vendor-init-hals-hostapd-20261114.md).
+- [FOTA 10/11 đã trả 2101 ở hai lần hỏi](../firmware/fota-nov10-runtime-no-update-evidence.md).
+
+Đây là nội dung biên soạn từ các TXT đã kiểm, không tự tính là bằng chứng cập nhật mới hoặc tăng tỷ lệ 207 đề mục gốc đã hoàn tất.

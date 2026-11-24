@@ -142,6 +142,12 @@ Các tài liệu này chỉ ghi lại nghiên cứu và các giới hạn; **kh�
 - [Lỗi parser bộ quét chức năng ẩn](docs/system/hidden-scanner-parser-failure-and-recovery.md), [Log Tools trong 2846](docs/system/assistant-2846-log-tools-safety-evidence.md).
 - [FOTA DEX VDEX010](docs/firmware/fota-vdex010-dequickening-evidence.md), [UService DEX VDEX010](docs/system/uservice-vdex010-recovery-progression.md), [12 thư viện ELF UCloudlink](docs/network/ucloudlink-elf-library-symbol-inventory.md).
 
+## Đối chiếu trực tiếp báo cáo gốc Dropbox — 24/11/2026
+
+- [Kiểm chứng GPT nguồn ↔ CSV công khai: **42/42 phân vùng, 0 sai khác**](docs/firmware/gpt-dropbox-csv-direct-audit-20261124.md).
+- [Vendor init RC: **26 dòng stanza** có thể nhận diện, HAL và hostapd](docs/system/vendor-init-hals-hostapd-20261114.md); có `hostapd_dual` không có nghĩa Wi-Fi 5 GHz chạy được.
+- [FOTA ngày 10/11: hai lần status 2101, không có bản cập nhật](docs/firmware/fota-nov10-runtime-no-update-evidence.md). Chỉ là hai lượt lịch sử, không phải dịch vụ OTA hiện tại.
+
 ## Phần cứng / firmware khảo sát
 
 | Mục | Ghi nhận |

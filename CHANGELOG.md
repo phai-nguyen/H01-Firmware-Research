@@ -1,5 +1,14 @@
 # Changelog
 
+## [Direct Dropbox evidence: GPT, vendor init and FOTA] — 2026-11-24
+
+- Đọc lại GPT TXT ngày 11/11 và so từng dòng với CSV GitHub: 42/42 partition metadata trùng ở index, name, LBA, sector count, bytes.
+- Đối chiếu hai bản text vendor init RC giống nhau; ghi 26 service stanza nhận dạng được, HAL và cấu hình hostapd_dual với lưu ý file nối dòng.
+- Đọc `H01-ota-check-current.txt`: FOTA 10/11/2026 hai lần trả status 2101; không sao chép raw URL định danh/signature.
+- Chỉ nghiên cứu, không ghi firmware hoặc công bố OEM binaries.
+
+
+
 ## [H01 LockSet and OTA recovery-source clarifications] — 2026-11-24
 
 - Công bố hai báo cáo chi tiết: LockSet/High Contrast UI và lịch sử bản OTA cũ trong Recovery, phân biệt HTTP/TLS với chữ ký CMS OTA.

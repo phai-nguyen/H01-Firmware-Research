@@ -46,3 +46,7 @@ Không kiểm thử thiết bị hoặc nạp module trong lần xuất bản n�
 ## Lần đối chiếu nguồn Notion + Dropbox — 24/11/2026
 
 Đã mở lại nhật ký tổng Notion H001–H003, H016–H018, H101–H105 và đọc trực tiếp báo cáo Dropbox `H01-firehose-usb-diagnostic-20261114.txt`, `H01-firehose-source-check-20261114.txt`, `H01-mmc-inspect-20261114.txt`, `H01-mmc-nodes-20261114.txt`, `H01-sysfs-mmc-attrs-20261114.txt`. **Không đăng nguyên tệp**; đã lọc serial và chi tiết riêng, chỉ công bố kết luận xác minh. Xem [source boundary](source-boundaries-and-coverage.md).
+
+## Đọc lại trực tiếp Dropbox — 24/11/2026
+
+Nguồn đã mở: `H01-GPT-map-20261111.txt`, `H01-vendor-init-rc.txt`, `H01-vendor-init-rc 2.txt`, `H01-ota-check-current.txt`. Kết quả: [bảng GPT 42/42 khớp](../firmware/gpt-dropbox-csv-direct-audit-20261124.md), [service init/HAL](../system/vendor-init-hals-hostapd-20261114.md), [hai log FOTA 2101](../firmware/fota-nov10-runtime-no-update-evidence.md). Không đưa Disk GUID, partition Unique GUID, request URL có product/device ID, signature, IMEI hoặc dữ liệu riêng vào GitHub.
