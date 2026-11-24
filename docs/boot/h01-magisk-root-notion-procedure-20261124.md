@@ -111,3 +111,7 @@ Các lệnh đọc trạng thái trên **không thay thế** phép băm partitio
 | `MODULE-PERSISTENCE PASS` | Module bật lại và UI phím Android xuất hiện sau reboot khác | H186 |
 
 **Ranh giới công bố:** đây là quy trình **rút từ Notion**, không chứa boot image OEM/patched, khóa hoặc serial máy. Các bước ghi flash được mô tả để phân biệt bằng chứng đã PASS và điều kiện an toàn, **không** cung cấp ảnh dùng chung hoặc lệnh flash một lần có thể áp dụng mù. Xem [mở khóa bootloader](h01-bootloader-unlock-notion-procedure-20261124.md), [root timeline](magisk-root-timeline.md), [H01 máy B](device-b-unlock-root-evidence.md), [chính sách Notion-only](../research/notion-only-publication-policy-20261124.md).
+
+## Công cụ mã nguồn công khai
+
+- [`tools/h01_root/root_tool.py`](../../tools/h01_root/README.md): dùng ADB/Fastboot với hình ảnh gốc/ảnh vá **của đúng H01** để thử RAM, kiểm quyền root, sao lưu, hoặc ghi boot có xác nhận. Không kèm IMG, Magisk APK hoặc thông số máy A/B. Bản này được viết lại từ trình tự đã lưu trên Notion; **chưa có chứng cứ kiểm thử H01 thật sau khi tổng quát hóa**.
