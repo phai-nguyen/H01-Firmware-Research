@@ -1,5 +1,12 @@
 # Changelog
 
+## [Notion H142–H170: 29-item OEM unlock evidence chronology] — 2026-11-24
+
+- Đối chiếu 29 mục liên tiếp của nhật ký Fastboot 14/11: OKAY không đồng nghĩa unlock, phân tích ABOOT là tĩnh và QFIL 9008 chỉ xác nhận kết nối host.
+- Tách rõ Android runtime 14/11 `locked=1/green` khỏi kết quả thử nghiệm 18/11 `locked=0/orange` (REPORTED PASS).
+- Cập nhật 29 tuyến trong bảng 207 mục tới báo cáo mới; không đăng binary/metadata nhạy cảm hoặc hướng dẫn thay DEVINFO.
+- Chưa công nhận 29/29 đính kèm đã xử lý hoàn toàn.
+
 ## [Historical baseline reconciliation, Wi-Fi band evidence and app safety matrix] — 2026-11-24
 
 - Thêm báo cáo đối chiếu **H007–H013**, tách trạng thái lịch sử (10/11) khỏi các kết quả OTA, EDL, eMMC, UService, unlock/root về sau.
