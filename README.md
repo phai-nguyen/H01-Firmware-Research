@@ -6,6 +6,14 @@
 
 English: [README.en.md](README.en.md)
 
+## Báo cáo bổ sung — đối chiếu mục còn thiếu (24/11/2026)
+
+- [Bảy mục nền tảng H007–H013: snapshot cũ và kết quả được cập nhật](docs/research/h007-h013-initial-baseline-reconciliation-20261124.md): đối chiếu kết luận lịch sử về UCloudlink, FOTA, EDL, root và kho chứng cứ.
+- [Wi-Fi 2,4 GHz / 5 GHz](docs/network/wifi-24ghz-5ghz-hotspot-evidence-20261124.md): tùy chọn 5 GHz làm hotspot tắt theo báo cáo người thử; cấu hình `hostapd_dual5g` **không** xác nhận phần cứng 5 GHz.
+- [Ma trận ứng dụng và dịch vụ hệ thống](docs/system/system-app-dependency-baseline-20261124.md): phân biệt package, process, init service và rủi ro trước khi tắt/gỡ.
+
+**Trạng thái công bố:** 207/207 tiêu đề Notion đã được liên kết chủ đề; **chưa chứng nhận 100% nội dung và mọi tệp đính kèm**. Xem [backlog](docs/research/publication-backlog.md).
+
 ## Bắt đầu
 
 - [Tổng quan phần cứng](docs/hardware/overview.md)
